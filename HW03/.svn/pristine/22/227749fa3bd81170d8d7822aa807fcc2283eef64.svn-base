@@ -1,0 +1,40 @@
+package strategy;
+
+import ball.Ball;
+import java.awt.Color;
+
+public class NinjaStrategy implements IUpdateStrategy {
+	
+	private Color OriginalColor = Color.BLACK;
+	private final Color backgroundColor = Color.LIGHT_GRAY;
+	/**
+	 * DrunkenBall changes direction when the count of drunken ball reaches STEPS.
+	 */
+	private int count = 0;
+
+	/**
+	 * DrunkenBall changes direction when the count of drunken ball reaches STEPS.
+	 */
+	private final int timespan1 = 15;
+	private final int timespan2 = 10;
+	
+	@Override
+	public void updateState(Ball context) {
+		
+		if (count < timespan1)
+			count++;
+		else if (count == timespan1) {
+			OriginalColor = context.getColor();
+			context.setColor(backgroundColor);
+			count++;
+		} 
+		else if (count < timespan1 + timespan2){
+			count++;
+		} else {
+			count = 0; // reset the count;
+			context.setColor(OriginalColor);;
+		}
+		
+	}
+
+}

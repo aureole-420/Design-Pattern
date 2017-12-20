@@ -1,0 +1,22 @@
+Project: A BallWorldApp
+Author: Yuhui Tong, Anqi Yu
+Version 1.0
+
+Welcome to the Ball World, where you will meet a multitude of cool balls! 
+These balls are lovely little creatures, with unique appearance and movement behavior. 
+Watching them moving gives visual as well as spiritual pleasure. Have fun!
+
+Instructions:
+1. Run src/controller/BallWorldController.java to launch the application.
+2. On the control panel
+	* Input the name of your desired ball, e.g., model.ball.ButterflyBall in the text field
+	* Then click "Load new ball" to summon a ball of your desired type. You can continuously click the button several times to summon multiple balls.
+	* Click "Clear balls" to remove all balls.
+3. There are at least five different types of balls, namely
+	* model.ball.NormalBall -- balls that move along straight lines.
+	* model.ball.BreathingBall -- balls which change their size all the time
+	* model.ball.ButterflyBall -- balls which change their color all the time (shining like butterfly :P)
+	* model.ball.CurvingBall -- balls rotating (and may also taking translational movement at the same time.)
+	* model.ball.DrunkenBall -- balls which try to move along straight line but could help to change direction every several steps -- poor little guy.
+	
+	They are sure many other types of balls. Let me know if you find/discover/cultivate new species!

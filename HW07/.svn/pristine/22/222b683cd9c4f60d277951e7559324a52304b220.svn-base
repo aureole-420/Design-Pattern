@@ -1,0 +1,8 @@
+package engine.view;
+
+public interface IModelAdapter {
+	public void quit();
+	
+	public void sendMsgToClient(String msg);
+
+}

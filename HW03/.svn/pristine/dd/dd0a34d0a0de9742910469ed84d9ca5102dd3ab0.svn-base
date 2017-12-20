@@ -1,0 +1,13 @@
+package strategy;
+
+import ball.Ball;
+import util.Randomizer;;
+
+public class BreathingStrategy implements IUpdateStrategy {
+
+	@Override
+	public void updateState(Ball context) {
+		context.setRadius(Randomizer.Singleton.randomInt(5, 15));
+	}
+
+}

@@ -1,0 +1,179 @@
+package client.model;
+
+import java.rmi.RemoteException;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+import java.util.function.Consumer;
+
+import provided.client.model.IClientModel;
+import provided.client.model.taskUtils.ITaskFactory;
+import provided.client.model.taskUtils.SingletonTaskFactoryLoader;
+import provided.compute.ICompute;
+import provided.compute.IRemoteTaskViewAdapter;
+import provided.compute.ITask;
+import provided.rmiUtils.IRMI_Defs;
+import provided.rmiUtils.RMIUtils;
+
+public class ClientModel implements IClientModel {
+	
+	private IViewAdapter _clientView;
+	
+	private Consumer<String> outputCmd = new Consumer<String>() {
+		@Override
+		public void accept(String t) {
+			_clientView.append(t);
+		}
+	}; 	
+	
+	private RMIUtils _rmiUtils = new RMIUtils(outputCmd);
+	
+	private ICompute _computeEngineStub;
+	
+	private IRemoteTaskViewAdapter _clientTVA;
+	
+	private IRemoteTaskViewAdapter _serverTVAStub;
+	
+	private IRemoteTaskViewAdapter _clientTVAStub;
+	
+	private Registry _registry;
+	
+	private String _defaultRemoteHost;
+	
+	/**
+	 * Constructor of client model;
+	 * @param _clientView
+	 */
+	public ClientModel(IViewAdapter _clientView) {
+		this._clientView = _clientView;
+	}
+	
+	/**
+	 * Starts the client model by initializing the RMI system and creating a remote view adapter stub for use by an engine server. Procedure:
+	 */
+	public void start() {
+		// 1. (DO THIS FIRST!) Use the IRMIUtils to start the RMI system, 
+		// using port = IRMI_Defs.CLASS_SERVER_PORT_CLIENT. 
+		// This will also automatically start the the security manager 
+		// and the class file server for remote dynamic class loading.
+		try {
+			_rmiUtils.startRMI(IRMI_Defs.CLASS_SERVER_PORT_CLIENT);
+			this._defaultRemoteHost = _rmiUtils.getLocalAddress();
+			// System.out.println("test0-----------_!" + _defaultRemoteHost);
+		} catch (Exception e) {
+			System.err.println("[ClientMode.start()]: Exception starting ClientModel: " + e);	
+		}
+		
+		// 2. Export a STUB from the client's IRemoteTaskViewAdapter RMI server object. 
+		// Save this stub for use when connecting to an engine server.
+		_clientTVA = new IRemoteTaskViewAdapter() {
+			@Override
+			public void append(String s) throws RemoteException {
+				_clientView.append("[Server]: " + s);		
+			}
+		};
+
+		try {
+			this._clientTVAStub = (IRemoteTaskViewAdapter) UnicastRemoteObject.exportObject(_clientTVA, IRemoteTaskViewAdapter.BOUND_PORT_CLIENT);
+		} catch (RemoteException e) {
+			System.err.println("[ClientMode.start()]: RemoteException " + e);
+			e.printStackTrace();
+			System.exit(-1);
+		}
+	}
+	
+	/**
+	 * Stops the client model by using the IRMIUtils to stop the RMI system. This automatically stops class file server. 
+	 * This MUST be called before exiting the system!
+	 */
+	@Override
+	public void stop() {
+		try {
+			System.out.println("ClientMode.stop(): client is quitting.");
+			_rmiUtils.stopRMI();
+		} catch (Exception e) {
+			System.err.println("[ClientMode.stop()] Error stopping class server:" + e);
+		}
+		System.exit(0);	
+	}
+	
+	
+	/**
+	 * Connects to the given remote host's Registry and retrieves the stub to the 
+	 * ICompute object bound to the ICompute.BOUND_NAME name in the remote Registry 
+	 * on port IRMI_Defs.REGISTRY_PORT. Procedure:
+	 */
+	@Override
+	public String connectTo(String remoteHost) {
+		
+		try {
+			//1. Use the IRMIUtils to retrieve the remote Registry at the given IP address. 
+			_registry = _rmiUtils.getRemoteRegistry(remoteHost);
+			//2. Use the remote Registry to retrieve an ICompute STUB bound to the name defined 
+			//by IComputer.BOUND_NAME Save the reference to the IComputer stub somewhere.
+			_computeEngineStub = (ICompute) _registry.lookup(ICompute.BOUND_NAME);
+			//3. Use the ICompute stub to give the client's IRemoteTaskViewAdapter STUB to the 
+			//remote engine server and retrieve the compute engine's IRemoteTaskViewAdapter stub. 
+			// Save the retrieved stub for later use. Use the retrieved stub to send a connection status 
+			// message to the remote compute engine's user interface.
+			_serverTVAStub = _computeEngineStub.setTextAdapter(_clientTVAStub);
+			
+			_serverTVAStub.append("Hello from the client!");
+			//_serverTVAStub.append("------test: n = " + n + "------");
+			//n++;
+			
+		} catch (Exception e) {
+			_clientView.append("[ClientModel.connectTo()] Exception connecting to " + remoteHost + ":" +  e + "\n");
+			System.err.println("[ClientModel.connectTo()] Exception connecting to " + remoteHost + ":" +  e + "\n");
+			e.printStackTrace();
+			return "No connection established!";
+		} 
+		
+		//4. Return a string indicating the success or failure of the connection attempt.
+		return "[Connection Status] Connection to " + remoteHost + " established!";
+	}
+	
+	/**
+	 * Sends a string message to the connected compute engine using the IRemoteTaskViewAdapter STUB received from the engine server. 
+	 * This message should also be echoed to the local user interface.
+	 */
+	@Override
+	public void sendMsgToComputeEngine(String msg) {
+		try {
+			_serverTVAStub.append(msg);
+			_clientView.append("[ClientModel.sendMsgToComputeEngine()] Sending msg to connected remote server. (msg = \"" + msg + "\")");
+		} catch (RemoteException e) {
+			System.err.println("[ClientModel.sendMsgToComputeEngine()] RemoteExcetion "+ e);
+			e.printStackTrace();
+		}	
+	}
+	
+	/**
+	 * Runs the given ITask on the remote engine server, returning the String formatted result, 
+	 * which is produced using the given ITask's ITaskResultFormatter object.
+	 */
+	@Override
+	public <T> String runTask(ITask<T> task) {
+		try {
+			T result = _computeEngineStub.executeTask(task);
+			_clientView.append("[Task execution returned result] " + task.getFormatter().format(result));
+		} catch (Exception e) {
+			System.err.println("[ClientModel.runTask] Exception runing task " + task + ":" + e + "\n");
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	public <T> ITask<T> loadTask(ITaskFactory<?> taskFactory, String param) {
+		return (ITask<T>) taskFactory.make(param);
+		
+	}
+	
+	public ITaskFactory<?> makeTaskFactory(String classname) {
+		return SingletonTaskFactoryLoader.SINGLETON.load(classname);
+	}
+	
+	public String getDefaultRemoteHost() {
+		return _defaultRemoteHost;
+	}
+
+}

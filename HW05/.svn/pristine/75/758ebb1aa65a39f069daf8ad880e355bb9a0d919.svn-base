@@ -1,0 +1,53 @@
+package model.updateStrategy;
+
+import model.IBallCmd;
+import model.IInteractStrategy;
+import model.IUpdateStrategy;
+import model.MultiInteractStrategy;
+import model.ball.Ball;
+import util.IDispatcher;
+
+/**
+ * (Enlarge the size of the target ball) implemented purely as an interaction strategy.   
+ * Combine with Overlap/Collide to see slowing other balls.
+ * @author yuhui
+ *
+ * @param <TDispMsg> The message dispatched by dispatcher.
+ */
+public class EnlargeStrategy<TDispMsg> implements IUpdateStrategy<TDispMsg> {
+
+	/**
+	 * increase the radius of target ball by EnlargeRatio every tick.
+	 */
+	private double EnlargeRatio = 1.1;
+
+	/**
+	 * {@inheritDoc}<br/>
+	 * Initialize a pure interactStrategy that enlarges target balls.
+	 */
+	public void init(Ball context) {
+		// System.out.println("KILLING INIT!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		context.setInteractStrategy(new MultiInteractStrategy(context.getInteractStrategy(), new IInteractStrategy() {
+			public void interact(Ball context, Ball target, IDispatcher<IBallCmd> disp) {
+				if (context == target) {
+					return; // do nothing to context ifself
+				}
+				if (target.getRadius() > 35) {
+					return;
+				}
+				target.setRadius((int) Math.round(EnlargeRatio * target.getRadius()));
+
+			}
+		}));
+	}
+
+	/**
+	 * {@inheritDoc}<br/>
+	 */
+	@Override
+	public void updateState(Ball context, IDispatcher<TDispMsg> disp) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

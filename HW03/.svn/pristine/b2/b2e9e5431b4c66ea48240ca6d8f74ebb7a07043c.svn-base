@@ -1,0 +1,28 @@
+package strategy;
+
+import ball.Ball;
+
+public class SwitcherStrategy implements IUpdateStrategy {
+
+	private IUpdateStrategy strategy;
+	
+	// constructor
+	public SwitcherStrategy() {
+		
+	}
+	
+	
+	//private IUpdateStrategy strategy = new SwitcherStrategy();
+	
+	@Override
+	public void updateState(Ball context) {
+		if (strategy != null) 
+			strategy.updateState(context);
+		
+	}
+	
+	public void setStrategy(IUpdateStrategy newStrategy) {
+		strategy = newStrategy;
+	}
+
+}

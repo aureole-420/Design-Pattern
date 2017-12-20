@@ -1,0 +1,111 @@
+package client.model.task;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.rmi.RemoteException;
+import java.util.HashSet;
+
+import provided.client.model.taskUtils.ITaskFactory;
+import provided.compute.ILocalTaskViewAdapter;
+import provided.compute.ITask;
+import provided.compute.ITaskResultFormatter;
+
+/**
+ * A Task that count the distinct chars of an input string.
+ * @author yuhui
+ */
+public class CountDistChar implements ITask<Integer> {
+	
+	/**
+	 * SerialversionUID for well-defined serialization.
+	 */
+	private static final long serialVersionUID = -4706130020409437404L;
+	
+	/**
+	 * input string
+	 */
+	private String input;
+	
+	 /**
+     * Adapter to the local view.  Marked "transient" so that it is not serialized
+     * and instead is reattached at the destination (the server).  
+     */
+    private transient ILocalTaskViewAdapter taskView = ILocalTaskViewAdapter.DEFAULT_ADAPTER;
+
+    /**
+     * Constructor for CountDistChar task.
+     * @param input The input String
+     */
+	public CountDistChar(String input) {
+		this.input = input;
+		taskView.append("CountDistNum constructing...");
+	}
+	
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public Integer execute() throws RemoteException {
+		char[] chars = input.toCharArray();
+		HashSet<Character> set = new HashSet<Character>();
+		for (char c: chars) {
+			set.add(c);
+		}
+		return set.size();
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void setTaskViewAdapter(ILocalTaskViewAdapter viewAdapter) {
+		taskView = viewAdapter;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public ITaskResultFormatter<Integer> getFormatter() {
+		return new ITaskResultFormatter<Integer>() {
+
+			@Override
+			public String format(Integer result) {
+				return  "Input string \"" + input + "\" has " + result + " distinct chars.";
+			}
+		};
+	}
+	
+    /**
+     * Reinitializes transient fields upon deserialization.  See the 
+     * <a href="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html">
+     * Serializable</a> marker interface docs.
+     * taskView is set to a default value for now (ILocalTaskViewAdapter.DEFAULT_ADAPTER).
+     * @param stream The object stream with the serialized data
+     * @throws IOException if the input stream cannot be read correctly
+     * @throws ClassNotFoundException if the class file associated with the input stream cannot be located.
+     */
+    private void readObject(ObjectInputStream stream) throws IOException, ClassNotFoundException {
+      stream.defaultReadObject(); // Deserialize the non-transient data
+      taskView = ILocalTaskViewAdapter.DEFAULT_ADAPTER;  // re-initialize the transient field
+    }
+    
+    /**
+     * static field for the Taskfactory loader to load the task factory for this task.
+     */
+    public static final ITaskFactory<Integer> FACTORY = new ITaskFactory<Integer>() {
+
+		@Override
+		public ITask<Integer> make(String param) {
+			// TODO Auto-generated method stub
+			return new CountDistChar(param);
+		}
+		
+		@Override
+		public String toString() {
+			return CountDistChar.class.getName();
+		}    		
+		
+    };
+
+}

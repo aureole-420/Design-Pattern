@@ -1,0 +1,15 @@
+Instruction:
+
+
+Testing:
+
+1. lp28 ker7 | group 14 | success.
+2. zy24 lz50 | group 22 | success
+3. lz50  zy24 | group 22 | success
+4. sw12 sq9 | group 20 | single task reverseString not working, otherwise okay (including multitask).
+5. ry13 dl52 | group 3 | success
+6. zf12 cz39 | group 2 | success.
+7. ql13 kp30 | group 28 | success.
+8. ds60 ly15 | group 4 | success
+9. qy11 pg23 | group17 | success
+10. xc23 yl148 | group11 | success

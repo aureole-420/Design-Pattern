@@ -1,0 +1,132 @@
+package engine.model;
+
+
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+import java.util.function.Consumer;
+
+import provided.compute.ICompute;
+import provided.compute.IRemoteTaskViewAdapter;
+import provided.engine.model.IEngineModel;
+import provided.rmiUtils.IRMI_Defs;
+import provided.rmiUtils.RMIUtils;
+
+/**
+ * model for the engine.
+ * @author yuhui
+ */
+public class EngineModel implements IEngineModel {
+	/**
+	 * The model to view adapter.
+	 */
+	private IViewAdapter _serverView;
+	
+	/**
+	 * Comsumer object used to initiate RMIutils object.
+	 */
+	private Consumer<String> outputCmd = new Consumer<String>() {
+		@Override
+		public void accept(String t) {
+			_serverView.append(t);
+		}
+	}; 
+	
+	/**
+	 * Reference to the Registry
+	 */
+	private Registry _registry;
+	
+	/**
+	 * Utility object to get the registry;
+	 */
+	private RMIUtils _rmiUtils = new RMIUtils(outputCmd);
+	
+	/**
+	 * the ICompute server implementation (an RMI server object) 
+	 */
+	private ICompute _computeEngine;
+	
+	/**
+	 * Constructor for the engine model
+	 * @param _serverView The model to view adapter.
+	 */
+	public EngineModel(IViewAdapter _serverView) {
+		this._serverView = _serverView;
+	}
+	
+	/**
+	 * Start the RMI server (IComputeEngine);
+	 */
+	@Override
+	public void start() {
+		try {
+			// Start the RMI Server (ICompute engine): 
+			// 1. (Do this FIRST!) Use the provided IRMIUtils to start the RMI system, using port = IRMI_Defs.CLASS_SERVER_PORT_SERVER. This will also automatically start the the security manager and the class file server for remote dynamic class loading.
+			_rmiUtils.startRMI(IRMI_Defs.CLASS_SERVER_PORT_SERVER);
+		
+			// 2. Instantiate the ICompute server, saving a reference to it in the model somewhere. 
+			_computeEngine = new ComputeEngine(_serverView);
+			_serverView.append("[EngineServer.start()] Instantiate new Compute engine: " + _computeEngine);
+		
+			// 3. Create a stub of the ICompute server. 
+			ICompute _computeEngineStub = (ICompute) UnicastRemoteObject.exportObject(_computeEngine, IRemoteTaskViewAdapter.BOUND_PORT_SERVER);
+				
+			_serverView.append("[EngineModel.start()] Looking for registry..." );
+			// 4. Use the IRMIUtils to get the LOCAL Registry. Save the reference somewhere for use later.
+			_registry = _rmiUtils.getLocalRegistry();
+			_serverView.append("[EngineModel.start()] Found registry:" + _registry);
+		
+			// 5. Bind the ICompute engine stub to the local Registry using the name and port defined by ICompute locating the local Registry and binding a STUB of an ICompute engine instance to the that registry
+			_registry.rebind(ICompute.BOUND_NAME, _computeEngineStub);
+			_serverView.append("[EngineModel.start()] ComputeEngine bound to name" + "\"" + ICompute.BOUND_NAME + "\"");
+		} catch (Exception e) {
+			System.err.println("ComputeEngine exception: " + e.toString());
+			e.printStackTrace();
+			System.exit(-1); // exit the program.
+		}
+		
+		_serverView.append("Waiting..."+"\n");
+	}
+	
+	/**
+	 * Stops the engine model by unbinding the ICompute engine from the Registry 
+	 * and stopping class file server.
+	 */
+	@Override
+	public void stop() {
+		try {
+		    // Stops the engine model by unbinding the ICompute engine from the Registry and stopping class file server. This MUST be called before exiting the system! Procedure: 
+			// 1. First, unbind the ICompute server stub from the local Registry. 
+			_registry.unbind(ICompute.BOUND_NAME);
+			System.out.println("EngineController:" + ICompute.BOUND_NAME + " has been unbound.");
+			
+			// 2. Use the IRMIUtils to stop the RMI system.
+			_rmiUtils.stopRMI();
+			
+			System.exit(0);
+		} catch (Exception e) {
+			System.err.println("EngineController: Error unbinding " + ICompute.BOUND_NAME + ":\n" + e);
+			System.exit(-1);
+		}
+	}
+	
+	/**
+	 * Send String message to connected remote client using the IRemoteTaskAdapter STUB received from the client.
+	 */
+	@Override
+	public void sendMsgToClient(String text) {
+		try {
+			((ComputeEngine) _computeEngine).getClientTVAStub().append(text);
+		} catch (Exception e) {
+			//IRemoteTaskViewAdapter.NULL_ADAPTER.append(text);
+			System.err.println("Remote Exception: " + e.toString());
+			e.printStackTrace();
+			System.exit(-1);
+		} 
+		
+		// copy to the local server view:
+		_serverView.append("[ComputeEngine.sendMsgToClient()] Sending msg to connected remote client." + "msg: \"" + text + "\"");
+	}
+
+
+}

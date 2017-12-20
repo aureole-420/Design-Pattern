@@ -1,0 +1,119 @@
+package view;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import javax.swing.JLabel;
+import java.awt.*;
+import javax.swing.JTextField;
+
+/**
+ * Main frame for the application.
+ */
+public class MainAppFrame extends JFrame {
+
+	/**
+	 * Auto-generated Serial Version ID for serializing and deserializing an object
+	 */
+	private static final long serialVersionUID = -4255830396470732847L;
+	
+	/**
+	 * Main panel to hold components in the application
+	 */
+	private JPanel contentPane;
+	
+	/**
+	 * 
+	 */
+	private JTextField txtInput;
+
+	/**
+	 * Launch the application.
+	 * @param args 
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					MainAppFrame frame = new MainAppFrame();
+					frame.start();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Constructor for the frame, call the initialization method.
+	 */
+	public MainAppFrame() {
+		initGUI();
+	}
+
+	/**
+	 * Initialize the GUI components but do not start the frame.
+	 */
+	public void initGUI() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);	
+		
+		JPanel pnlControl = new JPanel();
+		pnlControl.setToolTipText("Control Panel");
+		pnlControl.setBackground(Color.ORANGE);
+		pnlControl.setForeground(new Color(255, 200, 0));
+		contentPane.add(pnlControl, BorderLayout.NORTH);
+		
+		JLabel lblInfo = new JLabel("Info here!");
+		lblInfo.setToolTipText("Info board!");
+		pnlControl.add(lblInfo);
+		
+		JButton btnRun = new JButton("Click me to copy!");
+		btnRun.setToolTipText("Click me to copy your input to display!");
+		btnRun.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lblInfo.setText("Comp 504 Rocks!");
+				lblInfo.setText(txtInput.getText());
+			}
+		});
+		pnlControl.add(btnRun);
+		
+		txtInput = new JTextField();
+		txtInput.setToolTipText("Your input here!");
+		pnlControl.add(txtInput);
+		txtInput.setColumns(10);
+		
+		JPanel pnlDisplay = new JPanel() 
+			 {
+					/**
+					* Overridden paintComponent method to paint a shape in the panel.
+					* @param g The Graphics object to paint on.
+					**/
+					public void paintComponent(Graphics g) {
+					    super.paintComponent(g);   // Do everything normally done first, e.g. clear the screen.
+					    g.setColor(Color.RED);  // Set the color to use when drawing
+					    g.fillOval(75, 100, 20, 40);  // paint a filled 20x40 red ellipse whose upper left corner is at (75, 100)
+					}
+				};
+		pnlDisplay.setToolTipText("Central Panel");
+		contentPane.add(pnlDisplay, BorderLayout.CENTER);
+	}
+	
+	/**
+	 * Start the already initialized frame, making it visible and ready to interact with the user.
+	 */
+	public void start() {
+		this.setVisible(true);
+	}
+}

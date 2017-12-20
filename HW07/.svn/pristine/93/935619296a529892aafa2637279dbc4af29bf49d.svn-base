@@ -1,0 +1,80 @@
+package engine.controller;
+
+import java.awt.EventQueue;
+
+import engine.model.EngineModel;
+import engine.model.IViewAdapter;
+import engine.view.EngineView;
+import engine.view.IModelAdapter;
+
+/**
+ * Controller for the compute engine server
+ * @author yuhui
+ */
+class EngineController {
+	/**
+	 * The model for the server
+	 */
+	private EngineModel _model;
+	
+	/**
+	 * The view for the server.
+	 */
+	private EngineView _view;
+	
+	/**
+	 * Constructor for the engine controller.
+	 */
+	public EngineController() {
+		_model = new EngineModel(new IViewAdapter() {
+
+			@Override
+			public void append(String t) {	
+				_view.append(t);
+			}
+			
+		});
+		
+		_view = new EngineView(new IModelAdapter() {
+			@Override
+			public void quit() {
+				_model.stop();
+			}
+
+			@Override
+			public void sendMsgToClient(String msg) {
+				_model.sendMsgToClient(msg);
+				
+			}
+			
+		});
+		
+	}
+	
+	/**
+	 * This method start the controller.
+	 */
+	public void start() {
+		_model.start();
+		_view.start();
+	}
+	
+	/**
+	 * Run the controller to launch the server.
+	 * @param args Default string params.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			// java specs say that the system must be constructed on the GUI event thread
+			@Override
+			public void run() {
+				try {
+					EngineController controller = new EngineController();
+					controller.start();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+}

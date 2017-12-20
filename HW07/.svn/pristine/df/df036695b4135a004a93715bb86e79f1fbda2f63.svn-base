@@ -1,0 +1,104 @@
+package client.model.task;
+
+import java.rmi.RemoteException;
+import java.util.LinkedList;
+
+import provided.compute.ILocalTaskViewAdapter;
+import provided.compute.ITask;
+import provided.compute.ITaskResultFormatter;
+
+/**
+ * This class returns a multi-task.
+ * @author yuhui
+ */
+public class MultiTasks implements ITask<LinkedList<Object>>{
+	
+	/**
+	 * generated serialID
+	 */
+	private static final long serialVersionUID = -8175794870855031491L;
+	
+	/**
+	 * The first task to be combined 
+	 */
+	private ITask<? extends Object> _task1;
+	/**
+	 * The second task to be combined.
+	 */
+	private ITask<? extends Object> _task2;
+	/**
+	 * A list of objects, each is the result of a single task.
+	 */
+	private LinkedList<Object> _result = new LinkedList<Object>();
+	
+	/**
+	 * Local view adapter
+	 */
+	private transient ILocalTaskViewAdapter taskView = ILocalTaskViewAdapter.DEFAULT_ADAPTER;
+
+	/**
+	 * Constructor of a multi task.
+	 * @param task1 The first task
+	 * @param task2 The second task.
+	 */
+	public MultiTasks(ITask<? extends Object> task1, ITask<? extends Object> task2) {
+		this._task1 = task1;
+		this._task2 = task2;
+	}
+	
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public LinkedList<Object> execute() throws RemoteException {
+		try {
+			taskView.append("Executing multiTasks!\n");
+			taskView.append("(Executing task #1)");
+			_result.add(_task1.execute());
+			taskView.append("(Executing task #2)");
+			_result.add(_task2.execute());
+			return _result;
+		} catch (Exception e) {
+			taskView.append("Exception in executing multi-tasks: " + e);
+			return _result;
+		}
+	}
+	
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void setTaskViewAdapter(ILocalTaskViewAdapter viewAdapter) {
+		_task1.setTaskViewAdapter(viewAdapter);
+		_task2.setTaskViewAdapter(viewAdapter);
+		taskView = viewAdapter;
+	}
+    
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public ITaskResultFormatter<LinkedList<Object>> getFormatter() {
+		// TODO Auto-generated method stub
+		return new ITaskResultFormatter<LinkedList<Object>>() {
+
+			@Override
+			public String format(LinkedList<Object> result) {
+				ITaskResultFormatter<Object> formatter1 = (ITaskResultFormatter<Object>) _task1.getFormatter();
+				ITaskResultFormatter<Object> formatter2 = (ITaskResultFormatter<Object>) _task2.getFormatter();
+				return "\n---MultiTask 1---\n" + formatter1.format(result.get(0)) +"\n---MultiTask 2---\n"+ formatter2.format(result.get(1));
+			}			
+		};
+	}
+	
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public String toString() {
+		return _task1.toString() +"-"+ _task2.toString();
+	}
+	
+
+
+}

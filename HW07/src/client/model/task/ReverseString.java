@@ -1,0 +1,114 @@
+package client.model.task;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.rmi.RemoteException;
+
+import provided.client.model.taskUtils.ITaskFactory;
+import provided.compute.ILocalTaskViewAdapter;
+import provided.compute.ITask;
+import provided.compute.ITaskResultFormatter;
+
+/**
+ * An task the reverse an input string.
+ * @author yuhui
+ */
+public class ReverseString implements ITask<String> {
+	/**
+	 * SerialversionUID for well-defined serialization.
+	 */
+	private static final long serialVersionUID = -2723043121801883072L;
+
+	/**
+	 * An input string
+	 */
+	private String input;
+
+	/**
+	* Adapter to the local view.  Marked "transient" so that it is not serialized
+	* and instead is reattached at the destination (the server).  
+	*/
+	private transient ILocalTaskViewAdapter taskView = ILocalTaskViewAdapter.DEFAULT_ADAPTER;
+
+	/**
+	 * The constructor for this task.
+	 * @param input The input string
+	 */
+	public ReverseString(String input) {
+		this.input = input;
+		taskView.append("ReverseString constructing...");
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public String execute() throws RemoteException {
+		taskView.append("Executing  ReverseString with string \"" + input + "\".\n");
+		char[] chars = input.toCharArray();
+		int i = 0, j = chars.length - 1;
+		while (i < j) {
+			char temp = chars[i];
+			chars[i] = chars[j];
+			chars[j] = temp;
+			i++;
+			j--;
+		}
+		return new String(chars);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public void setTaskViewAdapter(ILocalTaskViewAdapter viewAdapter) {
+		taskView = viewAdapter;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public ITaskResultFormatter<String> getFormatter() {
+		return new ITaskResultFormatter<String>() {
+
+			@Override
+			public String format(String result) {
+				return "The reverse String of \"" + input + "\" is \"" + result + "\".";
+			}
+
+		};
+	}
+
+	/**
+	 * Reinitializes transient fields upon deserialization.  See the 
+	 * <a href="http://download.oracle.com/javase/6/docs/api/java/io/Serializable.html">
+	 * Serializable</a> marker interface docs.
+	 * taskView is set to a default value for now (ILocalTaskViewAdapter.DEFAULT_ADAPTER).
+	 * @param stream The object stream with the serialized data
+	 * @throws IOException if the input stream cannot be read correctly
+	 * @throws ClassNotFoundException if the class file associated with the input stream cannot be located.
+	 */
+	private void readObject(ObjectInputStream stream) throws IOException, ClassNotFoundException {
+		stream.defaultReadObject(); // Deserialize the non-transient data
+		taskView = ILocalTaskViewAdapter.DEFAULT_ADAPTER; // re-initialize the transient field
+	}
+
+	/**
+	 * static field for the Taskfactory loader to load the task factory for this task.
+	 */
+	public static final ITaskFactory<String> FACTORY = new ITaskFactory<String>() {
+
+		@Override
+		public ITask<String> make(String param) {
+			// TODO Auto-generated method stub
+			return new ReverseString(param);
+		}
+
+		@Override
+		public String toString() {
+			return ReverseString.class.getName();
+		}
+
+	};
+}

@@ -1,0 +1,19 @@
+package strategy;
+
+import ball.Ball;
+import java.awt.Point;
+
+public class CurvingStrategy implements IUpdateStrategy {
+	
+	private double theta = Math.PI / 15;
+	
+	@Override
+	public void updateState(Ball context) {
+		Point v = context.getVelocity();
+		int vx =v.x, vy = v.y;
+		context.setVelocity(new Point((int) Math.round(vx * Math.cos(theta) - vy * Math.sin(theta)),
+		 (int) Math.round(vy * Math.cos(theta) + vx * Math.sin(theta))));
+		
+	}
+
+}

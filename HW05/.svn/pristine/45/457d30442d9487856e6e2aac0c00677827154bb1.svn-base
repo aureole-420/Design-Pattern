@@ -1,0 +1,55 @@
+package model.updateStrategy;
+
+import model.IBallCmd;
+import model.IUpdateStrategy;
+import model.ball.Ball;
+import util.IDispatcher;
+
+/**
+ * Detects if any other balls enters the realm of the context ball.
+ * Note1: the realm is within around the context ball.
+ * Note2: this is a Strategy that just detect an interaction and 
+ * invoke the interaction strategies of the interacting balls.
+ * 
+ * @author yuhui
+ *
+ * @param <TDispMsg> The message dispatched by the dispatcher
+ */
+public class RealmStrategy<TDispMsg> implements IUpdateStrategy<IBallCmd> {
+
+	/**
+	 * The radius of the realm
+	 */
+	private double RealmRadius = 150.0;
+
+	/**
+	 * {@inheritDoc}<br/>
+	 * 
+	 */
+	@Override
+	public void init(Ball context) {
+		// do nothing
+
+	}
+
+	/**
+	 * {@inheritDoc}<br/>
+	 */
+	@Override
+	public void updateState(Ball context, IDispatcher<IBallCmd> dispatcher) {
+		dispatcher.dispatch(new IBallCmd() {
+
+			/**
+			 * {@inheritDoc}<br/>
+			 */
+			@Override
+			public void apply(Ball target, IDispatcher<IBallCmd> disp) {
+				if (context.getLocation().distance(target.getLocation()) <= context.getRadius() + RealmRadius) {
+					context.interactWith(target, disp);
+				}
+			}
+
+		});
+	}
+
+}

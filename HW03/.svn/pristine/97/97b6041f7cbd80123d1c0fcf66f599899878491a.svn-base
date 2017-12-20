@@ -1,0 +1,63 @@
+package view;
+
+
+public interface IView2ModelControlAdapter<TDropListItem> {
+
+	/**
+	 * This method tells model to load a ball.
+	 * @param selectedItem name of strategy type that ball uses
+	 */
+	public void loadBall(TDropListItem selectedItem);
+	
+	/**
+	 * Add a selectedItem (containing the corresponding strategy factory) to droplist
+	 * @param classname The classname of ball type to be loaded
+	 * @return
+	 */
+	public TDropListItem addStrategy(String classname);
+	
+	public TDropListItem combineStrategies(TDropListItem selectedItem1, TDropListItem selectedItem2);
+	
+	public void makeSwitcherBall();
+	
+	public void switchStrategy(TDropListItem selectedItem);
+	
+	/**
+	 * This method tells the model to remove all the balls.
+	 */
+	public void clearBalls();
+	
+	/**
+	 * "null" object to insure that view's operation is valid.
+	 */
+	
+	/**
+	public static final IView2ModelControlAdapter<Object> NULL_OBJECT = new IView2ModelControlAdapter<Object>() {
+
+
+		public void clearBalls() {
+
+		}
+
+		@Override
+		public void loadBall(Object selectedItem) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public Object addStrategy(String classname) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public Object combineStrategies(Object selectedItem1, Object selectedItem2) {
+			return null;
+		}
+		
+		@Override
+
+	};
+	*/
+}

@@ -1,0 +1,39 @@
+package model.paint.strategy;
+
+import java.awt.Graphics;
+
+import model.ball.Ball;
+
+public class SquarePaintStrategy implements IPaintStrategy {
+	
+	public SquarePaintStrategy() {
+		/**
+		 * No parameter constructor for the class.
+		 */
+	}
+	
+
+	@Override
+	/**
+	 * Paints a square on the given graphics context using the color and radius
+	 * provided by the host.
+	 * @param g The Graphics context that will be painted on
+	 * @param host The host ball that the required information will be pulled from.
+	 */
+	public void paint(Graphics g, Ball host) {
+		int halfSide = host.getRadius();
+		g.setColor(host.getColor());
+		g.fillRect(host.getLocation().x-halfSide, host.getLocation().y-halfSide, 2*halfSide, 2*halfSide);
+		
+	}
+
+	@Override
+	/**
+	 * By default, do nothing for initialization.
+	 */
+	public void init(Ball host) {
+		
+		
+	}
+
+}

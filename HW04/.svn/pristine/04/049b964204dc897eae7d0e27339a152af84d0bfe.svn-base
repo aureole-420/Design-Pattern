@@ -1,0 +1,15 @@
+package util;
+
+public class NoOpLambda implements ILambda {
+	
+	public static NoOpLambda Singleton = new NoOpLambda();
+	
+	private NoOpLambda() {}
+	
+	@Override
+	public Object apply(Object arg) {
+		// Does nothing
+		return null;
+	}
+
+}

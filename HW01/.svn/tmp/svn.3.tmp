@@ -1,0 +1,67 @@
+package view;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+/**
+ * Main frame for the application.
+ */
+public class MainAppFrame extends JFrame {
+
+	/**
+	 * Auto-generated Serial Version ID for serializing and deserializing an object
+	 */
+	private static final long serialVersionUID = -4255830396470732847L;
+	
+	/**
+	 * Main panel to hold components in the application
+	 */
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 * @param args 
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					MainAppFrame frame = new MainAppFrame();
+					frame.start();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Constructor for the frame, call the initialization method.
+	 */
+	public MainAppFrame() {
+		initGUI();
+	}
+
+	/**
+	 * Initialize the GUI components but do not start the frame.
+	 */
+	public void initGUI() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+	}
+	
+	/**
+	 * Start the already initialized frame, making it visible and ready to interact with the user.
+	 */
+	public void start() {
+		this.setVisible(true);
+	}
+}

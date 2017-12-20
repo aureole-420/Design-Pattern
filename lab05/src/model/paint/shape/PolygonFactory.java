@@ -1,0 +1,68 @@
+package model.paint.shape;
+
+import java.awt.Point;
+import java.awt.Polygon;
+import java.awt.Shape;
+import java.awt.geom.AffineTransform;
+
+import model.IShapeFactory;
+
+/**
+ * Concrete IShapeFactory that provides the invariant behavior to instantiate a Shape that is a Polygon. 
+ * This class can be instantiated and used simply by supplying the desired points in its constructor, 
+ * or sub-classed an the constructor overridden. Note that this class cannot be used directly by 
+ * the BallWar system because it does not have a no-parameter constructor.
+ * @author Yuhui Tong, Haoyuan Yue
+ */
+public class PolygonFactory implements IShapeFactory {
+
+	/**
+	 * The AffineTransform used for internal calculations;
+	 */
+	private AffineTransform at;
+
+	/**
+	 * The Polygon shape to use as the prototype;
+	 */
+	private Polygon poly = new Polygon();
+
+	/**
+	 * Scale factor that scales the interger Point-defined Polygon to a unit size, which requires doubles.
+	 */
+	private double scaleFactor;
+
+	/**
+	 * Constructor that uses an externally defined AffineTransform for internal use plus takes the defining points of the prototype 
+	 * Polygon and a scale factor to scale the given points to the desired unit size. Since Polygons require Point objects
+	 * for their definition, a prototype cannot be defined of arbitrary size because Points are defined on an integer grid. Thus, a double scale factor is also provided that is used to scale the Polygon via
+	 * the affinte transform into shape of the desired size.
+	 * @param at The AffineTransform used for internal calculations
+	 * @param scaleFactor Scale factor that scales the integer Point-defined Polygon to a unit size, which requires doubles. The value of scaleFactor is The ratio of the desired unit size to the defined size of the prototype Polygon.
+	 * @param pts array of Points
+	 */
+	PolygonFactory(AffineTransform at, double scaleFactor, Point... pts) {
+		this.at = at;
+		this.scaleFactor = scaleFactor;
+		for (int i = 0; i < pts.length; i++) {
+			this.poly.addPoint(pts[i].x, pts[i].y);
+		}
+	}
+
+	@Override
+	/**
+	 * Instantiate a Shape object that is the prototype Polygon translated by the given (x,y) point and scaled by given (xScale, yScale)
+	 * factor times the internal scaleFactor. Note that this method does not return a Polygon object, but rather an abstract Shape Object. 
+	 * The return value *cannot* be cast to Polygon.
+	 * @param x x-coordinate of the center of the shape
+	 * @param y y-coordinate of the center of the shape
+	 * @param xScale The x-dimension of the shape, usually the x-radius.
+	 * @param yScale The y-dimension of the shape, usually the y-radius.
+	 * @return A shape instance
+	 */
+	public Shape makeShape(double x, double y, double xScale, double yScale) {
+		at.setToTranslation(x, y);
+		at.scale(scaleFactor * xScale, scaleFactor * yScale);
+		return at.createTransformedShape(poly);
+	}
+
+}

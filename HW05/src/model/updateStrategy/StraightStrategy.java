@@ -1,0 +1,33 @@
+package model.updateStrategy;
+
+import model.IUpdateStrategy;
+import model.ball.Ball;
+import util.IDispatcher;
+
+/**
+ * A concrete strategy class that implements IUpdateStategy.
+ * The ball go straight before hitting the wall if taking this strategy.
+ * @author Yuhui Tong, Haoyuan Yue
+ * @version 1.0
+ * @param <TDispMsg> The message dispatched by dispatcher.
+ */
+public class StraightStrategy<TDispMsg> implements IUpdateStrategy<TDispMsg> {
+
+	/**
+	 * An overridden method that updates the ball's state.
+	 * @param context The ball that the strategy is applied on.
+	 */
+	@Override
+	public void updateState(Ball context, IDispatcher<TDispMsg> disp) {
+		// do nothing
+	}
+
+	/**
+	 * {@inheritDoc}<br/>
+	 */
+	@Override
+	public void init(Ball context) {
+		// TODO Auto-generated method stub
+
+	}
+}

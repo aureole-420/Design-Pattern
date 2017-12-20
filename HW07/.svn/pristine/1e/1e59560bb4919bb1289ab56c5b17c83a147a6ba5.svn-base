@@ -1,0 +1,88 @@
+package engine.view;
+
+import java.awt.BorderLayout;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import javax.swing.JTextField;
+import javax.swing.border.TitledBorder;
+import javax.swing.border.EtchedBorder;
+import java.awt.Color;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.SystemColor;
+
+public class EngineView extends JFrame {
+
+	/**
+	 * Default Serial ID
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private IModelAdapter _model;
+	
+	private JPanel _contentPane;
+	private final JPanel _pnlControl = new JPanel();
+	private final JButton _btnQuit = new JButton("Quit");
+	private final JPanel _subPnl = new JPanel();
+	private final JTextField _txtInput = new JTextField();
+	private final JTextArea _txtArea = new JTextArea();
+	private final JScrollPane _scrollPane = new JScrollPane(_txtArea);
+	
+	/**
+	 * Constructor
+	 */
+	public EngineView(IModelAdapter _model) {
+		this._model = _model;
+		initGUI();
+
+	}
+	
+	private void initGUI() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 700, 300);
+		_contentPane = new JPanel();
+		_contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		_contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(_contentPane);
+		_pnlControl.setBackground(SystemColor.textHighlight);
+		
+		_contentPane.add(_pnlControl, BorderLayout.NORTH);
+		_btnQuit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) { // quit the RMI server.
+				_model.quit(); // indirectly call stop in Controller.
+			}
+		});
+		
+		_pnlControl.add(_btnQuit);
+		_subPnl.setBackground(SystemColor.textHighlight);
+		_subPnl.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null), "Send msg to remote client's view", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(0, 0, 0)));
+		
+		_pnlControl.add(_subPnl);
+		
+		_subPnl.add(_txtInput);
+		_contentPane.add(_scrollPane, BorderLayout.CENTER);
+		
+		_txtInput.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				_model.sendMsgToClient(_txtInput.getText());
+			}
+		});
+		
+		_txtInput.setToolTipText("Hit enter to send the string to the remote client to be displayed on its view.");
+		_txtInput.setText("Hit Enter to send msg...");
+		_txtInput.setColumns(20);
+	}
+	
+	public void append(String text) {
+		_txtArea.append("\n" + text);
+	}
+	
+	public void start() {
+		setVisible(true);
+	}
+
+}

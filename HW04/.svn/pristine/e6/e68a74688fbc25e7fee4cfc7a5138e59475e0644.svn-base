@@ -1,0 +1,40 @@
+package model.strategy;
+
+import java.awt.Rectangle;
+
+import model.ball.Ball;
+import util.Dispatcher;
+import util.Randomizer;
+
+/**
+ * A concrete strategy class that implements IUpdateStategy.
+ * A ball changes velocity every several STEPS if taking this strategy.
+ * @author Yuhui Tong, Haoyuan Yue
+ * @version 1.0
+ */
+public class DrunkenStrategy implements IUpdateStrategy {
+	/**
+	 * DrunkenBall changes direction when the count of drunken ball reaches STEPS.
+	 */
+	private int count = 0;
+
+	/**
+	 * DrunkenBall changes direction when the count of drunken ball reaches STEPS.
+	 */
+	private final int STEPS = 25;
+
+	@Override
+	/**
+	 * An overriden method that updates the ball's state.
+	 * @param context The ball that the strategy is applied on.
+	 */
+	public void updateState(Ball context, Dispatcher disp) {
+		// TODO Auto-generated method stub
+		if (count < STEPS)
+			count++;
+		else {
+			count = 0; // reset the count;
+			context.setVelocity(Randomizer.Singleton.randomVel(new Rectangle(0, 0, 5, 15)));
+		}
+	}
+}

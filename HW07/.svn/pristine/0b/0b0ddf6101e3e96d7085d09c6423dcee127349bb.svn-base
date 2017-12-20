@@ -1,0 +1,127 @@
+package engine.view;
+
+import java.awt.BorderLayout;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import javax.swing.JTextField;
+import javax.swing.border.TitledBorder;
+import javax.swing.border.EtchedBorder;
+import java.awt.Color;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.SystemColor;
+
+/**
+ * The view for the engine.
+ * @author yuhui
+ */
+public class EngineView extends JFrame {
+
+	/**
+	 * Default Serial ID
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	/**
+	 * view to model adapter.
+	 */
+	private IModelAdapter _model;
+	
+	/**
+	 * The content panel
+	 */
+	private JPanel _contentPane;
+	/**
+	 * The control panel.
+	 */
+	private final JPanel _pnlControl = new JPanel();
+	/**
+	 * click the button to quit the view.
+	 */
+	private final JButton _btnQuit = new JButton("Quit");
+	/**
+	 * The subpanel for message.
+	 */
+	private final JPanel _subPnl = new JPanel();
+	/**
+	 * text field used to input the message.
+	 */
+	private final JTextField _txtInput = new JTextField();
+	/**
+	 * Text area to display the message/result.
+	 */
+	private final JTextArea _txtArea = new JTextArea();
+	/**
+	 * Scroll panel to contain text area.
+	 */
+	private final JScrollPane _scrollPane = new JScrollPane(_txtArea);
+	
+	/**
+	 * Constructor for the engine
+	 * @param _model The view to model adapter.
+	 */
+	public EngineView(IModelAdapter _model) {
+		this._model = _model;
+		initGUI();
+
+	}
+	
+	/**
+	 * Initialize the GUI.
+	 */
+	private void initGUI() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 700, 300);
+		_contentPane = new JPanel();
+		_contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		_contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(_contentPane);
+		_pnlControl.setBackground(SystemColor.textHighlight);
+		
+		_contentPane.add(_pnlControl, BorderLayout.NORTH);
+		_btnQuit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) { // quit the RMI server.
+				_model.quit(); // indirectly call stop in Controller.
+			}
+		});
+		
+		_pnlControl.add(_btnQuit);
+		_subPnl.setBackground(SystemColor.textHighlight);
+		_subPnl.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null), "Send msg to remote client's view", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(0, 0, 0)));
+		
+		_pnlControl.add(_subPnl);
+		
+		_subPnl.add(_txtInput);
+		_contentPane.add(_scrollPane, BorderLayout.CENTER);
+		
+		_txtInput.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				_model.sendMsgToClient(_txtInput.getText());
+			}
+		});
+		
+		_txtInput.setToolTipText("Hit enter to send the string to the remote client to be displayed on its view.");
+		_txtInput.setText("Hit Enter to send msg...");
+		_txtInput.setColumns(20);
+	}
+	
+	/**
+	 * Append string to the text area.
+	 * @param text The string to be displayed.
+	 */
+	public void append(String text) {
+		_txtArea.append("\n" + text);
+	}
+	
+	/**
+	 * Start the engine.
+	 */
+	public void start() {
+		setVisible(true);
+	}
+
+}

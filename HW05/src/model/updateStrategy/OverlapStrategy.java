@@ -1,0 +1,48 @@
+package model.updateStrategy;
+
+import model.IBallCmd;
+import model.IUpdateStrategy;
+import model.ball.Ball;
+import util.IDispatcher;
+
+/**
+ * Detects if the ball overlaps/collides with any other balls.
+ * @author Yuhui Tong, Zhenwei Feng
+ * @param <TDispMsg> The message dispatched by dispatcher.
+ */
+public class OverlapStrategy<TDispCmd> implements IUpdateStrategy<IBallCmd> {
+
+	/**
+	 * {@inheritDoc}<br/>
+	 */
+	@Override
+	public void init(Ball context) {
+		// do nothing
+
+	}
+
+	/**
+	 * {@inheritDoc}<br/>
+	 * detect if context and target balls have collided/overlapping
+	 */
+	@Override
+	public void updateState(Ball context, IDispatcher<IBallCmd> dispatcher) {
+
+		dispatcher.dispatch(new IBallCmd() {
+
+			/**
+			 * {@inheritDoc}<br/>
+			 */
+			@Override
+			public void apply(Ball target, IDispatcher<IBallCmd> disp) {
+				if (context == target) {
+					return; // do nothing to itself!
+				}
+				if ((context.getRadius() + target.getRadius()) > context.getLocation().distance(target.getLocation())) {
+					context.interactWith(target, disp);
+				}
+			}
+		});
+	}
+
+}

@@ -1,0 +1,60 @@
+package client.view;
+
+public interface IModelAdapter<TDropListItem> {
+	public String getDefaultRemoteHost();
+	
+	public void quit();
+	
+	public String connect(String remoteHostIP);
+	
+	public void sendMsgToComputeEngine(String msg);
+	
+	public void runTask(TDropListItem tf, String param); 
+	
+	public TDropListItem addFactory(String classname);
+	
+	public TDropListItem addMultiTasksFactory(TDropListItem tf1, TDropListItem tf2, String param);
+	
+	public static final IModelAdapter<String> NULLAdapter = new IModelAdapter<String> () {
+
+		@Override
+		public String getDefaultRemoteHost() {
+			return null;
+		}
+
+		@Override
+		public void quit() {
+			return;
+		}
+
+		@Override
+		public String connect(String remoteHostIP) {
+			return null;
+			
+		}
+
+		@Override
+		public void sendMsgToComputeEngine(String msg) {
+			return;
+			
+		}
+
+		@Override
+		public void runTask(String tf, String param) {
+			return;
+			
+		}
+
+		@Override
+		public String addFactory(String classname) {
+			return null;
+		}
+
+		@Override
+		public String addMultiTasksFactory(String tf1, String tf2, String param) {
+
+			return null;
+		}
+		
+	};
+}

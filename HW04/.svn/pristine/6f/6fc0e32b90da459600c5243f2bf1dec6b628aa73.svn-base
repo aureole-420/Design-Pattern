@@ -1,0 +1,11 @@
+package model.paint.strategy;
+
+import model.paint.UprightImagePaintStrategy;
+
+public class BirdPaintStrategy extends UprightImagePaintStrategy {
+
+	public BirdPaintStrategy() {
+		super("images/humbird_animate.gif", 1);
+	}
+
+}

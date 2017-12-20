@@ -1,0 +1,12 @@
+package model.paint.strategy;
+
+import model.paint.ShapePaintStrategy;
+import model.paint.shape.RectangleShapeFactory;
+
+public class RectanglePaintStrategy extends ShapePaintStrategy {
+
+	public RectanglePaintStrategy() {
+		super(RectangleShapeFactory.Singleton.makeShape(0, 0, 4.0 / 3, 2.0 / 3));
+	}
+
+}

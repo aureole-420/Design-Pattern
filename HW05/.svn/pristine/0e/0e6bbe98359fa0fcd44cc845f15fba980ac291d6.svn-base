@@ -1,0 +1,16 @@
+package util;
+
+/**
+ * Represents the abstract lambda expression whose sole urpose in life is to evaluate itself on an input and return the result of the evaluation.
+ * @author SWong
+ *
+ */
+public interface ILambda {
+
+	/**
+	 * Performs some computation with a given input Object. Returns an Object as the result.
+	 * @param arg input object for this ILambda object.
+	 * @return An output object resulting from evaluating the lambda expression on the input arg.
+	 */
+	Object apply(Object arg);
+}

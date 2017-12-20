@@ -1,0 +1,68 @@
+Instructions:
+	1. Open the project in Eclipse and run src/controller/BallWorldController.java
+
+Options:
+	1. Add an UpdateStrategy to the drop list and select one.
+		Input class name into the textfield and click "Add to lists". It will add a new strategy to the drop list.
+		
+		Available update strategies are as below:
+		* Ordinary strategies with no interaction
+			* Breathing - ball will changes its radius
+			* Brownian  - ball moves in Brownian motion
+			* Color - ball changes random color after a constant period
+			* Curving - ball moves in curve motion
+			* Drunken - ball changes to a random velocity after constant time period
+			* FadeOut - ball fades out after a random period, and repeating
+			* Ninja - ball will vanish for a while 
+			* Straight - regular straight ball
+		* Strategies that interact when balls overlap:
+			* Infect -- A black-colored infected ball that will turn any other ball it overlaps with into an Infect ball for its first 100 updates. All infected ball
+					can be cured (turn green) after 100 updates of infection, though they may get infection again.
+			* Spawn -- adds an identical ball whenever it overlaps with another ball.
+		* Strategies that both collide and interact:
+			* Collide - elastic collision behavior.
+		* Strategies that just detect an interaction and invoke the interaction strategies of the interacting balls.
+			* Overlap -- Detects if the ball overlaps with any other balls.
+			* Realm -- Detects if any ball enter the realm (radius of 100) of the context ball.
+		* Strategies that only install interaction strategies and thus at least be combined with a strategy that detects an interaction, e.g. Overlap, Realm or Collide.
+			* Kill -- deletes other when it collides. 
+			* Collide2 -- elastic collision implemented purely as an interaction strategy.   Combine with Overlap to see bouncing balls.
+			* Enlarge -- enlarge the size of target ball(s) implemented purely as an interaction strategy. Combine with Overlap/Collide/Realm.
+			* Accelerate -- increasing velocity of target ball(s) implemented purely as an interaction strategy. Combine with Overlap/Collide/Realm.
+			* Assimilate -- Assimilate target ball(s) implemented purely as an interaction strategy. Combine with Overlap/Collide/Realm.
+			* Friction -- reducing velocity of target ball(s) implemented purely as an interaction strategy. Combine with Overlap/Collide/Realm.
+		
+		
+		Note: A Straight ball will appear with beeping if the class name you input doesn't match any class of update strategy. And it's case-sensitive.
+	
+	2. Add a PaintStrategy to the drop list and select one:
+		Input class name into the text field and click "Add". A new paint strategy will be added to the drop list.
+		
+		Available pait strategies are listed below:
+		a) Ball - a ball
+		b) Square - a square 
+		c) Rectangle - a rectangle
+		d) Ellipse - an ellipse
+		e) Fish1 - a fish with mouth open
+		f) Fish2 - a fish with mouth closed
+		g) SwimFish - a fish keep opening and closing mouth while swimming 
+		h) Nice Fish - an upright SwimFish with black eye
+		i) BirdSheepImage - bird or sheep
+		j) GhostImage - an rotating ghost
+		
+		* A straight ball will appear with beeping if the classname you input doesn't match any class of paint strategy. And it's case-sensitive.
+		
+	2. Make Selected Balls: 
+		Click "Make Selected Balls", and the ball with strategy selected in the upper drop list will be created.
+	
+	3. Combine Strategies:
+		Select TWO strategies from top and bottom drop lists, and click "Combine!" will create a new combined strategies into the drop lists.
+		
+	4. Make Switcher
+		Click "Make Switcher" to make a Switcher ball in the canvas. Switch ball is a straight ball by default, until user at least switch its strategy once.
+		
+	5. Switch the strategy of Switchers
+		Click "Switch!", the strategy of Switchers will be swapped to the strategy selected in upper drop list. 
+	 
+	6. Clear All!
+		Simply removes all the balls on the canvas

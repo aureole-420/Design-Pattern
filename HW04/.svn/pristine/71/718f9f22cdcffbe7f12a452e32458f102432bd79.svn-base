@@ -1,0 +1,21 @@
+package model.strategy;
+
+import model.ball.Ball;
+import util.Dispatcher;
+
+/**
+ * A concrete strategy class that implements IUpdateStategy.
+ * The ball go straight before hitting the wall if taking this strategy.
+ * @author Yuhui Tong, Haoyuan Yue
+ * @version 1.0
+ */
+public class StraightStrategy implements IUpdateStrategy {
+	@Override
+	/**
+	 * An overriden method that updates the ball's state.
+	 * @param context The ball that the strategy is applied on.
+	 */
+	public void updateState(Ball context, Dispatcher disp) {
+		// do nothing
+	}
+}

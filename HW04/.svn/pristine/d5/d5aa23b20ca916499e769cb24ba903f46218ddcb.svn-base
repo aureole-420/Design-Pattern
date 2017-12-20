@@ -1,0 +1,31 @@
+package model.paint.strategy;
+
+
+import java.awt.geom.AffineTransform;
+
+import model.paint.shape.EllipseShapeFactory;
+
+public class EllipsePaintStrategy extends ShapePaintStrategy {
+	
+
+	public EllipsePaintStrategy() {
+		super(EllipseShapeFactory.Singleton.makeShape(0, 0, 4.0/3, 2.0/3));
+		//this(new AffineTransform(), -2.0/3, -1.0/3, 4.0/3, 2.0/3);
+	}
+	/**
+	 * Constructor that allows the specification of the location x-radius and y-radius of th
+	 * prototype ellipse. The affineTransform to use is given.
+	 * @param at
+	 * @param x
+	 * @param y
+	 * @param width
+	 * @param height
+	 */
+	public EllipsePaintStrategy(AffineTransform at, double x, double y, double width, double height) {
+		super(at, EllipseShapeFactory.Singleton.makeShape(x, y, width, height));
+	}
+	
+
+
+
+}

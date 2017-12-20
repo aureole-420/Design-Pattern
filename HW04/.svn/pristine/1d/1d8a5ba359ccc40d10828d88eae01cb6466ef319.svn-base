@@ -1,0 +1,60 @@
+package model.paint.strategy;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Shape;
+import java.awt.geom.AffineTransform;
+
+import model.ball.Ball;
+import model.paint.APaintStrategy;
+
+public class ShapePaintStrategy extends APaintStrategy {
+	
+	private Shape shape;
+	
+	/**
+	 * Constructor that allocates a new AffineTransform for internal use.
+	 * @param shape
+	 */
+	public ShapePaintStrategy(Shape shape) {
+		super(new AffineTransform());
+		this.shape = shape;
+	}
+	
+	/**
+	 * Constructor that uses a supplied AffineTransform for internal use.
+	 * @param at The AffineTransform to use.
+	 * @param shape The shape to be painted.
+	 */
+	public ShapePaintStrategy(AffineTransform at, Shape shape) {
+		super(at);
+		this.shape = shape;
+	}
+	
+	/**
+	@Override
+	public void paint(Graphics g, Ball host) {
+		double scale = host.getRadius();
+
+		
+		AffineTransform at = super.getAT();
+		at.setToTranslation(host.getLocation().x, host.getLocation().y);
+		at.scale(scale, scale);
+		at.rotate(host.getVelocity().x, host.getVelocity().y);
+		g.setColor(host.getColor());
+
+		
+		paintCfg(g, host);
+		paintXfrm(g, host, at);	
+		
+	}
+	*/
+
+	@Override
+	public void paintXfrm(Graphics g, Ball host, AffineTransform at) {
+		Shape newShape = at.createTransformedShape(shape);
+		((Graphics2D) g).fill(newShape);		
+	}
+
+}

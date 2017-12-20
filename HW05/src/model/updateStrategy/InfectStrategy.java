@@ -1,0 +1,84 @@
+package model.updateStrategy;
+
+import java.awt.Color;
+
+import model.IBallCmd;
+import model.IUpdateStrategy;
+import model.ball.Ball;
+import util.IDispatcher;
+
+/**
+ * An IUpdateStrategy that enables "sick" ball to "infect" other balls.
+ * Note: a sick ball is BLACK, whereas a healthy ball is GREEN.
+ * @author Yuhui Tong
+ *
+ * @param <TDispMsg> The message dispatched by dispatcher.
+ */
+public class InfectStrategy<TDispMsg> implements IUpdateStrategy<IBallCmd> {
+	/**
+	 * The color of a sick ball.
+	 */
+	private final Color INFECTED = Color.BLACK;
+
+	/**
+	 * The color of a healthy ball.
+	 */
+	private final Color HEALTHY = Color.GREEN;
+
+	/**
+	 * number of updates since the ball get infected.
+	 */
+	private int count = -1;
+
+	/**
+	 * The ball get rehabilitate after timespan of updates.
+	 */
+	private int timespan = 100;
+
+	/**
+	 * {@inheritDoc}<br/> 
+	 * If the context ball is sick, it can infect any overlapping balls.
+	 */
+	@Override
+	public void updateState(Ball context, IDispatcher<IBallCmd> dispatcher) {
+		if (count < 0) {
+			context.setColor(INFECTED);
+			count = 0;
+		}
+		if (context.getColor() == HEALTHY) { // ball context is cured
+			return;
+		}
+		if (count >= timespan) { // ball context is cured
+			context.setColor(HEALTHY);
+			count = 0;
+			return;
+		}
+		if (count++ < timespan) { // ball context can infect other balls!
+			dispatcher.dispatch(new IBallCmd() {
+				public void apply(Ball other, IDispatcher<IBallCmd> disp) {
+					if (context != other) {
+						// if overlapped
+						boolean isOverlapped = (context.getRadius() + other.getRadius()) > context.getLocation()
+								.distance(other.getLocation());
+						if (isOverlapped) {
+							if (other.getColor() == HEALTHY) {
+								other.setColor(INFECTED);
+							}
+						}
+					}
+				}
+			});
+		}
+
+	}
+
+	/**
+	 * {@inheritDoc}<br/>
+	 */
+	@Override
+	public void init(Ball context) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

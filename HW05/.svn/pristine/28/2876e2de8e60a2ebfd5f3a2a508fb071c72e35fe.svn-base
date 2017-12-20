@@ -1,0 +1,48 @@
+package model.updateStrategy;
+
+import model.IBallCmd;
+import model.IInteractStrategy;
+import model.IUpdateStrategy;
+import model.MultiInteractStrategy;
+import model.ball.Ball;
+import util.IDispatcher;
+
+/**
+ * Assimilation implemented purely as an interaction strategy.   
+ * Combine with Overlap/Collide to see slowing other balls.
+ * Note: the ball will assimilate other balls interms of COLOR/RADIUS/PaintStrategy;
+ * @author Yuhui Tong
+ *
+ * @param <TDispMsg> The message dispatched by dispatcher.
+ */
+public class AssimilateStrategy<TDispMsg> implements IUpdateStrategy<TDispMsg>{
+	
+	/**
+	 * {@inheritDoc}<br>
+	 * Initialize a pure Strategy that assimilate other balls.
+	 */
+	public void init(Ball context) {
+		// System.out.println("KILLING INIT!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		context.setInteractStrategy(new MultiInteractStrategy(context.getInteractStrategy(), new IInteractStrategy() {
+			public void interact(Ball context, Ball target, IDispatcher<IBallCmd> disp) {
+				if (context == target) {
+					return; // do nothing to context ifself
+				}
+				
+				target.setColor(context.getColor());
+				target.setRadius(context.getRadius());
+				target.setPaintStrategy(context.getPaintStrategy());
+			}
+		}));
+	}
+	
+	/**
+	 * {@inheritDoc}<br/>
+	 */
+	@Override
+	public void updateState(Ball context, IDispatcher<TDispMsg> disp) {
+		// do nothing
+		
+	}
+
+}

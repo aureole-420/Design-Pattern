@@ -1,0 +1,121 @@
+package engine.model;
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+import provided.compute.ICompute;
+import provided.compute.ILocalTaskViewAdapter;
+import provided.compute.IRemoteTaskViewAdapter;
+import provided.compute.ITask;
+
+
+/**
+ * The ICompute (server) for the model.
+ * @author yt30, zx17
+ */
+public class ComputeEngine implements ICompute {
+	
+	/**
+	 * The Stub of the client's Task View Adapter. 
+	 * The client first acquires ComputeEngineStub from registry.
+	 * The client then calls the .setTextAdapter() method of ComputeEngineStub.
+	 * This operation (1) assign the clientTVAStub to ComputeEngine, so that the server side
+	 * has access to the clientTVA, i.e. server is able to append text to client's view.
+	 * (2) create _serverTVA and returns the _serverTVAStub to client such that the client has 
+	 * access to the _serverTVA, i.e., client is able to append text to server's view;
+	 */
+	private IRemoteTaskViewAdapter _clientTVAStub;
+	
+	/**
+	 * The (server) object that allows server to append text to Server's view.
+	 */
+	private IRemoteTaskViewAdapter _serverTVA;
+	
+	/**
+	 * The model to view adapter.
+	 */
+	private IViewAdapter _serverView;
+	
+	/**
+	 * Constructor of the compute engine
+	 * @param _serverView The model to view adapter.
+	 */
+	public ComputeEngine(IViewAdapter _serverView) {
+		this._serverView = _serverView;
+	}
+	
+	/**
+	 * Execute the given ITask object and return the result.
+	 * @param t The ITask object to execute.
+	 * @return The result from executing the ITask object.
+	 */
+	@Override
+	public <T> T executeTask(ITask<T> t) throws RemoteException {
+		try {
+			//t.setTaskViewAdapter(viewAdapter);
+			ILocalTaskViewAdapter _localView = new ILocalTaskViewAdapter() {
+				@Override
+				public void append(String s) {
+					_serverView.append(s);
+				}
+			};
+			t.setTaskViewAdapter(_localView);
+			_localView.append("\n[ComputeEngine.executeTask()] Executing task:" + t + "\n");
+			T result = t.execute();
+			_localView.append("[ComputeEngine.executeTask()] Task result =" + result + "\n");
+			return result;
+		} catch (Exception e) {
+			System.err.println("[ComputeEngine.executeTask] Exception " + e);
+			return null;
+		}
+		
+	}
+	
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public IRemoteTaskViewAdapter setTextAdapter(IRemoteTaskViewAdapter clientTVAStub) throws RemoteException {
+		// this stub allows SERVER to append message to CLIENT's view!!!!
+		this._clientTVAStub = clientTVAStub;
+		
+		// this remote object can be used to append message on SERVER's view
+		this._serverTVA = new IRemoteTaskViewAdapter() {  
+			@Override
+			public void append(String s) throws RemoteException {
+				try {
+					_serverView.append("[Client]: " + s);
+				} catch (Exception e) {
+					System.err.println("ComputeEngine.setClient: " + e.toString());
+					e.printStackTrace();
+					System.exit(-1);
+				}
+				
+			}	
+		};
+		
+		_clientTVAStub.append("Hello from the server!\n");
+		// this stub allows CLIENT to append message to SERVER's view!!!
+		IRemoteTaskViewAdapter _serverTVAStub = (IRemoteTaskViewAdapter) UnicastRemoteObject.exportObject(_serverTVA, IRemoteTaskViewAdapter.BOUND_PORT_SERVER);
+		
+		return _serverTVAStub;
+	}
+	
+
+	/**
+	 * getter for ClientTVAStub; used by server.
+	 * @return The stub that allows server to append text to Client's view.
+	 */
+	public IRemoteTaskViewAdapter getClientTVAStub() {
+		return _clientTVAStub;
+	}
+	
+	/**
+	 * getter for serverTVA; used by client
+	 * @return The (server) object that allows server to append text to Server's view.
+	 */
+	public IRemoteTaskViewAdapter getServerTVA() {
+		return _serverTVA;
+	}
+
+}

@@ -1,0 +1,9 @@
+class : COMP 504 Fall 2017
+HW01: Simple GUI Program with Polymorphism
+Author : Lyu Pan, Yuhui Tong
+
+Launch : Choose src->view->MainAppFrame.java, on the detailed code of MainAppFrame.java,
+		right click, then click Run As -> Java Application, and the whole application will start.
+
+This application is just a simple GUI program, which paints various components and shapes on the screen.
+Click on the buttons and some components or shapes will be changed. Try it for yourself.

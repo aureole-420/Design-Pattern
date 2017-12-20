@@ -1,0 +1,15 @@
+package client.model;
+
+/**
+ * Adapter to allow model to call view's method.
+ * @author yt30, zx17
+ *
+ */
+public interface IViewAdapter {
+	/**
+	 * Append a string to the view's display panel.
+	 * @param s The string to be displayed.
+	 */
+	public void append(String s);
+
+}

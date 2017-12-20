@@ -1,0 +1,29 @@
+package strategy;
+
+import java.awt.Rectangle;
+
+import ball.Ball;
+import util.Randomizer;
+
+public class DrunkenStrategy implements IUpdateStrategy {
+	/**
+	 * DrunkenBall changes direction when the count of drunken ball reaches STEPS.
+	 */
+	private int count = 0;
+
+	/**
+	 * DrunkenBall changes direction when the count of drunken ball reaches STEPS.
+	 */
+	private final int STEPS = 25;
+	
+	@Override
+	public void updateState(Ball context) {
+		// TODO Auto-generated method stub
+		if (count < STEPS)
+			count++;
+		else {
+			count = 0; // reset the count;
+			context.setVelocity(Randomizer.Singleton.randomVel(new Rectangle(0, 0, 5, 15)));
+		}
+	}
+}

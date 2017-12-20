@@ -1,0 +1,286 @@
+package client.view;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.EtchedBorder;
+import javax.swing.border.TitledBorder;
+import javax.swing.JButton;
+import java.awt.GridLayout;
+import javax.swing.JTextField;
+import javax.swing.JComboBox;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+/**
+ * View for client model.
+ * @author yt30, zx17
+ *
+ * @param <TDropListItem> Generic type for comboboxItem
+ */
+public class ClientView<TDropListItem> extends JFrame {
+
+	/**
+	 * Generated serial ID
+	 */
+	private static final long serialVersionUID = 7795839388321810943L;
+
+	/**
+	 * java app panel
+	 */
+	private JPanel contentPane;
+
+	/**
+	 * Control panel
+	 */
+	private final JPanel _pnlCtrl = new JPanel();
+	/**
+	 * Click the button to quit the client.
+	 */
+	private final JButton _btnQuit = new JButton("Quit");
+	/**
+	 * sub panel for remote host.
+	 */
+	private final JPanel _subPanelRemoteHost = new JPanel();
+	/**
+	 * text field for displaying/inputing remote host.
+	 */
+	private final JTextField _txtIPAddress = new JTextField();
+	/**
+	 * click the button to connect.
+	 */
+	private final JButton _btnConnect = new JButton("Connect");
+	/**
+	 * sub panel regarding messaging.
+	 */
+	private final JPanel _subPnlMsg = new JPanel();
+	/**
+	 * test field to input message.
+	 */
+	private final JTextField _txtMsgToHost = new JTextField();
+	/**
+	 * sub panel for task setting.
+	 */
+	private final JPanel _subPnlTasks = new JPanel();
+	/**
+	 * input task class.
+	 */
+	private final JTextField _txtAddTask = new JTextField();
+	/**
+	 * click the button to add a task factory to the combo box.
+	 */
+	private final JButton _btnAddTask = new JButton("Add to lists");
+	/**
+	 * Click the button to run the task.
+	 */
+	private final JButton _btnRunTask = new JButton("Run Task");
+	/**
+	 * Select taskfactory in the combo box to run/combine task
+	 */
+	private final JComboBox<TDropListItem> _cbTask1 = new JComboBox<>();
+	/**
+	 * Select taskfactory in the combo box to combine task.
+	 */
+	private final JComboBox<TDropListItem> _cbTask2 = new JComboBox<>();
+	/**
+	 * Click the button to combine task.
+	 */
+	private final JButton _btnCombine = new JButton("Combine Tasks");
+	/**
+	 * Sub panel for task running setting.
+	 */
+	private final JPanel _subPnlRun = new JPanel();
+	/**
+	 * text field to input parameter for tasks.
+	 */
+	private final JTextField _txtParam = new JTextField();
+	/**
+	 * subpanel for parameter innput
+	 */
+	private final JPanel _subPnlParam = new JPanel();
+	/**
+	 * scrollpanel for text area
+	 */
+	private final JScrollPane _scrPnl = new JScrollPane();
+	/**
+	 * text area for displaying tasks.
+	 */
+	private final JTextArea _taDisplay = new JTextArea();
+
+	/**
+	 * Adapter allows view to call model's method.
+	 */
+	private IModelAdapter<TDropListItem> _clientModel;
+
+	/**
+	 * Constructor of ClientView
+	 * @param _cleintModel The adapter that allows view to call model's methods.
+	 */
+	public ClientView(IModelAdapter<TDropListItem> _Model) {
+		this._clientModel = _Model;
+		System.out.println("test1------------_!!!!!!--------------!");
+		_txtParam.setToolTipText("A parameter value used to instantiate a task.");
+		_txtParam.setColumns(10);
+		_txtAddTask
+				.setToolTipText("A full qualified classname of an ITask implementation with a FACTORY field defined.");
+		_txtAddTask.setColumns(10);
+
+		_txtMsgToHost.addActionListener(new ActionListener() { // send msg to server;
+			public void actionPerformed(ActionEvent e) {
+				_clientModel.sendMsgToComputeEngine(_txtMsgToHost.getText());
+			}
+		});
+		_txtMsgToHost.setToolTipText(
+				"Hit enter to send the string to the remote Compute Engine to be displayed on its view.");
+		_txtMsgToHost.setText("Hit Enter to send msg...");
+		_txtMsgToHost.setColumns(17);
+		_txtIPAddress.setToolTipText("The IP address of the remote Compute Engine.");
+		_txtIPAddress.setColumns(10);
+	}
+
+	/**
+	 * Initialize the GUI.
+	 */
+	private void initGUI() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 1100, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+		_pnlCtrl.setBackground(new Color(224, 255, 255));
+
+		_pnlCtrl.setToolTipText("The control panel");
+		getContentPane().add(_pnlCtrl, BorderLayout.NORTH);
+		_btnQuit.addActionListener(new ActionListener() { // quit the client
+			public void actionPerformed(ActionEvent e) {
+				_clientModel.quit();
+			}
+		});
+
+		_btnQuit.setToolTipText("Shuts down RMI system and quits.");
+
+		_pnlCtrl.add(_btnQuit);
+		_btnConnect.addActionListener(new ActionListener() { // connect to the server
+			public void actionPerformed(ActionEvent e) {
+				String status = _clientModel.connect(_txtIPAddress.getText());
+				append(status);
+			}
+		});
+
+		_btnConnect.setToolTipText("Click to connect to the remote Compute Engine.");
+		_subPanelRemoteHost.setBackground(new Color(224, 255, 255));
+
+		_pnlCtrl.add(_subPanelRemoteHost);
+		_subPanelRemoteHost.setLayout(new GridLayout(2, 1, 0, 0));
+		_subPanelRemoteHost.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null),
+				"Remote Host", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(0, 0, 0)));
+		_subPanelRemoteHost.add(_txtIPAddress);
+		_subPanelRemoteHost.add(_btnConnect);
+		_subPnlMsg.setBackground(new Color(224, 255, 255));
+		_subPnlMsg.setToolTipText(
+				"Hit enter to send the string to the remote Compute Engine to be displayed on its view.");
+		_subPnlMsg.setBorder(new TitledBorder(null, "Send msg to remote host's view", TitledBorder.LEADING,
+				TitledBorder.TOP, null, null));
+
+		_pnlCtrl.add(_subPnlMsg);
+		_pnlCtrl.setToolTipText("Add the factory to the specified ITask to the drop list.");
+		_subPnlMsg.add(_txtMsgToHost);
+		_subPnlTasks.setBackground(new Color(224, 255, 255));
+
+		_subPnlTasks.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
+		_subPnlTasks.setLayout(new GridLayout(2, 1, 0, 0));
+		_pnlCtrl.add(_subPnlTasks);
+		_btnAddTask.addActionListener(new ActionListener() { // add new Task to list
+			public void actionPerformed(ActionEvent e) {
+
+				TDropListItem tfactory = _clientModel.addFactory(_txtAddTask.getText());
+				_cbTask1.insertItemAt(tfactory, 0);
+				_cbTask2.insertItemAt(tfactory, 0);
+				_cbTask1.setSelectedIndex(0);
+				_cbTask2.setSelectedIndex(0);
+			}
+		});
+		_btnAddTask.setToolTipText("Add the factory to the specified ITask to the drop list.");
+		_subPnlTasks.add(_txtAddTask);
+		_subPnlTasks.add(_btnAddTask);
+		_subPnlRun.setBackground(new Color(224, 255, 255));
+
+		_subPnlRun.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
+		_subPnlRun.setLayout(new GridLayout(4, 1, 0, 0));
+		_btnRunTask.addActionListener(new ActionListener() { // run selected task
+			public void actionPerformed(ActionEvent e) {
+				_clientModel.runTask(_cbTask1.getItemAt(_cbTask1.getSelectedIndex()), _txtParam.getText());
+			}
+		});
+		_btnRunTask.setToolTipText(
+				"Instantiate the selected task with the given parameter and run it on the remote engine server.");
+		_subPnlRun.add(_btnRunTask);
+		_cbTask1.setToolTipText("Select the desired task factory to run or combine.");
+		_subPnlRun.add(_cbTask1);
+		_cbTask2.setToolTipText("Select the desired task to combine.");
+		_subPnlRun.add(_cbTask2);
+
+		_pnlCtrl.add(_subPnlRun);
+		_btnCombine.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) { // combine task
+				TDropListItem mtf = _clientModel.addMultiTasksFactory(_cbTask1.getItemAt(_cbTask1.getSelectedIndex()),
+						_cbTask2.getItemAt(_cbTask2.getSelectedIndex()), _txtParam.getText());
+				_cbTask1.insertItemAt(mtf, 0);
+				_cbTask2.insertItemAt(mtf, 0);
+				_cbTask1.setSelectedIndex(0);
+				_cbTask2.setSelectedIndex(0);
+			}
+		});
+
+		_subPnlRun.add(_btnCombine);
+		_subPnlParam.setBackground(new Color(224, 255, 255));
+
+		_subPnlParam.setBorder(
+				new TitledBorder(null, "Run Parameter:", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		_subPnlParam.add(_txtParam);
+		_pnlCtrl.add(_subPnlParam);
+
+		contentPane.add(_scrPnl, BorderLayout.CENTER);
+
+		_scrPnl.setViewportView(_taDisplay);
+	}
+
+	/**
+	 * Start the GUI.
+	 */
+	public void start() {
+		initGUI();
+		this.setVisible(true);
+		String defaultRemoteHost = _clientModel.getDefaultRemoteHost(); // get defaultRemoteHost
+		// test
+		System.out.println("test2------------_!!!!!!--------------!" + defaultRemoteHost);
+		_txtIPAddress.setText(defaultRemoteHost);
+		_txtParam.setText("15");
+
+		_cbTask1.insertItemAt(_clientModel.addFactory("provided.client.model.task.GetInfo"), 0);
+		_cbTask2.insertItemAt(_clientModel.addFactory("provided.client.model.task.GetInfo"), 0);
+		_cbTask1.insertItemAt(_clientModel.addFactory("provided.client.model.task.Pi2"), 0);
+		_cbTask2.insertItemAt(_clientModel.addFactory("provided.client.model.task.Pi2"), 0);
+		//_cbTask1.insertItemAt(_clientModel.addFactory("client.model.task.ReverseString"), 0);
+		//_cbTask2.insertItemAt(_clientModel.addFactory("client.model.task.IsOdd"), 0);
+		_cbTask1.setSelectedIndex(0);
+		_cbTask2.setSelectedIndex(0);
+	}
+
+	/**
+	 * append a string to the array;
+	 * @param str
+	 */
+	public void append(String str) {
+		_taDisplay.append("\n" + str);
+		_taDisplay.setCaretPosition(_taDisplay.getDocument().getLength());
+	}
+
+}

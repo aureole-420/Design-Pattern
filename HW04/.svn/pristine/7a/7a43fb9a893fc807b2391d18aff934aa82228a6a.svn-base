@@ -1,0 +1,16 @@
+package model.paint.strategy;
+
+import java.awt.geom.AffineTransform;
+import model.paint.AnimatePaintStrategy;
+
+
+public class SwimFishPaintStrategy extends AnimatePaintStrategy {
+	
+	public SwimFishPaintStrategy(AffineTransform at) {
+		super(at, new Fish1PaintStrategy(), new Fish2PaintStrategy());
+	}
+	
+	public SwimFishPaintStrategy() {
+		this(new AffineTransform());
+	}
+}

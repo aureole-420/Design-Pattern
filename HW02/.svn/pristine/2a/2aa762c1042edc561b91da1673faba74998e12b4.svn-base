@@ -1,0 +1,134 @@
+package model;
+
+import javax.swing.Timer;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import util.Dispatcher;
+import util.Randomizer;
+
+import java.awt.Graphics;
+
+import model.ball.ABall;
+
+import java.awt.Rectangle;
+import java.awt.Point;
+import java.awt.Color;
+import java.awt.Component;
+
+/**
+ * This is the model for BallWorldApp
+ * @author Yuhui Tong, Anqi Yu
+ * @version 1.0
+ */
+public class BallModel {
+	/**
+	 * Adapter that enables the model to talk to the view
+	 * i.e, enable the model to call view's methods.
+	 */
+	private IModel2ViewAdapter _model2ViewAdpt = IModel2ViewAdapter.NULL_OBJECT; //insure that the adapter is always valid.
+
+	/**
+	 * Constructor of BallModel 
+	 * @param model2ViewAdpt adapter that enables the model to talk to the view.
+	 * i.e., enable the model to call view's methods.
+	 */
+	public BallModel(IModel2ViewAdapter model2ViewAdpt) {
+		_model2ViewAdpt = model2ViewAdpt;
+	}
+
+	/**
+	 * Model update every 50 milliseconds.
+	 */
+	private int _timeSlice = 50; // 
+
+	/**
+	 * A timer is used to regularly update the View.
+	 */
+	private Timer _timer = new javax.swing.Timer(_timeSlice, new ActionListener() {
+
+		/**
+		 * The timer "ticks" by calling this method every _timeslice milliseconds. 
+		 */
+		public void actionPerformed(ActionEvent e) {
+			_model2ViewAdpt.repaint();
+		}
+	});
+
+	/**
+	 * Start the timer.
+	 */
+	public void start() {
+		_timer.start();
+	}
+
+	/**
+	 * The dispatcher for adding and removing balls.
+	 */
+	private Dispatcher _dispatcher = new Dispatcher();
+
+	/**
+	 * This  method is called by the view's adapter to the model, i.e. is called by IView2ModelAdapter.paint().
+	 * This method will update the sprites's painted locations by painting all the sprites onto the given Graphics object.
+	 * @param g The graphics object from the view's paintComponent() call.
+	 */
+	public void update(Graphics g) {
+		// every observer is notified, i.e., ABall.update() method is prcoessed.
+		_dispatcher.notifyAll(g); // The graphics object is given to all the balls (Observers)
+	}
+
+	/**
+	* The following method returns an instance of an ABall, given a fully qualified class name (package.classname) of
+	* a subclass of ABall.
+	* The method assumes that there is only one constructor for the supplied class that has the same *number* of
+	* input parameters as specified in the args array and that it conforms to a specific
+	* signature, i.e. specific order and types of input parameters in the args array.
+	* @param className A string that is the fully qualified class name of the desired object
+	* @return An instance of the supplied class. 
+	*/
+	private ABall loadBall(String className) { // YOUR CODE MAY HAVE MORE/DIFFERENT INPUT PARAMETERS!
+		try {
+			int initialRadius = Randomizer.Singleton.randomInt(5, 15);
+			int height = _model2ViewAdpt.getCanvas().getHeight();
+			int width = _model2ViewAdpt.getCanvas().getWidth();
+			Point initialLocation = Randomizer.Singleton.randomLoc(new Rectangle(0, 0, width, height));
+			Point initialVelocity = Randomizer.Singleton.randomVel(new Rectangle(0, 0, 5, 15));
+			Color initialColor = Randomizer.Singleton.randomColor();
+			Component theCanvas = _model2ViewAdpt.getCanvas();
+
+			Object[] args = new Object[] { initialLocation, initialRadius, initialVelocity, initialColor, theCanvas }; // YOUR CONSTRUCTOR MAY BE DIFFERENT!!   The supplied values here may be fields, input parameters, random values, etc.
+			java.lang.reflect.Constructor<?> cs[] = Class.forName(className).getConstructors(); // get all the constructors
+			java.lang.reflect.Constructor<?> c = null;
+			for (int i = 0; i < cs.length; i++) { // find the first constructor with the right number of input parameters
+				if (args.length == (cs[i]).getParameterTypes().length) {
+					c = cs[i];
+					break;
+				}
+			}
+			return (ABall) c.newInstance(args); // Call the constructor.   Will throw a null ptr exception if no constructor with the right number of input parameters was found.
+		} catch (Exception ex) {
+			System.err.println("Class " + className + " failed to load. \nException = \n" + ex);
+			ex.printStackTrace(); // print the stack trace to help in debugging.
+			return null; // Is this really a useful thing to return here?  Is there something better that could be returned? 
+		}
+	}
+
+	/**
+	 * Instantiate an ABall object of classname type, and
+	 * add it to the dispatcher
+	 * @param classname Name of a concrete subclass of ABall, e.g., "model.ball.DrunkenBall".
+	 */
+	public void makeBall(String classname) {
+		ABall ball;
+		ball = loadBall(classname);
+		_dispatcher.addObserver(ball);
+	}
+
+	/**
+	 * Remove all the balls/observers.
+	 */
+	public void clearBalls() {
+		_dispatcher.deleteObservers();
+	}
+
+}

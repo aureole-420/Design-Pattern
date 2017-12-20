@@ -1,0 +1,10 @@
+package strategy;
+
+import ball.Ball;
+import util.Randomizer;
+
+public class ColorStrategy implements IUpdateStrategy {
+	public void updateState(Ball context) {
+		context.setColor(Randomizer.Singleton.randomColor());
+	}
+}

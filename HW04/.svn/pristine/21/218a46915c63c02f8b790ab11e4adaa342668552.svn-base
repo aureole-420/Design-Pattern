@@ -1,0 +1,46 @@
+package model.paint.strategy;
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Shape;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.Ellipse2D;
+
+import model.ball.Ball;
+
+public class BallPaintStrategy implements IPaintStrategy {
+	
+	private AffineTransform at;
+	
+	private Ellipse2D.Double ball;
+	
+	public BallPaintStrategy() {
+		this.at = new AffineTransform();
+		this.ball = new Ellipse2D.Double(-1.0, -1.0,  2.0, 2.0);
+	}
+	
+	public BallPaintStrategy(AffineTransform at, double x, double y, double width, double height) {
+		this.at = at;
+		this.ball = new Ellipse2D.Double(x - width, y - height, 2 * width, 2 * height);
+	}
+	
+	@Override
+	public void paint(Graphics g, Ball host) {
+		double scale = host.getRadius();
+		
+		at.setToTranslation(host.getLocation().x, host.getLocation().y);
+		at.rotate(host.getVelocity().x, host.getVelocity().y);
+		at.scale(scale, scale);
+		Shape newShape = at.createTransformedShape(ball);
+		g.setColor(host.getColor());
+		((Graphics2D) g).fill(newShape);
+		
+	}
+
+	@Override
+	public void init(Ball host) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

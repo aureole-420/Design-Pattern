@@ -1,0 +1,15 @@
+package model.paint.strategy;
+
+import java.awt.Graphics;
+
+import model.ball.Ball;
+
+public interface IPaintStrategy {
+	public void paint (Graphics g, Ball host);
+	
+	public void init(Ball host);
+	
+	// there is also a null object
+	//public static IPaintStrategy NullObject = 
+	
+}

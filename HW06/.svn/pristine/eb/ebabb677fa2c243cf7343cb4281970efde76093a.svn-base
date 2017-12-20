@@ -1,0 +1,2259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_suonkLCiEeeXhtmVkHi-QA">
+  <modelElement href="Vistor.uml#_spheELCiEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Ler0YLCjEeeXhtmVkHi-QA" targetItem="_LetpkLCjEeeXhtmVkHi-QA" sourceItem="_LeYSYLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LesbcLCjEeeXhtmVkHi-QA" targetItem="_LetpkLCjEeeXhtmVkHi-QA" sourceItem="_Ler0YbCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LfdQcLCjEeeXhtmVkHi-QA" targetItem="_LfzOsLCjEeeXhtmVkHi-QA" sourceItem="_LfFdALCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LfxZgLCjEeeXhtmVkHi-QA" targetItem="_LfzOsLCjEeeXhtmVkHi-QA" sourceItem="_LfqEwLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LghAYLCjEeeXhtmVkHi-QA" targetItem="_Lg2XkLCjEeeXhtmVkHi-QA" sourceItem="_LgKbELCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Lg0iYLCjEeeXhtmVkHi-QA" targetItem="_Lg2XkLCjEeeXhtmVkHi-QA" sourceItem="_LgvC0LCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_LhPZILCjEeeXhtmVkHi-QA" sourceAnchor="0.0,51.0" targetAnchor="400.0,32.0" target="_Lg2XkLCjEeeXhtmVkHi-QA" source="_LkEqsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3yoAbCiEeeXhtmVkHi-QA"/>
+    <stereotypes xmi:id="_LjI2kLCjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t3zPELCiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_LjHocLCjEeeXhtmVkHi-QA" text="">
+      <visualProperties xmi:id="_M4RdgLCjEeeXhtmVkHi-QA" position="5.5,-7.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_LjIPgLCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t3yoArCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4Q2crCjEeeXhtmVkHi-QA" position="-19.0,5.5"/>
+      <visibility xmi:id="_LkAZQbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_LkAZQLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_LjIPgbCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="defaultCmd" navigable="true">
+      <modelElement href="Vistor.uml#_t1zrALCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4RdgbCjEeeXhtmVkHi-QA" position="5.0,-46.499999999999886"/>
+      <visibility xmi:id="_LkAZQ7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_LkAZQrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Lh45YLCjEeeXhtmVkHi-QA" sourceAnchor="206.0,101.0" targetAnchor="200.0,64.0" target="_Lg2XkLCjEeeXhtmVkHi-QA" source="_LkEqsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3zPEbCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4L98LCjEeeXhtmVkHi-QA" sourceY="80" targetX="624" targetY="98"/>
+    <bendpoints xmi:id="_M4MlALCjEeeXhtmVkHi-QA" sourceX="-624" sourceY="80" targetY="98"/>
+    <stereotypes xmi:id="_LjJdoLCjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t3z2ILCiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_LjI2kbCjEeeXhtmVkHi-QA" text="">
+      <visualProperties xmi:id="_M4SEkbCjEeeXhtmVkHi-QA" position="252.0,-7.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_LjI2krCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t3zPErCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4SEkLCjEeeXhtmVkHi-QA" position="6.0,5.5"/>
+      <visibility xmi:id="_LkBAUrCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_LkBAUbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_LjI2k7CjEeeXhtmVkHi-QA" aggregationKind="NONE" name="cmds" navigable="true">
+      <modelElement href="Vistor.uml#_t10SEbCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4SEkrCjEeeXhtmVkHi-QA" position="4.5,5.0"/>
+      <visibility xmi:id="_LkCOcrCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_LkCOcbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <qualifierHelper xmi:id="_LkBnYLCjEeeXhtmVkHi-QA">
+        <qualifiers xmi:id="_LkCOcLCjEeeXhtmVkHi-QA">
+          <modelElement href="Vistor.uml#_t105ILCiEeeXhtmVkHi-QA"/>
+          <visibility xmi:id="_LkDckbCjEeeXhtmVkHi-QA" label="+"/>
+          <cardinality xmi:id="_LkDckrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+          <type xmi:id="_LkDckLCjEeeXhtmVkHi-QA" name="String">
+            <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </type>
+        </qualifiers>
+      </qualifierHelper>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_LibE4LCjEeeXhtmVkHi-QA" sourceAnchor="206.0,0.0" targetAnchor="204.0,64.0" dashed="true" superClass="_LfzOsLCjEeeXhtmVkHi-QA" subClass="_LkEqsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tyxlIbCiEeeXhtmVkHi-QA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LjGaULCjEeeXhtmVkHi-QA" targetItem="_LkEqsLCjEeeXhtmVkHi-QA" sourceItem="_Li5mALCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LjhRELCjEeeXhtmVkHi-QA" targetItem="_LkEqvbCjEeeXhtmVkHi-QA" sourceItem="_LjJdobCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LjxIsLCjEeeXhtmVkHi-QA" targetItem="_LkEqvbCjEeeXhtmVkHi-QA" sourceItem="_Ljol0LCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Lj0zELCjEeeXhtmVkHi-QA" targetItem="_LkEqw7CjEeeXhtmVkHi-QA" sourceItem="_Lj0MALCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Lj9V8LCjEeeXhtmVkHi-QA" targetItem="_LkEqzLCjEeeXhtmVkHi-QA" sourceItem="_Lj8u4LCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Ll_9ULCjEeeXhtmVkHi-QA" targetItem="_Lot6ILCjEeeXhtmVkHi-QA" sourceItem="_LlN6MLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LoqPwLCjEeeXhtmVkHi-QA" targetItem="_Lot6ILCjEeeXhtmVkHi-QA" sourceItem="_LoJSYLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Lpn5ELCjEeeXhtmVkHi-QA" sourceAnchor="205.0,0.0" targetAnchor="192.0,64.0" dashed="true" superClass="_LetpkLCjEeeXhtmVkHi-QA" subClass="_LsiqMLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ty9yYLCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4NMELCjEeeXhtmVkHi-QA" sourceY="-25" targetX="273" targetY="33"/>
+    <bendpoints xmi:id="_M4NMEbCjEeeXhtmVkHi-QA" sourceX="-273" sourceY="-25" targetY="33"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LrStALCjEeeXhtmVkHi-QA" targetItem="_LsiqMLCjEeeXhtmVkHi-QA" sourceItem="_Lq2BELCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LrZasLCjEeeXhtmVkHi-QA" targetItem="_LsiqMLCjEeeXhtmVkHi-QA" sourceItem="_LrYzoLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Lr6YELCjEeeXhtmVkHi-QA" targetItem="_LsiqPbCjEeeXhtmVkHi-QA" sourceItem="_LrgvcLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LsY5MLCjEeeXhtmVkHi-QA" targetItem="_LsiqSbCjEeeXhtmVkHi-QA" sourceItem="_LsHMYLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LsauYLCjEeeXhtmVkHi-QA" targetItem="_LsiqTrCjEeeXhtmVkHi-QA" sourceItem="_LsaHULCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LshcEbCjEeeXhtmVkHi-QA" targetItem="_LsiqU7CjEeeXhtmVkHi-QA" sourceItem="_LshcELCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Ltkk8LCjEeeXhtmVkHi-QA" sourceAnchor="44.0,0.0" targetAnchor="192.0,64.0" superClass="_LetpkLCjEeeXhtmVkHi-QA" subClass="_LwvNsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ty_nkLCiEeeXhtmVkHi-QA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LvOKwLCjEeeXhtmVkHi-QA" targetItem="_LwvNsLCjEeeXhtmVkHi-QA" sourceItem="_Lui1ULCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LvWtoLCjEeeXhtmVkHi-QA" targetItem="_LwvNsLCjEeeXhtmVkHi-QA" sourceItem="_LvTDQLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_LvXUsLCjEeeXhtmVkHi-QA" sourceAnchor="287.0,0.0" targetAnchor="44.0,40.0" dashed="true" superClass="_LwvNsLCjEeeXhtmVkHi-QA" subClass="_L-RTYLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tzHjYLCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4OaMLCjEeeXhtmVkHi-QA" sourceY="-15" targetX="520" targetY="136"/>
+    <bendpoints xmi:id="_M4OaMbCjEeeXhtmVkHi-QA" sourceX="-520" sourceY="-15" targetY="136"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Lv-YsLCjEeeXhtmVkHi-QA" targetItem="_L-RTYLCjEeeXhtmVkHi-QA" sourceItem="_LvepcLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LwevALCjEeeXhtmVkHi-QA" targetItem="_L-RTYLCjEeeXhtmVkHi-QA" sourceItem="_LwGUgLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LwiZYLCjEeeXhtmVkHi-QA" targetItem="_L-RTfLCjEeeXhtmVkHi-QA" sourceItem="_Lwf9ILCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LwkOkLCjEeeXhtmVkHi-QA" targetItem="_L-RTkbCjEeeXhtmVkHi-QA" sourceItem="_LwjngLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LwqVMbCjEeeXhtmVkHi-QA" targetItem="_L-RTlrCjEeeXhtmVkHi-QA" sourceItem="_LwqVMLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Lwq8QbCjEeeXhtmVkHi-QA" targetItem="_L-RTnLCjEeeXhtmVkHi-QA" sourceItem="_Lwq8QLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LwrjULCjEeeXhtmVkHi-QA" targetItem="_L-RTorCjEeeXhtmVkHi-QA" sourceItem="_Lwq8QrCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LwsKYLCjEeeXhtmVkHi-QA" targetItem="_L-RTp7CjEeeXhtmVkHi-QA" sourceItem="_LwrjUbCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_LxRZMLCjEeeXhtmVkHi-QA" sourceAnchor="44.0,0.0" targetAnchor="192.0,64.0" superClass="_LetpkLCjEeeXhtmVkHi-QA" subClass="_Ly3UoLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tzCD0LCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4NzILCjEeeXhtmVkHi-QA" sourceY="-32" targetX="-832" targetY="33"/>
+    <bendpoints xmi:id="_M4NzIbCjEeeXhtmVkHi-QA" sourceX="832" sourceY="-32" targetY="33"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Lyp5QLCjEeeXhtmVkHi-QA" targetItem="_Ly3UoLCjEeeXhtmVkHi-QA" sourceItem="_LyC1QLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Ly04YLCjEeeXhtmVkHi-QA" targetItem="_Ly3UoLCjEeeXhtmVkHi-QA" sourceItem="_LyycILCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L1iOILCjEeeXhtmVkHi-QA" targetItem="_L3IJkLCjEeeXhtmVkHi-QA" sourceItem="_L0QbwLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L2oaULCjEeeXhtmVkHi-QA" targetItem="_L3IJxLCjEeeXhtmVkHi-QA" sourceItem="_L2fQYLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L2pocLCjEeeXhtmVkHi-QA" targetItem="_L3IJ0LCjEeeXhtmVkHi-QA" sourceItem="_L2pBYLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L26uMLCjEeeXhtmVkHi-QA" targetItem="_L3IJ27CjEeeXhtmVkHi-QA" sourceItem="_L2zZcLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L278UbCjEeeXhtmVkHi-QA" targetItem="_L3IJ3rCjEeeXhtmVkHi-QA" sourceItem="_L278ULCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L28jYbCjEeeXhtmVkHi-QA" targetItem="_L3IJ47CjEeeXhtmVkHi-QA" sourceItem="_L28jYLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L29KcbCjEeeXhtmVkHi-QA" targetItem="_L3IJ6bCjEeeXhtmVkHi-QA" sourceItem="_L29KcLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L29xgbCjEeeXhtmVkHi-QA" targetItem="_L3IJ7rCjEeeXhtmVkHi-QA" sourceItem="_L29xgLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L2-_oLCjEeeXhtmVkHi-QA" targetItem="_L3IJ9LCjEeeXhtmVkHi-QA" sourceItem="_L2-YkLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L2_msLCjEeeXhtmVkHi-QA" targetItem="_L3IJ-bCjEeeXhtmVkHi-QA" sourceItem="_L2-_obCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L3ANwbCjEeeXhtmVkHi-QA" targetItem="_L3IKBLCjEeeXhtmVkHi-QA" sourceItem="_L3ANwLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L3A00LCjEeeXhtmVkHi-QA" targetItem="_L3IKErCjEeeXhtmVkHi-QA" sourceItem="_L3ANwrCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_L3D4ILCjEeeXhtmVkHi-QA" source="_L3IJkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t325cbCiEeeXhtmVkHi-QA"/>
+    <stereotypes xmi:id="_L3D4IbCjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t325c7CiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_L3D4IrCjEeeXhtmVkHi-QA" text=""/>
+    <sourceRole xmi:id="_L3D4I7CjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t325crCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3D4JLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3D4JbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_L3D4JrCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="_sequence" navigable="true">
+      <modelElement href="Vistor.uml#_t2CUgrCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3D4J7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L3D4KLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_L3FGQLCjEeeXhtmVkHi-QA" source="_L3IJkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t33ggLCiEeeXhtmVkHi-QA"/>
+    <stereotypes xmi:id="_L3FGQbCjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t33ggrCiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_L3FGQrCjEeeXhtmVkHi-QA" text=""/>
+    <sourceRole xmi:id="_L3FGQ7CjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t33ggbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3FGRLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3FGRbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_L3FGRrCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="_track" navigable="true">
+      <modelElement href="Vistor.uml#_t2C7kbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3FGR7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L3FGSLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_L3GUYLCjEeeXhtmVkHi-QA" source="_L3IJkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t33gg7CiEeeXhtmVkHi-QA"/>
+    <stereotypes xmi:id="_L3GUYbCjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t34HkLCiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_L3GUYrCjEeeXhtmVkHi-QA" text=""/>
+    <sourceRole xmi:id="_L3GUY7CjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t33ghLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3GUZLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3GUZbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_L3GUZrCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="_sequencer" navigable="true">
+      <modelElement href="Vistor.uml#_t2F-4LCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3GUZ7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L3GUaLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_L3HigLCjEeeXhtmVkHi-QA" source="_L3IJkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t34HkbCiEeeXhtmVkHi-QA"/>
+    <stereotypes xmi:id="_L3HigbCjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t34uoLCiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_L3HigrCjEeeXhtmVkHi-QA" text=""/>
+    <sourceRole xmi:id="_L3Hig7CjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t34HkrCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3HihLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3HihbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_L3HihrCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="_synthesizer" navigable="true">
+      <modelElement href="Vistor.uml#_t2Gl8LCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3Hih7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L3HiiLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_L432ALCjEeeXhtmVkHi-QA" sourceAnchor="329.0,34.0" targetAnchor="0.0,128.0" target="_L-RTYLCjEeeXhtmVkHi-QA" source="_L8yssLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t31rVLCiEeeXhtmVkHi-QA"/>
+    <stereotypes xmi:id="_L7ivg7CjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t32SYLCiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_L7ivgLCjEeeXhtmVkHi-QA" text="">
+      <visualProperties xmi:id="_M4TSsLCjEeeXhtmVkHi-QA" position="-39.5,-7.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_L7ivgbCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t31rVbCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4SroLCjEeeXhtmVkHi-QA" position="5.5,-46.5"/>
+      <visibility xmi:id="_L8wQcbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L8wQcLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_L7ivgrCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="notes" navigable="true">
+      <modelElement href="Vistor.uml#_t1-qILCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4T5wLCjEeeXhtmVkHi-QA" position="-48.5,5.5"/>
+      <visibility xmi:id="_L8w3gLCjEeeXhtmVkHi-QA" label="#"/>
+      <cardinality xmi:id="_L8wQcrCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_L6JoYLCjEeeXhtmVkHi-QA" sourceAnchor="165.0,0.0" targetAnchor="44.0,40.0" dashed="true" superClass="_LwvNsLCjEeeXhtmVkHi-QA" subClass="_L8yssLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tzJ_oLCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4NzIrCjEeeXhtmVkHi-QA" sourceY="-109" targetX="-130" targetY="136"/>
+    <bendpoints xmi:id="_M4NzI7CjEeeXhtmVkHi-QA" sourceX="130" sourceY="-109" targetY="136"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L7N_YLCjEeeXhtmVkHi-QA" targetItem="_L8yssLCjEeeXhtmVkHi-QA" sourceItem="_L7E1cLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L7OmcLCjEeeXhtmVkHi-QA" targetItem="_L8yssLCjEeeXhtmVkHi-QA" sourceItem="_L7N_YbCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_L7bawLCjEeeXhtmVkHi-QA" sourceAnchor="205.0,0.0" targetAnchor="165.0,67.0" superClass="_L8yssLCjEeeXhtmVkHi-QA" subClass="_Lot6ILCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ty2doLCiEeeXhtmVkHi-QA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_L78_MLCjEeeXhtmVkHi-QA" targetItem="_L8ysubCjEeeXhtmVkHi-QA" sourceItem="_L7jWkLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_MAb2kLCjEeeXhtmVkHi-QA" sourceAnchor="205.0,105.0" targetAnchor="0.0,53.0" target="_MDqJsLCjEeeXhtmVkHi-QA" source="_MDqJsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t30dMbCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4OaMrCjEeeXhtmVkHi-QA" sourceY="91" targetX="205" targetY="143"/>
+    <bendpoints xmi:id="_M4OaM7CjEeeXhtmVkHi-QA" sourceX="-312" sourceY="91" targetX="-107" targetY="143"/>
+    <bendpoints xmi:id="_M4OaNLCjEeeXhtmVkHi-QA" sourceX="-312" sourceY="-52" targetX="-107"/>
+    <stereotypes xmi:id="_MDoUg7CjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t30dM7CiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_MDoUgLCjEeeXhtmVkHi-QA" text="">
+      <visualProperties xmi:id="_M4VH4LCjEeeXhtmVkHi-QA" position="252.0,-7.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_MDoUgbCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t30dMrCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4Ug0LCjEeeXhtmVkHi-QA" position="6.0,5.5"/>
+      <visibility xmi:id="_MDpiobCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MDpioLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_MDoUgrCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="Singleton" navigable="true">
+      <modelElement href="Vistor.uml#_t15KkbCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4VH4bCjEeeXhtmVkHi-QA" position="-69.0,5.5"/>
+      <visibility xmi:id="_MDpio7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MDpiorCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_MCV7ELCjEeeXhtmVkHi-QA" sourceAnchor="205.0,0.0" targetAnchor="44.0,40.0" dashed="true" superClass="_Ly3UoLCjEeeXhtmVkHi-QA" subClass="_MDqJsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tzCD0bCiEeeXhtmVkHi-QA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MDhm0LCjEeeXhtmVkHi-QA" targetItem="_MDqJsLCjEeeXhtmVkHi-QA" sourceItem="_MDd8cLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MDiN4LCjEeeXhtmVkHi-QA" targetItem="_MDqJsLCjEeeXhtmVkHi-QA" sourceItem="_MDhm0bCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_MGD9cLCjEeeXhtmVkHi-QA" sourceAnchor="192.0,0.0" targetAnchor="0.0,32.0" target="_LetpkLCjEeeXhtmVkHi-QA" source="_MMBbgLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t30dNLCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4PBQLCjEeeXhtmVkHi-QA" sourceY="-380" targetX="-991" targetY="234"/>
+    <bendpoints xmi:id="_M4PBQbCjEeeXhtmVkHi-QA" sourceX="-481" sourceY="-380" targetX="-1472" targetY="234"/>
+    <bendpoints xmi:id="_M4PBQrCjEeeXhtmVkHi-QA" sourceX="-481" sourceY="-614" targetX="-1472"/>
+    <stereotypes xmi:id="_MKDFkLCjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t31EQLCiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_MKCegLCjEeeXhtmVkHi-QA" text="">
+      <visualProperties xmi:id="_M4W9ELCjEeeXhtmVkHi-QA" position="-21.0,-33.49999999999994"/>
+    </nameVisual>
+    <sourceRole xmi:id="_MKCegbCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t30dNbCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4WWALCjEeeXhtmVkHi-QA" position="-443.5,-374.49999999999994"/>
+      <visibility xmi:id="_ML-YMbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_ML-YMLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_MKCegrCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="_first" navigable="true">
+      <modelElement href="Vistor.uml#_t16YsLCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4W9EbCjEeeXhtmVkHi-QA" position="-45.0,5.500000000000114"/>
+      <visibility xmi:id="_ML-YM7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_ML-YMrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_MHCN0LCjEeeXhtmVkHi-QA" sourceAnchor="205.0,0.0" targetAnchor="0.0,20.0" target="_Ly3UoLCjEeeXhtmVkHi-QA" source="_MMBbgLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t31EQbCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4PBQ7CjEeeXhtmVkHi-QA" sourceY="-445" targetX="-294" targetY="52"/>
+    <bendpoints xmi:id="_M4PBRLCjEeeXhtmVkHi-QA" sourceX="-52" sourceY="-445" targetX="-346" targetY="52"/>
+    <bendpoints xmi:id="_M4PBRbCjEeeXhtmVkHi-QA" sourceX="-52" sourceY="-497" targetX="-346"/>
+    <stereotypes xmi:id="_MKDFlLCjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t31rULCiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_MKDFkbCjEeeXhtmVkHi-QA" text="">
+      <visualProperties xmi:id="_M4YyQLCjEeeXhtmVkHi-QA" position="-21.0,-33.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_MKDFkrCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t31EQrCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4YLMLCjEeeXhtmVkHi-QA" position="-19.0,-439.5"/>
+      <visibility xmi:id="_ML-YNrCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_ML-YNbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_MKDFk7CjEeeXhtmVkHi-QA" aggregationKind="NONE" name="_rest" navigable="true">
+      <modelElement href="Vistor.uml#_t16YsrCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4YyQbCjEeeXhtmVkHi-QA" position="-45.0,5.499999999999886"/>
+      <visibility xmi:id="_ML-_QbCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_ML-_QLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_MHx0sLCjEeeXhtmVkHi-QA" sourceAnchor="179.0,0.0" targetAnchor="191.0,64.0" target="_LfzOsLCjEeeXhtmVkHi-QA" source="_MMBbgLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t31rUbCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4PoULCjEeeXhtmVkHi-QA" sourceY="-16" targetX="221" targetY="280"/>
+    <bendpoints xmi:id="_M4PoUbCjEeeXhtmVkHi-QA" sourceX="-1079" sourceY="-16" targetX="-858" targetY="280"/>
+    <bendpoints xmi:id="_M4PoUrCjEeeXhtmVkHi-QA" sourceX="-1079" sourceY="-276" targetX="-858" targetY="20"/>
+    <bendpoints xmi:id="_M4PoU7CjEeeXhtmVkHi-QA" sourceX="-221" sourceY="-276" targetY="20"/>
+    <stereotypes xmi:id="_MKDFmLCjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t31rU7CiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_MKDFlbCjEeeXhtmVkHi-QA" text="">
+      <visualProperties xmi:id="_M4ZZUbCjEeeXhtmVkHi-QA" position="-21.0,-59.50000000000017"/>
+    </nameVisual>
+    <sourceRole xmi:id="_MKDFlrCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t31rUrCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4ZZULCjEeeXhtmVkHi-QA" position="-198.0,-10.5"/>
+      <visibility xmi:id="_ML-_RLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_ML-_Q7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_MKDFl7CjEeeXhtmVkHi-QA" aggregationKind="NONE" name="_toStringAlgo" navigable="true">
+      <modelElement href="Vistor.uml#_t16_wbCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4aAYLCjEeeXhtmVkHi-QA" position="-90.0,25.5"/>
+      <visibility xmi:id="_ML-_RrCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_ML-_RbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_MIat4LCjEeeXhtmVkHi-QA" sourceAnchor="218.0,0.0" targetAnchor="44.0,40.0" dashed="true" superClass="_Ly3UoLCjEeeXhtmVkHi-QA" subClass="_MMBbgLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tzD5ALCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4PoVLCjEeeXhtmVkHi-QA" sourceY="-406" targetX="-325" targetY="71"/>
+    <bendpoints xmi:id="_M4PoVbCjEeeXhtmVkHi-QA" sourceX="325" sourceY="-406" targetY="71"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MJDAALCjEeeXhtmVkHi-QA" targetItem="_MMBbgLCjEeeXhtmVkHi-QA" sourceItem="_MI7EMLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MKB3cLCjEeeXhtmVkHi-QA" targetItem="_MMBbgLCjEeeXhtmVkHi-QA" sourceItem="_MJDnELCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MKfKcLCjEeeXhtmVkHi-QA" targetItem="_MMBblrCjEeeXhtmVkHi-QA" sourceItem="_MKDsoLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MLl9sLCjEeeXhtmVkHi-QA" targetItem="_MMBbm7CjEeeXhtmVkHi-QA" sourceItem="_MKpigLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MLnL0LCjEeeXhtmVkHi-QA" targetItem="_MMBboLCjEeeXhtmVkHi-QA" sourceItem="_MLmkwLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ML0AILCjEeeXhtmVkHi-QA" targetItem="_MMBbpbCjEeeXhtmVkHi-QA" sourceItem="_MLzZELCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ML7U4bCjEeeXhtmVkHi-QA" targetItem="_MMBbqrCjEeeXhtmVkHi-QA" sourceItem="_ML7U4LCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ML8jALCjEeeXhtmVkHi-QA" targetItem="_MMBbtrCjEeeXhtmVkHi-QA" sourceItem="_ML778LCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MOp4wLCjEeeXhtmVkHi-QA" targetItem="_MRWAYLCjEeeXhtmVkHi-QA" sourceItem="_MNPjgLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MP4n0LCjEeeXhtmVkHi-QA" targetItem="_MRWAfrCjEeeXhtmVkHi-QA" sourceItem="_MP1kgLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MRACILCjEeeXhtmVkHi-QA" targetItem="_MRWAh7CjEeeXhtmVkHi-QA" sourceItem="_MP5O4LCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MRBQQLCjEeeXhtmVkHi-QA" targetItem="_MRWAj7CjEeeXhtmVkHi-QA" sourceItem="_MRApMLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MRB3UbCjEeeXhtmVkHi-QA" targetItem="_MRWAkrCjEeeXhtmVkHi-QA" sourceItem="_MRB3ULCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MRDFcLCjEeeXhtmVkHi-QA" targetItem="_MRWAmLCjEeeXhtmVkHi-QA" sourceItem="_MRCeYLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MRLBQLCjEeeXhtmVkHi-QA" targetItem="_MRWAoLCjEeeXhtmVkHi-QA" sourceItem="_MRKaMLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_MROEkLCjEeeXhtmVkHi-QA" source="_MRWAYLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t4LpkbCiEeeXhtmVkHi-QA"/>
+    <stereotypes xmi:id="_MROEkbCjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t4MQoLCiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_MROEkrCjEeeXhtmVkHi-QA" text=""/>
+    <sourceRole xmi:id="_MROEk7CjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t4LpkrCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MROElLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MROElbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_MROElrCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="notes" navigable="true">
+      <modelElement href="Vistor.uml#_t2njUrCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MROEl7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MROEmLCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_MRVZULCjEeeXhtmVkHi-QA" source="_MRWAYLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t4MQobCiEeeXhtmVkHi-QA"/>
+    <stereotypes xmi:id="_MRVZUbCjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t4M3sLCiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_MRVZUrCjEeeXhtmVkHi-QA" text=""/>
+    <sourceRole xmi:id="_MRVZU7CjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t4MQorCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MRVZVLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MRVZVbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_MRVZVrCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="fs_dsm" navigable="true">
+      <modelElement href="Vistor.uml#_t2oxcLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MRVZV7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MRVZWLCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_MSoZ0LCjEeeXhtmVkHi-QA" sourceAnchor="205.0,0.0" targetAnchor="165.0,67.0" superClass="_L8yssLCjEeeXhtmVkHi-QA" subClass="_MVVIgLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tzRUYLCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4QPYLCjEeeXhtmVkHi-QA" sourceY="-25" targetX="-429" targetY="110"/>
+    <bendpoints xmi:id="_M4QPYbCjEeeXhtmVkHi-QA" sourceX="429" sourceY="-25" targetY="110"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MVPB4LCjEeeXhtmVkHi-QA" targetItem="_MVVIgLCjEeeXhtmVkHi-QA" sourceItem="_MTv0ILCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MVSsQbCjEeeXhtmVkHi-QA" targetItem="_MVVIgLCjEeeXhtmVkHi-QA" sourceItem="_MVSsQLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_MXuVMLCjEeeXhtmVkHi-QA" sourceAnchor="205.0,0.0" targetAnchor="165.0,67.0" superClass="_L8yssLCjEeeXhtmVkHi-QA" subClass="_MaYAkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tzTwoLCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4QPYrCjEeeXhtmVkHi-QA" sourceY="-25" targetX="429" targetY="110"/>
+    <bendpoints xmi:id="_M4QPY7CjEeeXhtmVkHi-QA" sourceX="-429" sourceY="-25" targetY="110"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MY_ggLCjEeeXhtmVkHi-QA" targetItem="_MaYAkLCjEeeXhtmVkHi-QA" sourceItem="_MY1IcLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MZDK4LCjEeeXhtmVkHi-QA" targetItem="_MaYAkLCjEeeXhtmVkHi-QA" sourceItem="_MZCj0LCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Mbv5kLCjEeeXhtmVkHi-QA" sourceAnchor="410.0,50.0" targetAnchor="88.0,33.0" target="_Ly3UoLCjEeeXhtmVkHi-QA" source="_MgLGkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3z2IbCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4QPZLCjEeeXhtmVkHi-QA" sourceX="55" targetX="645" targetY="169"/>
+    <bendpoints xmi:id="_M4QPZbCjEeeXhtmVkHi-QA" sourceX="55" sourceY="-169" targetX="645"/>
+    <stereotypes xmi:id="_MffxILCjEeeXhtmVkHi-QA" name="Reference">
+      <modelElement href="Vistor.uml#_t30dMLCiEeeXhtmVkHi-QA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_MffKELCjEeeXhtmVkHi-QA" text="">
+      <visualProperties xmi:id="_M4bOgLCjEeeXhtmVkHi-QA" position="-21.0,-0.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_MffKEbCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="">
+      <modelElement href="Vistor.uml#_t3z2IrCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4aAYbCjEeeXhtmVkHi-QA" position="5.0,-46.5"/>
+      <visibility xmi:id="_MgJRYbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MgJRYLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_MffKErCjEeeXhtmVkHi-QA" aggregationKind="NONE" name="decoree" navigable="true">
+      <modelElement href="Vistor.uml#_t11gMbCiEeeXhtmVkHi-QA"/>
+      <visualProperties xmi:id="_M4b1kLCjEeeXhtmVkHi-QA" position="655.5,5.0"/>
+      <visibility xmi:id="_MgJRY7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MgJRYrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_MdFWULCjEeeXhtmVkHi-QA" sourceAnchor="205.0,0.0" targetAnchor="44.0,40.0" dashed="true" superClass="_Ly3UoLCjEeeXhtmVkHi-QA" subClass="_MgLGkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ty3rwLCiEeeXhtmVkHi-QA"/>
+    <bendpoints xmi:id="_M4Q2cLCjEeeXhtmVkHi-QA" sourceY="-41" targetX="429" targetY="71"/>
+    <bendpoints xmi:id="_M4Q2cbCjEeeXhtmVkHi-QA" sourceX="-429" sourceY="-41" targetY="71"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MeC_oLCjEeeXhtmVkHi-QA" targetItem="_MgLGkLCjEeeXhtmVkHi-QA" sourceItem="_Md4nkLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MeENwLCjEeeXhtmVkHi-QA" targetItem="_MgLGkLCjEeeXhtmVkHi-QA" sourceItem="_MeDmsLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Mf9EILCjEeeXhtmVkHi-QA" targetItem="_MgLGn7CjEeeXhtmVkHi-QA" sourceItem="_MfgYMLCjEeeXhtmVkHi-QA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MgIDQbCjEeeXhtmVkHi-QA" targetItem="_MgLGqLCjEeeXhtmVkHi-QA" sourceItem="_MgIDQLCjEeeXhtmVkHi-QA"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LeYSYLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_Ler0YLCjEeeXhtmVkHi-QA" text="Top level of a piece of abc music.  The generalized notion of a playable piece of music." item="_LetpkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RqoLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Ler0YbCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LesbcLCjEeeXhtmVkHi-QA" text="Abstract Host&#xA;Each concrete host calls its associated case on the visitor." item="_LetpkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RqobCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LfFdALCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LfdQcLCjEeeXhtmVkHi-QA" text="Interface for a Phrase visitor." item="_LfzOsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RqorCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LfqEwLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LfxZgLCjEeeXhtmVkHi-QA" text="Abstract extended visitor.&#xA;Supplies case behavior for every host." item="_LfzOsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3Rqo7CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LgKbELCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LghAYLCjEeeXhtmVkHi-QA" text="The command used by APhraseVisitor that is associated with a host or hosts.&#xA;@author rixner" item="_Lg2XkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RqpLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LgvC0LCjEeeXhtmVkHi-QA" sourceConnectionVisual="_Lg0iYLCjEeeXhtmVkHi-QA" text="Abstract command used by APhraseVisitor.  Each command is associated with a particular host(s)." item="_Lg2XkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RqpbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Li5mALCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LjGaULCjEeeXhtmVkHi-QA" text="Command-based implementation of IPhraseVisitor that uses IPhraseVisitorCmds stored in a hash table.&#xA;@author swong&#xA; *" item="_LkEqsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3P1d7CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LjJdobCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LjhRELCjEeeXhtmVkHi-QA" text="Constructor that installs a default cmd that throws an IllegalArgumentException on any unknown host." item="_LkEqvbCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3QcgLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Ljol0LCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LjxIsLCjEeeXhtmVkHi-QA" text="Abstract extended visitor implementation that uses a dictionary of commands to associate commands with host IDs." item="_LkEqvbCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3QcgbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Lj0MALCjEeeXhtmVkHi-QA" sourceConnectionVisual="_Lj0zELCjEeeXhtmVkHi-QA" text="Constructor that sets the default cmd to the supplied cmd.&#xA;&#x9; * @param defaultCmd   the default cmd to use." item="_LkEqw7CjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3QcgrCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Lj8u4LCjEeeXhtmVkHi-QA" sourceConnectionVisual="_Lj9V8LCjEeeXhtmVkHi-QA" text="Add the given command to the dictionary, associated with the given id value.&#xA;&#x9; * @param id The id of the host that will use this command&#xA;&#x9; * @param cmd The command that will be run when the host calls for it." item="_LkEqzLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3Qcg7CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LlN6MLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_Ll_9ULCjEeeXhtmVkHi-QA" text="A collection of notes that make up a Chord.  All of the notes should&#xA;be played simultaneously.   The last note defines the length of all the notes." item="_Lot6ILCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3QchLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LoJSYLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LoqPwLCjEeeXhtmVkHi-QA" text="A collection of Notes all played at once" item="_Lot6ILCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3QchbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Lq2BELCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LrStALCjEeeXhtmVkHi-QA" text="An abc Header.  Headers are identified by a one character &quot;id&quot; and&#xA;can have an arbitrary string value. &lt;br/>&#xA;Note that this class represents many different *types* of headers, &#xA;each with its own id value." item="_LsiqMLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RDkrCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LrYzoLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LrZasLCjEeeXhtmVkHi-QA" text="A single Header class represents multiple, distinct header hosts." item="_LsiqMLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RDk7CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LrgvcLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_Lr6YELCjEeeXhtmVkHi-QA" text="Create a header out of an id and value&#xA;&#x9; * &#xA;&#x9; * @param id    - one character corresponding to the abc header name&#xA;&#x9; * @param value - arbitrary string value of the header" item="_LsiqPbCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RDlLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LsHMYLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LsY5MLCjEeeXhtmVkHi-QA" text="Accessor for the id.&#xA;&#x9; * @return the _id" item="_LsiqSbCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RDlbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LsaHULCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LsauYLCjEeeXhtmVkHi-QA" text="Accessor for the text value of this header.&#xA;&#x9; * @return the _value" item="_LsiqTrCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RDlrCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LshcELCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LshcEbCjEeeXhtmVkHi-QA" text="String representation of this header: &quot;id: text&quot;" item="_LsiqU7CjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RDl7CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Lui1ULCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LvOKwLCjEeeXhtmVkHi-QA" text="Note interface for Notes and collections of Notes." item="_LwvNsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RDmLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LvTDQLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LvWtoLCjEeeXhtmVkHi-QA" text="A generalized notion of a note" item="_LwvNsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RDmbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LvepcLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_Lv-YsLCjEeeXhtmVkHi-QA" text="Basic class representing musical Notes." item="_L-RTYLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3SRsrCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LwGUgLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LwevALCjEeeXhtmVkHi-QA" text="A playable note or rest." item="_L-RTYLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3SRs7CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Lwf9ILCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LwiZYLCjEeeXhtmVkHi-QA" text="Constructor for the class&#xA;&#x9; * @param name  The name of the note&#xA;&#x9; * @param octave The octave of the note w.r.t. middle C.  Zero = same octave as middle C.&#xA;&#x9; * @param accidental accidental setting sharp &amp;gt; 0, flat &amp;lt; 0&#xA;&#x9; * @param duration duration of note&#xA;&#x9; * @param isNatural flag to override key signature.  True if note should be natural, overriding key signature." item="_L-RTfLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3SRtLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LwjngLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LwkOkLCjEeeXhtmVkHi-QA" text="Returns a string representation of the Note  &#xA;&#x9; * @return &quot;(name, octave, duration)&quot;" item="_L-RTkbCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3SRtbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LwqVMLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LwqVMbCjEeeXhtmVkHi-QA" text="Accessor to set the name of the note&#xA;&#x9; * @param name - the name to set" item="_L-RTlrCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3SRtrCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Lwq8QLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_Lwq8QbCjEeeXhtmVkHi-QA" text="Accessor to set the accidental value&#xA;&#x9; * @param accidental - the accidental to set" item="_L-RTnLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3S4wLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Lwq8QrCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LwrjULCjEeeXhtmVkHi-QA" text="Accessor for isNatural flag&#xA;&#x9; * @return isNatural flag setting" item="_L-RTorCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3S4wbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LwrjUbCjEeeXhtmVkHi-QA" sourceConnectionVisual="_LwsKYLCjEeeXhtmVkHi-QA" text="Settor for isNatural flag.  Accidentals will be set to zero if isNatural is true.&#xA;&#x9; * @param isNatural  New isNatural setting" item="_L-RTp7CjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3S4wrCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LyC1QLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_Lyp5QLCjEeeXhtmVkHi-QA" text="Interface for sequential lists of IPhrases." item="_Ly3UoLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RqprCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LyycILCjEeeXhtmVkHi-QA" sourceConnectionVisual="_Ly04YLCjEeeXhtmVkHi-QA" text="A list of IPhrases&#xA;e.g. an ordered sequence of Notes." item="_Ly3UoLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3Rqp7CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L0QbwLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L1iOILCjEeeXhtmVkHi-QA" text="Sequence Player to create and play MIDI music sequences." item="_L3IJkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3Ut9LCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L2fQYLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L2oaULCjEeeXhtmVkHi-QA" text="Create a new SequencePlayer to create and play music.&#xA;&#x9; * &#xA;&#x9; * @param  ticksPerQuarterNote      - tick definition&#xA;&#x9; * @param  instrument               - MIDI instrument" item="_L3IJxLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3Ut9bCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L2pBYLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L2pocLCjEeeXhtmVkHi-QA" text="Initialize the SequencePlayer as per the supplied ticksPerQuarterNote and instrument&#xA;&#x9; * this SequencePlayer was instantiated with.   This method is called by the constructor to &#xA;&#x9; * initialize the player upon instantiation and can be called again to reinitialize the &#xA;&#x9; * SequencePlayer.&#xA;&#x9; * &#xA;&#x9; * @param  ticksPerQuarterNote      - tick definition&#xA;&#x9; * @param  instrument               - MIDI instrument&#xA;&#x9; * @return                         - true if properly initialized, false otherwise" item="_L3IJ0LCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3VVALCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L2zZcLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L26uMLCjEeeXhtmVkHi-QA" text="Stop playing music and close resources." item="_L3IJ27CjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3VVBLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L278ULCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L278UbCjEeeXhtmVkHi-QA" text="Accessor to get the current ticks per default note&#xA;&#x9; * @return the _ticksPerDefaultNote" item="_L3IJ3rCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3VVBbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L28jYLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L28jYbCjEeeXhtmVkHi-QA" text="Accessor to set the current ticks per default note&#xA;&#x9; * @param ticksPerDefaultNote the _ticksPerDefaultNote to set" item="_L3IJ47CjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3VVBrCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L29KcLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L29KcbCjEeeXhtmVkHi-QA" text="Accessor for the current tempo&#xA;&#x9; * @return the tempo (in beats per minute)" item="_L3IJ6bCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3V8ELCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L29xgLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L29xgbCjEeeXhtmVkHi-QA" text="Set the tempo - can't change the tempo in the middle of a sequence,&#xA;&#x9; * the last tempo set will be used for the whole sequence.&#xA;&#x9; * &#xA;&#x9; * @param bpm - beats per minute" item="_L3IJ7rCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3V8EbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L2-YkLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L2-_oLCjEeeXhtmVkHi-QA" text="Accessor for the current number of ticks per quarter note.&#xA;&#x9; * @return the number of ticks per quarter note" item="_L3IJ9LCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3V8ErCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L2-_obCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L2_msLCjEeeXhtmVkHi-QA" text="Add a note to the MIDI sequence with a default velocity of 64 for middle volume&#xA;&#x9; * &#xA;&#x9; * @param note     - the note to schedule in the sequence&#xA;&#x9; * @param start    - the tick at which this note should start playing&#xA;&#x9; * @return         - the tick at which this note stops playing" item="_L3IJ-bCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3VVAbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L3ANwLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L3ANwbCjEeeXhtmVkHi-QA" text="Add a note to the MIDI sequence.&#xA;&#x9; * &#xA;&#x9; * @param note     - the note to schedule in the sequence&#xA;&#x9; * @param start    - the tick at which this note should start playing&#xA;&#x9; * @param velocity - the volume (0-127)&#xA;&#x9; * @return         - the tick at which this note stops playing" item="_L3IKBLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3VVArCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L3ANwrCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L3A00LCjEeeXhtmVkHi-QA" text="Play the created Sequence.&#xA;&#x9; * @param statusCmd The finished() method of this command is called when the track finishes being played, i.e. a normal termination.  There is no notification if play is forcibly stopped." item="_L3IKErCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3VVA7CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L7E1cLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L7N_YLCjEeeXhtmVkHi-QA" text="A collection of multiple notes" item="_L8yssLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3S4w7CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L7N_YbCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L7OmcLCjEeeXhtmVkHi-QA" text="A collection of Notes" item="_L8yssLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3S4xLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_L7jWkLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_L78_MLCjEeeXhtmVkHi-QA" text="Accessor for the array of notes in this collection&#xA;&#x9; * @return the array of notes" item="_L8ysubCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3S4xbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MDd8cLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MDhm0LCjEeeXhtmVkHi-QA" text="An empty sequence list." item="_MDqJsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RqqLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MDhm0bCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MDiN4LCjEeeXhtmVkHi-QA" text="An empty ISeqList" item="_MDqJsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RqqbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MI7EMLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MJDAALCjEeeXhtmVkHi-QA" text="A non-empty (&quot;cons&quot;) sequence list." item="_MMBbgLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RqqrCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MJDnELCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MKB3cLCjEeeXhtmVkHi-QA" text="A non-empty ISeqList" item="_MMBbgLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3Rqq7CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MKDsoLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MKfKcLCjEeeXhtmVkHi-QA" text="Accessor method for the first element&#xA;&#x9; * @return the IPhrase that is the first element of the sequence list" item="_MMBblrCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RqrbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MKpigLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MLl9sLCjEeeXhtmVkHi-QA" text="Accessor method for the rest of the lsit&#xA;&#x9; * @return the rest of the sequence list" item="_MMBbm7CjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RqrrCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MLmkwLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MLnL0LCjEeeXhtmVkHi-QA" text="Getter for the _toStringAlgo helper.  Only for use internally inside this package&#xA;&#x9; * so ToggleDecoratorSeqList and FineToggleDecoratorSeqList can use the same visitor.&#xA;&#x9; * @return the toStringAlgo helper visitor" item="_MMBboLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3SRsLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MLzZELCjEeeXhtmVkHi-QA" sourceConnectionVisual="_ML0AILCjEeeXhtmVkHi-QA" text="Run a visitor over the list to convert it to a String.  &#xA;&#x9; * Delegates to the rest of the list using the helper algo, with the accumulator &#xA;&#x9; * (params[0]) set to &quot;{&quot;+_first.toString().  &#xA;&#x9; * @return &quot;{a, b, c, d}&quot;" item="_MMBbpbCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3SRsbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ML7U4LCjEeeXhtmVkHi-QA" sourceConnectionVisual="_ML7U4bCjEeeXhtmVkHi-QA" text="Cons an IPhrase to a Sequence List.&#xA;&#x9; * @param first The first element of the sequence&#xA;&#x9; * @param rest The rest of the sequence" item="_MMBbqrCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3RqrLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ML778LCjEeeXhtmVkHi-QA" sourceConnectionVisual="_ML8jALCjEeeXhtmVkHi-QA" text="Setter for the _toStringAlgo helper.  This non-typical method is provided solely &#xA;&#x9; * for the purpose of enabling the student to install their toStringAlgo into the &#xA;&#x9; * read-only provided code.&#xA;&#x9; * @param stringAlgo The helper algo to use." item="_MMBbtrCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3Rqr7CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MNPjgLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MOp4wLCjEeeXhtmVkHi-QA" text="Utility class to simplify dealing with key signatures &lt;br/>&#xA;Usage:&lt;br/>&#xA;KeySignature keySig = new KeySignature(aKey); // aKey is a string representing a key, e.g. &quot;C&quot;, &quot;Bb&quot;, &quot;Am&quot;&lt;br/>&#xA;Note adjustedNote = keySig.adjust(originalNote); // returns the Note object, adjusted so that it matches the key,&#xA;e.g for key of &quot;D&quot;, an &quot;F&quot; --&amp;gt; &quot;F#&quot;.&lt;br/>" item="_MRWAYLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3aNgbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MP1kgLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MP4n0LCjEeeXhtmVkHi-QA" text="Generate a &quot;Key&quot; object that enables easy access to the key signature.&#xA;&#x9; * &#xA;&#x9; * @param key        - String indicating key (i.e., &quot;C&quot; or &quot;D#m&quot;)" item="_MRWAfrCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3aNhLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MP5O4LCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MRACILCjEeeXhtmVkHi-QA" text="Helper method to convert a note to its equivalent flat version.&#xA;&#x9; * &#xA;&#x9; * @param n  - note letter&#xA;&#x9; * @return   - equivalent flat version of note n" item="_MRWAh7CjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3aNhbCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MRApMLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MRBQQLCjEeeXhtmVkHi-QA" text="Print the mapping for this key signature" item="_MRWAj7CjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3aNibCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MRB3ULCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MRB3UbCjEeeXhtmVkHi-QA" text="Helper method to insert the given note into the keymap.&#xA;&#x9; * &#xA;&#x9; * @param n  - note to add to the map" item="_MRWAkrCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3aNhrCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MRCeYLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MRDFcLCjEeeXhtmVkHi-QA" text="Takes a note and returns the properly transposed note in this key signature&#xA;&#x9; *&#xA;&#x9; * @param n - note to be adjusted&#xA;&#x9; * @return A new, adjusted Note" item="_MRWAmLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3aNiLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MRKaMLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MRLBQLCjEeeXhtmVkHi-QA" text="Takes a note (with no accidentals) and returns the accidental for this&#xA;&#x9; * key signature.&#xA;&#x9; * &#xA;&#x9; * @param  note - in [A, B, C, D, E, F, G]&#xA;&#x9; * @return accidental for the note in this key signature [-1, 0, 1]" item="_MRWAoLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3aNh7CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MTv0ILCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MVPB4LCjEeeXhtmVkHi-QA" text="A musical triplet.  The three notes should be played with 2/3 of their&#xA;indicated duration." item="_MVVIgLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3UG4rCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MVSsQLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MVSsQbCjEeeXhtmVkHi-QA" text="A set of 3 notes played in sequence in a special manner." item="_MVVIgLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3UG47CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MY1IcLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MY_ggLCjEeeXhtmVkHi-QA" text="Class that represents a tuplet, a series of notes played in a fraction of their normal total time.&#xA;The exact fraction depends on the meter and the number of notes in the tuplet.&#xA;A triplet is a specific type of tuplet.&#xA;@author swong" item="_MaYAkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3Ut8LCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MZCj0LCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MZDK4LCjEeeXhtmVkHi-QA" text="A arbitrary set of notes played in sequence in a special manner." item="_MaYAkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3Ut8bCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Md4nkLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MeC_oLCjEeeXhtmVkHi-QA" text="An ISeqList that transparently routes the visitor execution to its decoree.  &#xA;This class is primarily used to provide a placeholder when a the music should flow &#xA;to a specific point in the sequence but that point has not yet been calculated, as occurs&#xA;for instance, during the processing of repeats.    When that target point is finally calculated, &#xA;the decoree can be set and the decorated target will behave identically to the target.&#xA;This decorator can also be used to dynamically change the flow of the music by changing the target.  &#xA;@author swong" item="_MgLGkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3QchrCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MeDmsLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MeENwLCjEeeXhtmVkHi-QA" text="Decorated ISeqList used as a transparent proxy placeholder." item="_MgLGkLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3Qch7CiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MfgYMLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_Mf9EILCjEeeXhtmVkHi-QA" text="Constructor used to set the decoree to a known value at construction time.&#xA;&#x9; * @param decoree The decoree phrase sequence" item="_MgLGn7CjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3QciLCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MgIDQLCjEeeXhtmVkHi-QA" sourceConnectionVisual="_MgIDQbCjEeeXhtmVkHi-QA" text="Setter methods used to set the decoree.&#xA;&#x9; * @param decoree  The new decoree ISeqList." item="_MgLGqLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_t3QcibCiEeeXhtmVkHi-QA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_LetpkLCjEeeXhtmVkHi-QA" comments="_LeYSYLCjEeeXhtmVkHi-QA _Ler0YbCjEeeXhtmVkHi-QA" targetConnectionVisual="_Ler0YLCjEeeXhtmVkHi-QA _LesbcLCjEeeXhtmVkHi-QA" name="IPhrase" associationsIn="_MGD9cLCjEeeXhtmVkHi-QA" subclassedBy="_Lpn5ELCjEeeXhtmVkHi-QA _Ltkk8LCjEeeXhtmVkHi-QA _LxRZMLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ttfcgLCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_LetpkbCjEeeXhtmVkHi-QA" position="2114.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_LetpkrCjEeeXhtmVkHi-QA" label="+"/>
+    <operations xmi:id="_Letpk7CjEeeXhtmVkHi-QA" name="execute">
+      <modelElement href="Vistor.uml#_t0sQsLCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_LetplLCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t0sQtLCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_LetplbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_LetplrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Letpl7CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t0sQs7CiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_LetpmLCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_LetpmbCjEeeXhtmVkHi-QA" name="algo">
+        <modelElement href="Vistor.uml#_t0sQsbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LetpmrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_Letpm7CjEeeXhtmVkHi-QA" name="IPhraseVisitor">
+          <modelElement href="Vistor.uml#_ttgDkLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_LetpnLCjEeeXhtmVkHi-QA" name="params">
+        <modelElement href="Vistor.uml#_t0sQsrCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LetpnbCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_LetpnrCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_LfzOsLCjEeeXhtmVkHi-QA" comments="_LfFdALCjEeeXhtmVkHi-QA _LfqEwLCjEeeXhtmVkHi-QA" targetConnectionVisual="_LfdQcLCjEeeXhtmVkHi-QA _LfxZgLCjEeeXhtmVkHi-QA" name="IPhraseVisitor" associationsIn="_MHx0sLCjEeeXhtmVkHi-QA" subclassedBy="_LibE4LCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ttgDkLCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_LfzOsbCjEeeXhtmVkHi-QA" position="698.0,316.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_LfzOsrCjEeeXhtmVkHi-QA" label="+"/>
+    <operations xmi:id="_LfzOs7CjEeeXhtmVkHi-QA" name="caseAt">
+      <modelElement href="Vistor.uml#_t0te0LCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_LfzOtLCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t0uF4bCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_LfzOtbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_LfzOtrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_LfzOt7CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t0uF4LCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_LfzOuLCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_LfzOubCjEeeXhtmVkHi-QA" name="id">
+        <modelElement href="Vistor.uml#_t0te0bCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LfzOurCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_LfzOu7CjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_LfzOvLCjEeeXhtmVkHi-QA" name="host">
+        <modelElement href="Vistor.uml#_t0te0rCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LfzOvbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_LfzOvrCjEeeXhtmVkHi-QA" name="IPhrase">
+          <modelElement href="Vistor.uml#_ttfcgLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_LfzOv7CjEeeXhtmVkHi-QA" name="params">
+        <modelElement href="Vistor.uml#_t0te07CiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LfzOwLCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_LfzOwbCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Lg2XkLCjEeeXhtmVkHi-QA" comments="_LgKbELCjEeeXhtmVkHi-QA _LgvC0LCjEeeXhtmVkHi-QA" targetConnectionVisual="_LghAYLCjEeeXhtmVkHi-QA _Lg0iYLCjEeeXhtmVkHi-QA" name="IPhraseVisitorCmd" associationsIn="_LhPZILCjEeeXhtmVkHi-QA _Lh45YLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tthRsLCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_Lg2XkbCjEeeXhtmVkHi-QA" position="78.0,472.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Lg2XkrCjEeeXhtmVkHi-QA" label="+"/>
+    <operations xmi:id="_Lg2Xk7CjEeeXhtmVkHi-QA" name="apply">
+      <modelElement href="Vistor.uml#_t0vUALCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_Lg2XlLCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t0wiILCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_Lg2XlbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_Lg2XlrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Lg2Xl7CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t0v7ErCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_Lg2XmLCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Lg2XmbCjEeeXhtmVkHi-QA" name="id">
+        <modelElement href="Vistor.uml#_t0vUAbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_Lg2XmrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_Lg2Xm7CjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Lg2XnLCjEeeXhtmVkHi-QA" name="host">
+        <modelElement href="Vistor.uml#_t0v7ELCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_Lg2XnbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_Lg2XnrCjEeeXhtmVkHi-QA" name="IPhrase">
+          <modelElement href="Vistor.uml#_ttfcgLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Lg2Xn7CjEeeXhtmVkHi-QA" name="params">
+        <modelElement href="Vistor.uml#_t0v7EbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_Lg2XoLCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_Lg2XobCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_LkEqsLCjEeeXhtmVkHi-QA" comments="_Li5mALCjEeeXhtmVkHi-QA" targetConnectionVisual="_LjGaULCjEeeXhtmVkHi-QA" name="APhraseVisitor" abstractClass="true" associationsOut="_LhPZILCjEeeXhtmVkHi-QA _Lh45YLCjEeeXhtmVkHi-QA" generalizations="_LibE4LCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ttFM0LCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_LkEqsbCjEeeXhtmVkHi-QA" position="696.0,453.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_LkEqsrCjEeeXhtmVkHi-QA" label="+"/>
+    <attributes xmi:id="_LkEqs7CjEeeXhtmVkHi-QA" name="defaultCmd">
+      <modelElement href="Vistor.uml#_t1zrALCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_LkEqtLCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t10SELCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_LkEqtbCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_LkEqtrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_LkEqt7CjEeeXhtmVkHi-QA" name="IPhraseVisitorCmd">
+        <modelElement href="Vistor.uml#_tthRsLCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_LkEquLCjEeeXhtmVkHi-QA" defaultValue="new Hashtable&lt;String, IPhraseVisitorCmd>()" name="cmds">
+      <modelElement href="Vistor.uml#_t10SEbCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_LkEqubCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t10SE7CiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_LkEqurCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_LkEqu7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_LkEqvLCjEeeXhtmVkHi-QA" name="IPhraseVisitorCmd">
+        <modelElement href="Vistor.uml#_tthRsLCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_LkEqvbCjEeeXhtmVkHi-QA" comments="_LjJdobCjEeeXhtmVkHi-QA _Ljol0LCjEeeXhtmVkHi-QA" targetConnectionVisual="_LjhRELCjEeeXhtmVkHi-QA _LjxIsLCjEeeXhtmVkHi-QA" name="APhraseVisitor">
+      <modelElement href="Vistor.uml#_ttFz4LCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_LkEqvrCjEeeXhtmVkHi-QA" keyword="create"/>
+      <visibility xmi:id="_LkEqv7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_LkEqwLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_LkEqwbCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ttGa8rCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_LkEqwrCjEeeXhtmVkHi-QA" name="APhraseVisitor">
+          <modelElement href="Vistor.uml#_ttFM0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_LkEqw7CjEeeXhtmVkHi-QA" comments="_Lj0MALCjEeeXhtmVkHi-QA" targetConnectionVisual="_Lj0zELCjEeeXhtmVkHi-QA" name="APhraseVisitor">
+      <modelElement href="Vistor.uml#_tyyzQLCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_LkEqxLCjEeeXhtmVkHi-QA" keyword="create"/>
+      <visibility xmi:id="_LkEqxbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_LkEqxrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_LkEqx7CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tyyzRLCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_LkEqyLCjEeeXhtmVkHi-QA" name="APhraseVisitor">
+          <modelElement href="Vistor.uml#_ttFM0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_LkEqybCjEeeXhtmVkHi-QA" name="defaultCmd">
+        <modelElement href="Vistor.uml#_tyyzQbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LkEqyrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_LkEqy7CjEeeXhtmVkHi-QA" name="IPhraseVisitorCmd">
+          <modelElement href="Vistor.uml#_tthRsLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LkEqzLCjEeeXhtmVkHi-QA" comments="_Lj8u4LCjEeeXhtmVkHi-QA" targetConnectionVisual="_Lj9V8LCjEeeXhtmVkHi-QA" name="addCmd">
+      <modelElement href="Vistor.uml#_tyzaULCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_LkEqzbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_LkEqzrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LkEqz7CjEeeXhtmVkHi-QA" name="id">
+        <modelElement href="Vistor.uml#_tyzaUbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LkEq0LCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_LkEq0bCjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_LkEq0rCjEeeXhtmVkHi-QA" name="cmd">
+        <modelElement href="Vistor.uml#_tyzaUrCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LkEq07CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_LkEq1LCjEeeXhtmVkHi-QA" name="IPhraseVisitorCmd">
+          <modelElement href="Vistor.uml#_tthRsLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LkEq1bCjEeeXhtmVkHi-QA" name="caseAt">
+      <modelElement href="Vistor.uml#_t0fcYLCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_LkEq1rCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t0gDcbCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_LkEq17CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_LkEq2LCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_LkEq2bCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t0gDcLCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_LkEq2rCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_LkEq27CjEeeXhtmVkHi-QA" name="id">
+        <modelElement href="Vistor.uml#_t0fcYbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LkEq3LCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_LkEq3bCjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_LkEq3rCjEeeXhtmVkHi-QA" name="host">
+        <modelElement href="Vistor.uml#_t0fcYrCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LkEq37CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_LkEq4LCjEeeXhtmVkHi-QA" name="IPhrase">
+          <modelElement href="Vistor.uml#_ttfcgLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_LkEq4bCjEeeXhtmVkHi-QA" name="params">
+        <modelElement href="Vistor.uml#_t0fcY7CiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LkEq4rCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_LkEq47CjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Lot6ILCjEeeXhtmVkHi-QA" comments="_LlN6MLCjEeeXhtmVkHi-QA _LoJSYLCjEeeXhtmVkHi-QA" targetConnectionVisual="_Ll_9ULCjEeeXhtmVkHi-QA _LoqPwLCjEeeXhtmVkHi-QA" name="Chord" generalizations="_L7bawLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ttLTcLCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_Lot6IbCjEeeXhtmVkHi-QA" position="1971.0,659.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Lot6IrCjEeeXhtmVkHi-QA" label="+"/>
+    <attributes xmi:id="_Lot6I7CjEeeXhtmVkHi-QA" defaultValue="&quot;Chord&quot;" name="ID" staticAttribute="true">
+      <modelElement href="Vistor.uml#_t105IbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_Lot6JLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_Lot6JbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_Lot6JrCjEeeXhtmVkHi-QA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Lot6J7CjEeeXhtmVkHi-QA" name="toString">
+      <modelElement href="Vistor.uml#_ttMhkLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_Lot6KLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_Lot6KbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Lot6KrCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ttNIoLCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_Lot6K7CjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Lot6LLCjEeeXhtmVkHi-QA" name="Chord">
+      <modelElement href="Vistor.uml#_ty1PgLCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_Lot6LbCjEeeXhtmVkHi-QA" keyword="create"/>
+      <stereotypes xmi:id="_Lot6LrCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_ty12kbCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_Lot6L7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_Lot6MLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Lot6MbCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ty12krCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_Lot6MrCjEeeXhtmVkHi-QA" name="Chord">
+          <modelElement href="Vistor.uml#_ttLTcLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Lot6M7CjEeeXhtmVkHi-QA" name="notes">
+        <modelElement href="Vistor.uml#_ty1PgbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_Lot6NLCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_Lot6NbCjEeeXhtmVkHi-QA" name="Note">
+          <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Lot6NrCjEeeXhtmVkHi-QA" name="execute">
+      <modelElement href="Vistor.uml#_t0h4oLCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_Lot6N7CjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t0jGwLCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Lot6OLCjEeeXhtmVkHi-QA" name="Annotations">
+        <modelElement href="Vistor.uml#_t0jt0LCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_Lot6ObCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_Lot6OrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Lot6O7CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t0ifsLCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_Lot6PLCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Lot6PbCjEeeXhtmVkHi-QA" name="algo">
+        <modelElement href="Vistor.uml#_t0h4obCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_Lot6PrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_Lot6P7CjEeeXhtmVkHi-QA" name="IPhraseVisitor">
+          <modelElement href="Vistor.uml#_ttgDkLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Lot6QLCjEeeXhtmVkHi-QA" name="params">
+        <modelElement href="Vistor.uml#_t0h4orCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_Lot6QbCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_Lot6QrCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_LsiqMLCjEeeXhtmVkHi-QA" comments="_Lq2BELCjEeeXhtmVkHi-QA _LrYzoLCjEeeXhtmVkHi-QA" targetConnectionVisual="_LrStALCjEeeXhtmVkHi-QA _LrZasLCjEeeXhtmVkHi-QA" name="Header" generalizations="_Lpn5ELCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ttZV4LCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_LsiqMbCjEeeXhtmVkHi-QA" position="2374.0,152.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_LsiqMrCjEeeXhtmVkHi-QA" label="+"/>
+    <attributes xmi:id="_LsiqM7CjEeeXhtmVkHi-QA" name="_id">
+      <modelElement href="Vistor.uml#_t13VYLCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_LsiqNLCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t138cLCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_LsiqNbCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_LsiqNrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_LsiqN7CjEeeXhtmVkHi-QA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_LsiqOLCjEeeXhtmVkHi-QA" name="_value">
+      <modelElement href="Vistor.uml#_t138cbCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_LsiqObCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t138crCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_LsiqOrCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_LsiqO7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_LsiqPLCjEeeXhtmVkHi-QA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_LsiqPbCjEeeXhtmVkHi-QA" comments="_LrgvcLCjEeeXhtmVkHi-QA" targetConnectionVisual="_Lr6YELCjEeeXhtmVkHi-QA" name="Header">
+      <modelElement href="Vistor.uml#_ttakALCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_LsiqPrCjEeeXhtmVkHi-QA" keyword="create"/>
+      <visibility xmi:id="_LsiqP7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_LsiqQLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_LsiqQbCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ttakBbCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_LsiqQrCjEeeXhtmVkHi-QA" name="Header">
+          <modelElement href="Vistor.uml#_ttZV4LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_LsiqQ7CjEeeXhtmVkHi-QA" name="id">
+        <modelElement href="Vistor.uml#_ttakAbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LsiqRLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_LsiqRbCjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_LsiqRrCjEeeXhtmVkHi-QA" name="value">
+        <modelElement href="Vistor.uml#_ttakArCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LsiqR7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_LsiqSLCjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LsiqSbCjEeeXhtmVkHi-QA" comments="_LsHMYLCjEeeXhtmVkHi-QA" targetConnectionVisual="_LsY5MLCjEeeXhtmVkHi-QA" name="getID">
+      <modelElement href="Vistor.uml#_ttbLELCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_LsiqSrCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_LsiqS7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_LsiqTLCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ttbyILCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_LsiqTbCjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_LsiqTrCjEeeXhtmVkHi-QA" comments="_LsaHULCjEeeXhtmVkHi-QA" targetConnectionVisual="_LsauYLCjEeeXhtmVkHi-QA" name="getValue">
+      <modelElement href="Vistor.uml#_ttbyIbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_LsiqT7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_LsiqULCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_LsiqUbCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ttcZMLCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_LsiqUrCjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_LsiqU7CjEeeXhtmVkHi-QA" comments="_LshcELCjEeeXhtmVkHi-QA" targetConnectionVisual="_LshcEbCjEeeXhtmVkHi-QA" name="toString">
+      <modelElement href="Vistor.uml#_ttcZMbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_LsiqVLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_LsiqVbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_LsiqVrCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ttcZMrCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_LsiqV7CjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_LsiqWLCjEeeXhtmVkHi-QA" name="execute">
+      <modelElement href="Vistor.uml#_t0p0cLCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_LsiqWbCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t0qbgbCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_LsiqWrCjEeeXhtmVkHi-QA" name="Annotations">
+        <modelElement href="Vistor.uml#_t0rCkbCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_LsiqW7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_LsiqXLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_LsiqXbCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t0qbgLCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_LsiqXrCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_LsiqX7CjEeeXhtmVkHi-QA" name="algo">
+        <modelElement href="Vistor.uml#_t0p0cbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LsiqYLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_LsiqYbCjEeeXhtmVkHi-QA" name="IPhraseVisitor">
+          <modelElement href="Vistor.uml#_ttgDkLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_LsiqYrCjEeeXhtmVkHi-QA" name="params">
+        <modelElement href="Vistor.uml#_t0p0crCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_LsiqY7CjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_LsiqZLCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_LwvNsLCjEeeXhtmVkHi-QA" comments="_Lui1ULCjEeeXhtmVkHi-QA _LvTDQLCjEeeXhtmVkHi-QA" targetConnectionVisual="_LvOKwLCjEeeXhtmVkHi-QA _LvWtoLCjEeeXhtmVkHi-QA" name="INote" generalizations="_Ltkk8LCjEeeXhtmVkHi-QA" subclassedBy="_LvXUsLCjEeeXhtmVkHi-QA _L6JoYLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tteOYLCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_LwvNsbCjEeeXhtmVkHi-QA" position="2262.0,159.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_LwvNsrCjEeeXhtmVkHi-QA" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Ly3UoLCjEeeXhtmVkHi-QA" comments="_LyC1QLCjEeeXhtmVkHi-QA _LyycILCjEeeXhtmVkHi-QA" targetConnectionVisual="_Lyp5QLCjEeeXhtmVkHi-QA _Ly04YLCjEeeXhtmVkHi-QA" name="ISeqList" associationsIn="_MHCN0LCjEeeXhtmVkHi-QA _Mbv5kLCjEeeXhtmVkHi-QA" generalizations="_LxRZMLCjEeeXhtmVkHi-QA" subclassedBy="_MCV7ELCjEeeXhtmVkHi-QA _MIat4LCjEeeXhtmVkHi-QA _MdFWULCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ttjG4LCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_Ly3UobCjEeeXhtmVkHi-QA" position="1430.0,159.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Ly3UorCjEeeXhtmVkHi-QA" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_L8yssLCjEeeXhtmVkHi-QA" comments="_L7E1cLCjEeeXhtmVkHi-QA _L7N_YbCjEeeXhtmVkHi-QA" targetConnectionVisual="_L7N_YLCjEeeXhtmVkHi-QA _L7OmcLCjEeeXhtmVkHi-QA" name="NoteCollection" abstractClass="true" associationsOut="_L432ALCjEeeXhtmVkHi-QA" generalizations="_L6JoYLCjEeeXhtmVkHi-QA" subclassedBy="_L7bawLCjEeeXhtmVkHi-QA _MSoZ0LCjEeeXhtmVkHi-QA _MXuVMLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ttyXcLCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_L8yssbCjEeeXhtmVkHi-QA" position="2011.0,444.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_L8yssrCjEeeXhtmVkHi-QA" label="+"/>
+    <attributes xmi:id="_L8yss7CjEeeXhtmVkHi-QA" name="notes">
+      <modelElement href="Vistor.uml#_t1-qILCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_L8ystLCjEeeXhtmVkHi-QA" name="Array">
+        <modelElement href="Vistor.uml#_t1-qIrCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_L8ystbCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t1-qI7CiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L8ystrCjEeeXhtmVkHi-QA" label="#"/>
+      <cardinality xmi:id="_L8yst7CjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_L8ysuLCjEeeXhtmVkHi-QA" name="Note">
+        <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_L8ysubCjEeeXhtmVkHi-QA" comments="_L7jWkLCjEeeXhtmVkHi-QA" targetConnectionVisual="_L78_MLCjEeeXhtmVkHi-QA" name="getNotes">
+      <modelElement href="Vistor.uml#_tt0zsLCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_L8ysurCjEeeXhtmVkHi-QA" name="Array">
+        <modelElement href="Vistor.uml#_tt1awrCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L8ysu7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L8ysvLCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_L8ysvbCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tt1awLCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_L8ysvrCjEeeXhtmVkHi-QA" name="Note">
+          <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_L8ysv7CjEeeXhtmVkHi-QA" name="NoteCollection">
+      <modelElement href="Vistor.uml#_tzKmsLCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_L8yswLCjEeeXhtmVkHi-QA" keyword="create"/>
+      <stereotypes xmi:id="_L8yswbCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_tzLNwLCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L8yswrCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L8ysw7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_L8ysxLCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tzLNwbCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_L8ysxbCjEeeXhtmVkHi-QA" name="NoteCollection">
+          <modelElement href="Vistor.uml#_ttyXcLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_L8ysxrCjEeeXhtmVkHi-QA" name="notes">
+        <modelElement href="Vistor.uml#_tzKmsbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L8ysx7CjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_L8ysyLCjEeeXhtmVkHi-QA" name="Note">
+          <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_L-RTYLCjEeeXhtmVkHi-QA" comments="_LvepcLCjEeeXhtmVkHi-QA _LwGUgLCjEeeXhtmVkHi-QA" targetConnectionVisual="_Lv-YsLCjEeeXhtmVkHi-QA _LwevALCjEeeXhtmVkHi-QA" name="Note" associationsIn="_L432ALCjEeeXhtmVkHi-QA" generalizations="_LvXUsLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_L-RTYbCjEeeXhtmVkHi-QA" position="2539.0,350.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_L-RTYrCjEeeXhtmVkHi-QA" label="+"/>
+    <attributes xmi:id="_L-RTY7CjEeeXhtmVkHi-QA" defaultValue="&quot;Note&quot;" name="ID" staticAttribute="true">
+      <modelElement href="Vistor.uml#_t18N4LCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L-RTZLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L-RTZbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L-RTZrCjEeeXhtmVkHi-QA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L-RTZ7CjEeeXhtmVkHi-QA" defaultValue="'Z'" name="name">
+      <modelElement href="Vistor.uml#_t18N4rCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L-RTaLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L-RTabCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L-RTarCjEeeXhtmVkHi-QA" name="char">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L-RTa7CjEeeXhtmVkHi-QA" defaultValue="0" name="octave">
+      <modelElement href="Vistor.uml#_t1808bCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L-RTbLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L-RTbbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L-RTbrCjEeeXhtmVkHi-QA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L-RTb7CjEeeXhtmVkHi-QA" defaultValue="0" name="accidental">
+      <modelElement href="Vistor.uml#_t18087CiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L-RTcLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L-RTcbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L-RTcrCjEeeXhtmVkHi-QA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L-RTc7CjEeeXhtmVkHi-QA" defaultValue="0" name="duration">
+      <modelElement href="Vistor.uml#_t19cALCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L-RTdLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L-RTdbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L-RTdrCjEeeXhtmVkHi-QA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L-RTd7CjEeeXhtmVkHi-QA" defaultValue="false" name="isNatural">
+      <modelElement href="Vistor.uml#_t19cArCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_L-RTeLCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t1-DELCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L-RTebCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L-RTerCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L-RTe7CjEeeXhtmVkHi-QA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_L-RTfLCjEeeXhtmVkHi-QA" comments="_Lwf9ILCjEeeXhtmVkHi-QA" targetConnectionVisual="_LwiZYLCjEeeXhtmVkHi-QA" name="Note">
+      <modelElement href="Vistor.uml#_tts34LCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_L-RTfbCjEeeXhtmVkHi-QA" keyword="create"/>
+      <visibility xmi:id="_L-RTfrCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L-RTf7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_L-RTgLCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ttte9rCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_L-RTgbCjEeeXhtmVkHi-QA" name="Note">
+          <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_L-RTgrCjEeeXhtmVkHi-QA" name="name">
+        <modelElement href="Vistor.uml#_tts34bCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L-RTg7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L-RThLCjEeeXhtmVkHi-QA" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_L-RThbCjEeeXhtmVkHi-QA" name="octave">
+        <modelElement href="Vistor.uml#_ttte8LCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L-RThrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L-RTh7CjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_L-RTiLCjEeeXhtmVkHi-QA" name="accidental">
+        <modelElement href="Vistor.uml#_ttte8bCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L-RTibCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L-RTirCjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_L-RTi7CjEeeXhtmVkHi-QA" name="duration">
+        <modelElement href="Vistor.uml#_ttte8rCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L-RTjLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L-RTjbCjEeeXhtmVkHi-QA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_L-RTjrCjEeeXhtmVkHi-QA" name="isNatural">
+        <modelElement href="Vistor.uml#_ttte87CiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L-RTj7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L-RTkLCjEeeXhtmVkHi-QA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_L-RTkbCjEeeXhtmVkHi-QA" comments="_LwjngLCjEeeXhtmVkHi-QA" targetConnectionVisual="_LwkOkLCjEeeXhtmVkHi-QA" name="toString">
+      <modelElement href="Vistor.uml#_ttte97CiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L-RTkrCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L-RTk7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_L-RTlLCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ttuGALCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_L-RTlbCjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_L-RTlrCjEeeXhtmVkHi-QA" comments="_LwqVMLCjEeeXhtmVkHi-QA" targetConnectionVisual="_LwqVMbCjEeeXhtmVkHi-QA" name="setName">
+      <modelElement href="Vistor.uml#_ttuGAbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L-RTl7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L-RTmLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_L-RTmbCjEeeXhtmVkHi-QA" name="name">
+        <modelElement href="Vistor.uml#_ttuGArCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L-RTmrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L-RTm7CjEeeXhtmVkHi-QA" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_L-RTnLCjEeeXhtmVkHi-QA" comments="_Lwq8QLCjEeeXhtmVkHi-QA" targetConnectionVisual="_Lwq8QbCjEeeXhtmVkHi-QA" name="setAccidental">
+      <modelElement href="Vistor.uml#_ttutELCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L-RTnbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L-RTnrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_L-RTn7CjEeeXhtmVkHi-QA" name="accidental">
+        <modelElement href="Vistor.uml#_ttutEbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L-RToLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L-RTobCjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_L-RTorCjEeeXhtmVkHi-QA" comments="_Lwq8QrCjEeeXhtmVkHi-QA" targetConnectionVisual="_LwrjULCjEeeXhtmVkHi-QA" name="getIsNatural">
+      <modelElement href="Vistor.uml#_ttvUILCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L-RTo7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L-RTpLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_L-RTpbCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ttv7MLCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_L-RTprCjEeeXhtmVkHi-QA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_L-RTp7CjEeeXhtmVkHi-QA" comments="_LwrjUbCjEeeXhtmVkHi-QA" targetConnectionVisual="_LwsKYLCjEeeXhtmVkHi-QA" name="setIsNatural">
+      <modelElement href="Vistor.uml#_ttv7MbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L-RTqLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L-RTqbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_L-RTqrCjEeeXhtmVkHi-QA" name="isNatural">
+        <modelElement href="Vistor.uml#_ttv7MrCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L-RTq7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L-RTrLCjEeeXhtmVkHi-QA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_L-RTrbCjEeeXhtmVkHi-QA" name="execute">
+      <modelElement href="Vistor.uml#_t02owLCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_L-RTrrCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t03P0LCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_L-RTr7CjEeeXhtmVkHi-QA" name="Annotations">
+        <modelElement href="Vistor.uml#_t0324LCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L-RTsLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L-RTsbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_L-RTsrCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t02ow7CiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_L-RTs7CjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_L-RTtLCjEeeXhtmVkHi-QA" name="algo">
+        <modelElement href="Vistor.uml#_t02owbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L-RTtbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L-RTtrCjEeeXhtmVkHi-QA" name="IPhraseVisitor">
+          <modelElement href="Vistor.uml#_ttgDkLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_L-RTt7CjEeeXhtmVkHi-QA" name="params">
+        <modelElement href="Vistor.uml#_t02owrCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L-RTuLCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_L-RTubCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_MDqJsLCjEeeXhtmVkHi-QA" comments="_MDd8cLCjEeeXhtmVkHi-QA _MDhm0bCjEeeXhtmVkHi-QA" targetConnectionVisual="_MDhm0LCjEeeXhtmVkHi-QA _MDiN4LCjEeeXhtmVkHi-QA" name="MTSeqList" associationsIn="_MAb2kLCjEeeXhtmVkHi-QA" associationsOut="_MAb2kLCjEeeXhtmVkHi-QA" generalizations="_MCV7ELCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ttjt8LCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_MDqJsbCjEeeXhtmVkHi-QA" position="1269.0,308.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_MDqJsrCjEeeXhtmVkHi-QA" label="+"/>
+    <attributes xmi:id="_MDqJs7CjEeeXhtmVkHi-QA" defaultValue="&quot;MTSeqList&quot;" name="ID" staticAttribute="true">
+      <modelElement href="Vistor.uml#_t14jgLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MDqJtLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MDqJtbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_MDqJtrCjEeeXhtmVkHi-QA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_MDqJt7CjEeeXhtmVkHi-QA" defaultValue="new MTSeqList()" name="Singleton" staticAttribute="true">
+      <modelElement href="Vistor.uml#_t15KkbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MDqJuLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MDqJubCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_MDqJurCjEeeXhtmVkHi-QA" name="MTSeqList">
+        <modelElement href="Vistor.uml#_ttjt8LCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_MDqJu7CjEeeXhtmVkHi-QA" name="MTSeqList">
+      <modelElement href="Vistor.uml#_ttkVALCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_MDqJvLCjEeeXhtmVkHi-QA" keyword="create"/>
+      <stereotypes xmi:id="_MDqJvbCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_ttkVA7CiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MDqJvrCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MDqJv7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MDqJwLCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ttkVBLCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MDqJwbCjEeeXhtmVkHi-QA" name="MTSeqList">
+          <modelElement href="Vistor.uml#_ttjt8LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_MDqJwrCjEeeXhtmVkHi-QA" name="toString">
+      <modelElement href="Vistor.uml#_ttk8ELCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MDqJw7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MDqJxLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MDqJxbCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ttk8EbCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MDqJxrCjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_MDqJx7CjEeeXhtmVkHi-QA" name="execute">
+      <modelElement href="Vistor.uml#_t0xJMLCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MDqJyLCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t0xwQ7CiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_MDqJybCjEeeXhtmVkHi-QA" name="Annotations">
+        <modelElement href="Vistor.uml#_t0y-YLCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MDqJyrCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MDqJy7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MDqJzLCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t0xwQrCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MDqJzbCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MDqJzrCjEeeXhtmVkHi-QA" name="algo">
+        <modelElement href="Vistor.uml#_t0xwQLCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MDqJz7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MDqJ0LCjEeeXhtmVkHi-QA" name="IPhraseVisitor">
+          <modelElement href="Vistor.uml#_ttgDkLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_MDqJ0bCjEeeXhtmVkHi-QA" name="params">
+        <modelElement href="Vistor.uml#_t0xwQbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MDqJ0rCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_MDqJ07CjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_MMBbgLCjEeeXhtmVkHi-QA" comments="_MI7EMLCjEeeXhtmVkHi-QA _MJDnELCjEeeXhtmVkHi-QA" targetConnectionVisual="_MJDAALCjEeeXhtmVkHi-QA _MKB3cLCjEeeXhtmVkHi-QA" name="NESeqList" associationsOut="_MGD9cLCjEeeXhtmVkHi-QA _MHCN0LCjEeeXhtmVkHi-QA _MHx0sLCjEeeXhtmVkHi-QA" generalizations="_MIat4LCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ttmxQLCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_MMBbgbCjEeeXhtmVkHi-QA" position="931.0,676.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_MMBbgrCjEeeXhtmVkHi-QA" label="+"/>
+    <attributes xmi:id="_MMBbg7CjEeeXhtmVkHi-QA" defaultValue="&quot;NESeqList&quot;" name="ID" staticAttribute="true">
+      <modelElement href="Vistor.uml#_t15xoLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MMBbhLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MMBbhbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_MMBbhrCjEeeXhtmVkHi-QA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_MMBbh7CjEeeXhtmVkHi-QA" name="_first">
+      <modelElement href="Vistor.uml#_t16YsLCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MMBbiLCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t16YsbCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MMBbibCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MMBbirCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_MMBbi7CjEeeXhtmVkHi-QA" name="IPhrase">
+        <modelElement href="Vistor.uml#_ttfcgLCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_MMBbjLCjEeeXhtmVkHi-QA" name="_rest">
+      <modelElement href="Vistor.uml#_t16YsrCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MMBbjbCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t16_wLCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MMBbjrCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MMBbj7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_MMBbkLCjEeeXhtmVkHi-QA" name="ISeqList">
+        <modelElement href="Vistor.uml#_ttjG4LCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_MMBbkbCjEeeXhtmVkHi-QA" name="_toStringAlgo" staticAttribute="true">
+      <modelElement href="Vistor.uml#_t16_wbCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MMBbkrCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t17m0LCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MMBbk7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MMBblLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_MMBblbCjEeeXhtmVkHi-QA" name="IPhraseVisitor">
+        <modelElement href="Vistor.uml#_ttgDkLCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_MMBblrCjEeeXhtmVkHi-QA" comments="_MKDsoLCjEeeXhtmVkHi-QA" targetConnectionVisual="_MKfKcLCjEeeXhtmVkHi-QA" name="getFirst">
+      <modelElement href="Vistor.uml#_ttn_YLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MMBbl7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MMBbmLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MMBbmbCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tzFHIbCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MMBbmrCjEeeXhtmVkHi-QA" name="IPhrase">
+          <modelElement href="Vistor.uml#_ttfcgLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_MMBbm7CjEeeXhtmVkHi-QA" comments="_MKpigLCjEeeXhtmVkHi-QA" targetConnectionVisual="_MLl9sLCjEeeXhtmVkHi-QA" name="getRest">
+      <modelElement href="Vistor.uml#_ttn_YbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MMBbnLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MMBbnbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MMBbnrCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tzFHIrCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MMBbn7CjEeeXhtmVkHi-QA" name="ISeqList">
+          <modelElement href="Vistor.uml#_ttjG4LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_MMBboLCjEeeXhtmVkHi-QA" comments="_MLmkwLCjEeeXhtmVkHi-QA" targetConnectionVisual="_MLnL0LCjEeeXhtmVkHi-QA" name="getToStringAlgo" staticOperation="true">
+      <modelElement href="Vistor.uml#_ttomcLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MMBbobCjEeeXhtmVkHi-QA" label="~"/>
+      <cardinality xmi:id="_MMBborCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MMBbo7CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tzGVQbCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MMBbpLCjEeeXhtmVkHi-QA" name="IPhraseVisitor">
+          <modelElement href="Vistor.uml#_ttgDkLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_MMBbpbCjEeeXhtmVkHi-QA" comments="_MLzZELCjEeeXhtmVkHi-QA" targetConnectionVisual="_ML0AILCjEeeXhtmVkHi-QA" name="toString">
+      <modelElement href="Vistor.uml#_ttpNgLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MMBbprCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MMBbp7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MMBbqLCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ttp0kLCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MMBbqbCjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_MMBbqrCjEeeXhtmVkHi-QA" comments="_ML7U4LCjEeeXhtmVkHi-QA" targetConnectionVisual="_ML7U4bCjEeeXhtmVkHi-QA" name="NESeqList">
+      <modelElement href="Vistor.uml#_tzEgELCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_MMBbq7CjEeeXhtmVkHi-QA" keyword="create"/>
+      <visibility xmi:id="_MMBbrLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MMBbrbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MMBbrrCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tzFHILCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MMBbr7CjEeeXhtmVkHi-QA" name="NESeqList">
+          <modelElement href="Vistor.uml#_ttmxQLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MMBbsLCjEeeXhtmVkHi-QA" name="first">
+        <modelElement href="Vistor.uml#_tzEgEbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MMBbsbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MMBbsrCjEeeXhtmVkHi-QA" name="IPhrase">
+          <modelElement href="Vistor.uml#_ttfcgLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_MMBbs7CjEeeXhtmVkHi-QA" name="rest">
+        <modelElement href="Vistor.uml#_tzEgErCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MMBbtLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MMBbtbCjEeeXhtmVkHi-QA" name="ISeqList">
+          <modelElement href="Vistor.uml#_ttjG4LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MMBbtrCjEeeXhtmVkHi-QA" comments="_ML778LCjEeeXhtmVkHi-QA" targetConnectionVisual="_ML8jALCjEeeXhtmVkHi-QA" name="setToStringAlgo" staticOperation="true">
+      <modelElement href="Vistor.uml#_tzFuMLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MMBbt7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MMBbuLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_MMBbubCjEeeXhtmVkHi-QA" name="stringAlgo">
+        <modelElement href="Vistor.uml#_tzGVQLCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MMBburCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MMBbu7CjEeeXhtmVkHi-QA" name="IPhraseVisitor">
+          <modelElement href="Vistor.uml#_ttgDkLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MMBbvLCjEeeXhtmVkHi-QA" name="execute">
+      <modelElement href="Vistor.uml#_t0zlcLCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MMBbvbCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t00MgrCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_MMBbvrCjEeeXhtmVkHi-QA" name="Annotations">
+        <modelElement href="Vistor.uml#_t00zkbCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MMBbv7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MMBbwLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MMBbwbCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t00MgbCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MMBbwrCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MMBbw7CjEeeXhtmVkHi-QA" name="algo">
+        <modelElement href="Vistor.uml#_t0zlcbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MMBbxLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MMBbxbCjEeeXhtmVkHi-QA" name="IPhraseVisitor">
+          <modelElement href="Vistor.uml#_ttgDkLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_MMBbxrCjEeeXhtmVkHi-QA" name="params">
+        <modelElement href="Vistor.uml#_t00MgLCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MMBbx7CjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_MMBbyLCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_MRWAYLCjEeeXhtmVkHi-QA" comments="_MNPjgLCjEeeXhtmVkHi-QA" targetConnectionVisual="_MOp4wLCjEeeXhtmVkHi-QA" name="KeySignature" associationsOut="_MROEkLCjEeeXhtmVkHi-QA _MRVZULCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tvJpYLCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_MRWAYbCjEeeXhtmVkHi-QA" position="562.0,925.0" size="-1.0,-1.0" visible="false"/>
+    <visibility xmi:id="_MRWAYrCjEeeXhtmVkHi-QA" label="+"/>
+    <attributes xmi:id="_MRWAY7CjEeeXhtmVkHi-QA" defaultValue="{ 0, 2, 2, 1, 2, 2, 2 //, 1&#xA;&#x9;}" name="_major" staticAttribute="true">
+      <modelElement href="Vistor.uml#_t2lHELCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MRWAZLCjEeeXhtmVkHi-QA" name="Array">
+        <modelElement href="Vistor.uml#_t2lHErCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MRWAZbCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MRWAZrCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_MRWAZ7CjEeeXhtmVkHi-QA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_MRWAaLCjEeeXhtmVkHi-QA" defaultValue="{ // Half steps in a Minor key&#xA;&#x9;&#x9;&#x9;0, 2, 1, 2, 2, 1, 2 //, 2&#xA;&#x9;}" name="_minor" staticAttribute="true">
+      <modelElement href="Vistor.uml#_t2luILCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MRWAabCjEeeXhtmVkHi-QA" name="Array">
+        <modelElement href="Vistor.uml#_t2luIrCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MRWAarCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MRWAa7CjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_MRWAbLCjEeeXhtmVkHi-QA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_MRWAbbCjEeeXhtmVkHi-QA" defaultValue="new Hashtable&lt;Character, Integer>()" name="keymap">
+      <modelElement href="Vistor.uml#_t2m8QbCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MRWAbrCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t2njULCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MRWAb7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MRWAcLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_MRWAcbCjEeeXhtmVkHi-QA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_MRWAcrCjEeeXhtmVkHi-QA" defaultValue="{ new KeyNote('A', 0), new KeyNote('A', 1), new KeyNote('B', 0), new KeyNote('C', 0),&#xA;&#x9;&#x9;&#x9;new KeyNote('C', 1), new KeyNote('D', 0), new KeyNote('D', 1), new KeyNote('E', 0), new KeyNote('F', 0),&#xA;&#x9;&#x9;&#x9;new KeyNote('F', 1), new KeyNote('G', 0), new KeyNote('G', 1) }" name="notes">
+      <modelElement href="Vistor.uml#_t2njUrCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MRWAc7CjEeeXhtmVkHi-QA" name="Array">
+        <modelElement href="Vistor.uml#_t2oKYbCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_MRWAdLCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t2oKY7CiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MRWAdbCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MRWAdrCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_MRWAd7CjEeeXhtmVkHi-QA" name="KeyNote">
+        <modelElement href="Vistor.uml#_tvK3gLCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_MRWAeLCjEeeXhtmVkHi-QA" defaultValue="{ new KeyNote('A', 1), new KeyNote('B', 0), new KeyNote('C', 1), new KeyNote('D', 1),&#xA;&#x9;&#x9;&#x9;new KeyNote('E', 1), new KeyNote('F', 1), new KeyNote('G', 1) }" name="fs_dsm">
+      <modelElement href="Vistor.uml#_t2oxcLCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MRWAebCjEeeXhtmVkHi-QA" name="Array">
+        <modelElement href="Vistor.uml#_t2oxcrCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_MRWAerCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t2pYgbCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MRWAe7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MRWAfLCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_MRWAfbCjEeeXhtmVkHi-QA" name="KeyNote">
+        <modelElement href="Vistor.uml#_tvK3gLCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_MRWAfrCjEeeXhtmVkHi-QA" comments="_MP1kgLCjEeeXhtmVkHi-QA" targetConnectionVisual="_MP4n0LCjEeeXhtmVkHi-QA" name="KeySignature">
+      <modelElement href="Vistor.uml#_tvN60LCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_MRWAf7CjEeeXhtmVkHi-QA" keyword="create"/>
+      <visibility xmi:id="_MRWAgLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MRWAgbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MRWAgrCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tvN61LCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MRWAg7CjEeeXhtmVkHi-QA" name="KeySignature">
+          <modelElement href="Vistor.uml#_tvJpYLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MRWAhLCjEeeXhtmVkHi-QA" name="key">
+        <modelElement href="Vistor.uml#_tvN60bCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MRWAhbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MRWAhrCjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MRWAh7CjEeeXhtmVkHi-QA" comments="_MP5O4LCjEeeXhtmVkHi-QA" targetConnectionVisual="_MRACILCjEeeXhtmVkHi-QA" name="convertflat">
+      <modelElement href="Vistor.uml#_tvOh4LCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MRWAiLCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MRWAibCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MRWAirCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t0JeILCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MRWAi7CjEeeXhtmVkHi-QA" name="KeyNote">
+          <modelElement href="Vistor.uml#_tvK3gLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MRWAjLCjEeeXhtmVkHi-QA" name="n">
+        <modelElement href="Vistor.uml#_tvOh4bCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MRWAjbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MRWAjrCjEeeXhtmVkHi-QA" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MRWAj7CjEeeXhtmVkHi-QA" comments="_MRApMLCjEeeXhtmVkHi-QA" targetConnectionVisual="_MRBQQLCjEeeXhtmVkHi-QA" name="printmap">
+      <modelElement href="Vistor.uml#_tvPwALCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MRWAkLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MRWAkbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_MRWAkrCjEeeXhtmVkHi-QA" comments="_MRB3ULCjEeeXhtmVkHi-QA" targetConnectionVisual="_MRB3UbCjEeeXhtmVkHi-QA" name="insert">
+      <modelElement href="Vistor.uml#_t0JeIbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MRWAk7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MRWAlLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_MRWAlbCjEeeXhtmVkHi-QA" name="n">
+        <modelElement href="Vistor.uml#_t0KFMLCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MRWAlrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MRWAl7CjEeeXhtmVkHi-QA" name="KeyNote">
+          <modelElement href="Vistor.uml#_tvK3gLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MRWAmLCjEeeXhtmVkHi-QA" comments="_MRCeYLCjEeeXhtmVkHi-QA" targetConnectionVisual="_MRDFcLCjEeeXhtmVkHi-QA" name="adjust">
+      <modelElement href="Vistor.uml#_t0KFMbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MRWAmbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MRWAmrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MRWAm7CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t0KFM7CiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MRWAnLCjEeeXhtmVkHi-QA" name="Note">
+          <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MRWAnbCjEeeXhtmVkHi-QA" name="n">
+        <modelElement href="Vistor.uml#_t0KFMrCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MRWAnrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MRWAn7CjEeeXhtmVkHi-QA" name="Note">
+          <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MRWAoLCjEeeXhtmVkHi-QA" comments="_MRKaMLCjEeeXhtmVkHi-QA" targetConnectionVisual="_MRLBQLCjEeeXhtmVkHi-QA" name="map">
+      <modelElement href="Vistor.uml#_t1dFsbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MRWAobCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MRWAorCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MRWAo7CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t1dFs7CiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MRWApLCjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MRWApbCjEeeXhtmVkHi-QA" name="note">
+        <modelElement href="Vistor.uml#_t1dFsrCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MRWAprCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MRWAp7CjEeeXhtmVkHi-QA" name="Character">
+          <modelElement href="Vistor.uml#_t1ceoLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_MVVIgLCjEeeXhtmVkHi-QA" comments="_MTv0ILCjEeeXhtmVkHi-QA _MVSsQLCjEeeXhtmVkHi-QA" targetConnectionVisual="_MVPB4LCjEeeXhtmVkHi-QA _MVSsQbCjEeeXhtmVkHi-QA" name="Triplet" generalizations="_MSoZ0LCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tt8IcLCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_MVVIgbCjEeeXhtmVkHi-QA" position="1542.0,646.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_MVVIgrCjEeeXhtmVkHi-QA" label="+"/>
+    <attributes xmi:id="_MVVIg7CjEeeXhtmVkHi-QA" defaultValue="&quot;Triplet&quot;" name="ID" staticAttribute="true">
+      <modelElement href="Vistor.uml#_t2BGYLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MVVIhLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MVVIhbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_MVVIhrCjEeeXhtmVkHi-QA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_MVVIh7CjEeeXhtmVkHi-QA" name="toString">
+      <modelElement href="Vistor.uml#_tt9WkLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MVVIiLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MVVIibCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MVVIirCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tt9WkbCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MVVIi7CjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_MVVIjLCjEeeXhtmVkHi-QA" name="Triplet">
+      <modelElement href="Vistor.uml#_tzQtULCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_MVVIjbCjEeeXhtmVkHi-QA" keyword="create"/>
+      <visibility xmi:id="_MVVIjrCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MVVIj7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MVVIkLCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tzQtVrCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MVVIkbCjEeeXhtmVkHi-QA" name="Triplet">
+          <modelElement href="Vistor.uml#_tt8IcLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MVVIkrCjEeeXhtmVkHi-QA" name="n1">
+        <modelElement href="Vistor.uml#_tzQtUbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MVVIk7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MVVIlLCjEeeXhtmVkHi-QA" name="Note">
+          <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_MVVIlbCjEeeXhtmVkHi-QA" name="n2">
+        <modelElement href="Vistor.uml#_tzQtUrCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MVVIlrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MVVIl7CjEeeXhtmVkHi-QA" name="Note">
+          <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_MVVImLCjEeeXhtmVkHi-QA" name="n3">
+        <modelElement href="Vistor.uml#_tzQtU7CiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MVVImbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MVVImrCjEeeXhtmVkHi-QA" name="Note">
+          <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MVVIm7CjEeeXhtmVkHi-QA" name="execute">
+      <modelElement href="Vistor.uml#_t08IULCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MVVInLCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t08vYrCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_MVVInbCjEeeXhtmVkHi-QA" name="Annotations">
+        <modelElement href="Vistor.uml#_t09WcrCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MVVInrCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MVVIn7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MVVIoLCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t08vYbCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MVVIobCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MVVIorCjEeeXhtmVkHi-QA" name="algo">
+        <modelElement href="Vistor.uml#_t08IUbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MVVIo7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MVVIpLCjEeeXhtmVkHi-QA" name="IPhraseVisitor">
+          <modelElement href="Vistor.uml#_ttgDkLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_MVVIpbCjEeeXhtmVkHi-QA" name="params">
+        <modelElement href="Vistor.uml#_t08vYLCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MVVIprCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_MVVIp7CjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_MaYAkLCjEeeXhtmVkHi-QA" comments="_MY1IcLCjEeeXhtmVkHi-QA _MZCj0LCjEeeXhtmVkHi-QA" targetConnectionVisual="_MY_ggLCjEeeXhtmVkHi-QA _MZDK4LCjEeeXhtmVkHi-QA" name="Tuplet" generalizations="_MXuVMLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tt-ksLCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_MaYAkbCjEeeXhtmVkHi-QA" position="2400.0,646.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_MaYAkrCjEeeXhtmVkHi-QA" label="+"/>
+    <attributes xmi:id="_MaYAk7CjEeeXhtmVkHi-QA" defaultValue="&quot;Tuplet&quot;" name="ID" staticAttribute="true">
+      <modelElement href="Vistor.uml#_t2BtcbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MaYAlLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MaYAlbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_MaYAlrCjEeeXhtmVkHi-QA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_MaYAl7CjEeeXhtmVkHi-QA" name="toString">
+      <modelElement href="Vistor.uml#_tt_y0LCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MaYAmLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MaYAmbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MaYAmrCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tuAZ4LCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MaYAm7CjEeeXhtmVkHi-QA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_MaYAnLCjEeeXhtmVkHi-QA" name="Tuplet">
+      <modelElement href="Vistor.uml#_tzR7cLCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_MaYAnbCjEeeXhtmVkHi-QA" keyword="create"/>
+      <stereotypes xmi:id="_MaYAnrCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_tzSigrCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MaYAn7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MaYAoLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MaYAobCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tzSig7CiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MaYAorCjEeeXhtmVkHi-QA" name="Tuplet">
+          <modelElement href="Vistor.uml#_tt-ksLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MaYAo7CjEeeXhtmVkHi-QA" name="notes">
+        <modelElement href="Vistor.uml#_tzR7cbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MaYApLCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_MaYApbCjEeeXhtmVkHi-QA" name="Note">
+          <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MaYAprCjEeeXhtmVkHi-QA" name="execute">
+      <modelElement href="Vistor.uml#_t0-kkLCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MaYAp7CjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t0-klLCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_MaYAqLCjEeeXhtmVkHi-QA" name="Annotations">
+        <modelElement href="Vistor.uml#_t0_ysLCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MaYAqbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MaYAqrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MaYAq7CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t0-kk7CiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MaYArLCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MaYArbCjEeeXhtmVkHi-QA" name="algo">
+        <modelElement href="Vistor.uml#_t0-kkbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MaYArrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MaYAr7CjEeeXhtmVkHi-QA" name="IPhraseVisitor">
+          <modelElement href="Vistor.uml#_ttgDkLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_MaYAsLCjEeeXhtmVkHi-QA" name="params">
+        <modelElement href="Vistor.uml#_t0-kkrCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MaYAsbCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_MaYAsrCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_MgLGkLCjEeeXhtmVkHi-QA" comments="_Md4nkLCjEeeXhtmVkHi-QA _MeDmsLCjEeeXhtmVkHi-QA" targetConnectionVisual="_MeC_oLCjEeeXhtmVkHi-QA _MeENwLCjEeeXhtmVkHi-QA" name="DecoratorSeqList" associationsOut="_Mbv5kLCjEeeXhtmVkHi-QA" generalizations="_MdFWULCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_ttO90LCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_MgLGkbCjEeeXhtmVkHi-QA" position="1698.0,311.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_MgLGkrCjEeeXhtmVkHi-QA" label="+"/>
+    <attributes xmi:id="_MgLGk7CjEeeXhtmVkHi-QA" defaultValue="MTSeqList.Singleton" name="decoree">
+      <modelElement href="Vistor.uml#_t11gMbCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MgLGlLCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t12HQLCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MgLGlbCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_MgLGlrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_MgLGl7CjEeeXhtmVkHi-QA" name="ISeqList">
+        <modelElement href="Vistor.uml#_ttjG4LCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_MgLGmLCjEeeXhtmVkHi-QA" name="DecoratorSeqList">
+      <modelElement href="Vistor.uml#_ttPk4LCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_MgLGmbCjEeeXhtmVkHi-QA" keyword="create"/>
+      <stereotypes xmi:id="_MgLGmrCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_ttQzALCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MgLGm7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MgLGnLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MgLGnbCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ttQzAbCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MgLGnrCjEeeXhtmVkHi-QA" name="DecoratorSeqList">
+          <modelElement href="Vistor.uml#_ttO90LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_MgLGn7CjEeeXhtmVkHi-QA" comments="_MfgYMLCjEeeXhtmVkHi-QA" targetConnectionVisual="_Mf9EILCjEeeXhtmVkHi-QA" name="DecoratorSeqList">
+      <modelElement href="Vistor.uml#_ty4S0LCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_MgLGoLCjEeeXhtmVkHi-QA" keyword="create"/>
+      <visibility xmi:id="_MgLGobCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MgLGorCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MgLGo7CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_ty4S1LCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MgLGpLCjEeeXhtmVkHi-QA" name="DecoratorSeqList">
+          <modelElement href="Vistor.uml#_ttO90LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MgLGpbCjEeeXhtmVkHi-QA" name="decoree">
+        <modelElement href="Vistor.uml#_ty4S0bCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MgLGprCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MgLGp7CjEeeXhtmVkHi-QA" name="ISeqList">
+          <modelElement href="Vistor.uml#_ttjG4LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MgLGqLCjEeeXhtmVkHi-QA" comments="_MgIDQLCjEeeXhtmVkHi-QA" targetConnectionVisual="_MgIDQbCjEeeXhtmVkHi-QA" name="setDecoree">
+      <modelElement href="Vistor.uml#_ty454LCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_MgLGqbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MgLGqrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_MgLGq7CjEeeXhtmVkHi-QA" name="decoree">
+        <modelElement href="Vistor.uml#_ty454bCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MgLGrLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MgLGrbCjEeeXhtmVkHi-QA" name="ISeqList">
+          <modelElement href="Vistor.uml#_ttjG4LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MgLGrrCjEeeXhtmVkHi-QA" name="execute">
+      <modelElement href="Vistor.uml#_t0k78LCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_MgLGr7CjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t0ljALCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_MgLGsLCjEeeXhtmVkHi-QA" name="Annotations">
+        <modelElement href="Vistor.uml#_t0mxILCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_MgLGsbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_MgLGsrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MgLGs7CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_t0k787CiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_MgLGtLCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MgLGtbCjEeeXhtmVkHi-QA" name="algo">
+        <modelElement href="Vistor.uml#_t0k78bCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MgLGtrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_MgLGt7CjEeeXhtmVkHi-QA" name="IPhraseVisitor">
+          <modelElement href="Vistor.uml#_ttgDkLCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_MgLGuLCjEeeXhtmVkHi-QA" name="params">
+        <modelElement href="Vistor.uml#_t0k78rCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_MgLtoLCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_MgLtobCjEeeXhtmVkHi-QA" name="Object">
+          <modelElement href="Vistor.uml#_t0eOQbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_L3IJkLCjEeeXhtmVkHi-QA" comments="_L0QbwLCjEeeXhtmVkHi-QA" targetConnectionVisual="_L1iOILCjEeeXhtmVkHi-QA" name="SequencePlayer" associationsOut="_L3D4ILCjEeeXhtmVkHi-QA _L3FGQLCjEeeXhtmVkHi-QA _L3GUYLCjEeeXhtmVkHi-QA _L3HigLCjEeeXhtmVkHi-QA">
+    <modelElement href="Vistor.uml#_tuCPEbCiEeeXhtmVkHi-QA"/>
+    <visualProperties xmi:id="_L3IJkbCjEeeXhtmVkHi-QA" position="11.0,921.0" size="-1.0,-1.0" visible="false"/>
+    <visibility xmi:id="_L3IJkrCjEeeXhtmVkHi-QA" label="+"/>
+    <attributes xmi:id="_L3IJk7CjEeeXhtmVkHi-QA" defaultValue="47" name="END_OF_TRACK" staticAttribute="true">
+      <modelElement href="Vistor.uml#_t2CUgLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3IJlLCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3IJlbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L3IJlrCjEeeXhtmVkHi-QA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L3IJl7CjEeeXhtmVkHi-QA" name="_sequence">
+      <modelElement href="Vistor.uml#_t2CUgrCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_L3IJmLCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t2C7kLCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L3IJmbCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L3IJmrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L3IJm7CjEeeXhtmVkHi-QA" name="Sequence">
+        <modelElement href="Vistor.uml#_t1AZwLCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L3IJnLCjEeeXhtmVkHi-QA" name="_track">
+      <modelElement href="Vistor.uml#_t2C7kbCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_L3IJnbCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t2DioLCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L3IJnrCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L3IJn7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L3IJoLCjEeeXhtmVkHi-QA" name="Track">
+        <modelElement href="Vistor.uml#_t1Bn4bCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L3IJobCjEeeXhtmVkHi-QA" name="_bpm">
+      <modelElement href="Vistor.uml#_t2DiobCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_L3IJorCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t2EJsLCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L3IJo7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L3IJpLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L3IJpbCjEeeXhtmVkHi-QA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L3IJprCjEeeXhtmVkHi-QA" name="_ticksPerDefaultNote">
+      <modelElement href="Vistor.uml#_t2EJsbCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_L3IJp7CjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t2EJsrCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L3IJqLCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L3IJqbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L3IJqrCjEeeXhtmVkHi-QA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L3IJq7CjEeeXhtmVkHi-QA" name="_ticksPerQuarterNote">
+      <modelElement href="Vistor.uml#_t2EwwLCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_L3IJrLCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t2EwwbCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L3IJrbCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L3IJrrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L3IJr7CjEeeXhtmVkHi-QA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L3IJsLCjEeeXhtmVkHi-QA" name="_instrument">
+      <modelElement href="Vistor.uml#_t2FX0LCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_L3IJsbCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t2FX0bCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L3IJsrCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L3IJs7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L3IJtLCjEeeXhtmVkHi-QA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L3IJtbCjEeeXhtmVkHi-QA" name="_sequencer">
+      <modelElement href="Vistor.uml#_t2F-4LCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_L3IJtrCjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t2F-4bCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L3IJt7CjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L3IJuLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L3IJubCjEeeXhtmVkHi-QA" name="Sequencer">
+        <modelElement href="Vistor.uml#_t1C2ALCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L3IJurCjEeeXhtmVkHi-QA" name="_synthesizer">
+      <modelElement href="Vistor.uml#_t2Gl8LCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_L3IJu7CjEeeXhtmVkHi-QA" name="LegacyStyledElement">
+        <modelElement href="Vistor.uml#_t2Gl8bCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L3IJvLCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L3IJvbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <type xmi:id="_L3IJvrCjEeeXhtmVkHi-QA" name="Synthesizer">
+        <modelElement href="Vistor.uml#_tz0G8bCiEeeXhtmVkHi-QA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_L3IJv7CjEeeXhtmVkHi-QA" defaultValue="{ // add these amounts to the base value&#xA;&#x9;&#x9;&#x9;// A   B  C  D  E  F  G&#xA;&#x9;&#x9;&#x9;9, 11, 0, 2, 4, 5, 7 }" name="_offsets" staticAttribute="true">
+      <modelElement href="Vistor.uml#_t2Gl8rCiEeeXhtmVkHi-QA"/>
+      <stereotypes xmi:id="_L3IJwLCjEeeXhtmVkHi-QA" name="Array">
+        <modelElement href="Vistor.uml#_t2HNAbCiEeeXhtmVkHi-QA"/>
+      </stereotypes>
+      <visibility xmi:id="_L3IJwbCjEeeXhtmVkHi-QA" label="-"/>
+      <cardinality xmi:id="_L3IJwrCjEeeXhtmVkHi-QA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_L3IJw7CjEeeXhtmVkHi-QA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_L3IJxLCjEeeXhtmVkHi-QA" comments="_L2fQYLCjEeeXhtmVkHi-QA" targetConnectionVisual="_L2oaULCjEeeXhtmVkHi-QA" name="SequencePlayer">
+      <modelElement href="Vistor.uml#_tuDdMLCiEeeXhtmVkHi-QA"/>
+      <keywords xmi:id="_L3IJxbCjEeeXhtmVkHi-QA" keyword="create"/>
+      <visibility xmi:id="_L3IJxrCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3IJx7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_L3IJyLCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tuEERLCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_L3IJybCjEeeXhtmVkHi-QA" name="SequencePlayer">
+          <modelElement href="Vistor.uml#_tuCPEbCiEeeXhtmVkHi-QA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_L3IJyrCjEeeXhtmVkHi-QA" name="ticksPerQuarterNote">
+        <modelElement href="Vistor.uml#_tuEEQLCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L3IJy7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L3IJzLCjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_L3IJzbCjEeeXhtmVkHi-QA" name="instrument">
+        <modelElement href="Vistor.uml#_tuEEQbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L3IJzrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L3IJz7CjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_L3IJ0LCjEeeXhtmVkHi-QA" comments="_L2pBYLCjEeeXhtmVkHi-QA" targetConnectionVisual="_L2pocLCjEeeXhtmVkHi-QA" name="init">
+      <modelElement href="Vistor.uml#_tuEERbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3IJ0bCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3IJ0rCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_L3IJ07CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tuErUrCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_L3IJ1LCjEeeXhtmVkHi-QA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_L3IJ1bCjEeeXhtmVkHi-QA" name="ticksPerQuarterNote">
+        <modelElement href="Vistor.uml#_tuErULCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L3IJ1rCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L3IJ17CjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_L3IJ2LCjEeeXhtmVkHi-QA" name="instrument">
+        <modelElement href="Vistor.uml#_tuErUbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L3IJ2bCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L3IJ2rCjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_L3IJ27CjEeeXhtmVkHi-QA" comments="_L2zZcLCjEeeXhtmVkHi-QA" targetConnectionVisual="_L26uMLCjEeeXhtmVkHi-QA" name="stop">
+      <modelElement href="Vistor.uml#_tuFSYLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3IJ3LCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3IJ3bCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_L3IJ3rCjEeeXhtmVkHi-QA" comments="_L278ULCjEeeXhtmVkHi-QA" targetConnectionVisual="_L278UbCjEeeXhtmVkHi-QA" name="getTicksPerDefaultNote">
+      <modelElement href="Vistor.uml#_tuFSYbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3IJ37CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3IJ4LCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_L3IJ4bCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tuF5cLCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_L3IJ4rCjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_L3IJ47CjEeeXhtmVkHi-QA" comments="_L28jYLCjEeeXhtmVkHi-QA" targetConnectionVisual="_L28jYbCjEeeXhtmVkHi-QA" name="setTicksPerDefaultNote">
+      <modelElement href="Vistor.uml#_tuF5cbCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3IJ5LCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3IJ5bCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_L3IJ5rCjEeeXhtmVkHi-QA" name="ticksPerDefaultNote">
+        <modelElement href="Vistor.uml#_tuF5crCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L3IJ57CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L3IJ6LCjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_L3IJ6bCjEeeXhtmVkHi-QA" comments="_L29KcLCjEeeXhtmVkHi-QA" targetConnectionVisual="_L29KcbCjEeeXhtmVkHi-QA" name="getTempo">
+      <modelElement href="Vistor.uml#_tuGggLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3IJ6rCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3IJ67CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_L3IJ7LCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tuGggbCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_L3IJ7bCjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_L3IJ7rCjEeeXhtmVkHi-QA" comments="_L29xgLCjEeeXhtmVkHi-QA" targetConnectionVisual="_L29xgbCjEeeXhtmVkHi-QA" name="setTempo">
+      <modelElement href="Vistor.uml#_tuHHkLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3IJ77CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3IJ8LCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_L3IJ8bCjEeeXhtmVkHi-QA" name="bpm">
+        <modelElement href="Vistor.uml#_tuHHkbCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L3IJ8rCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L3IJ87CjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_L3IJ9LCjEeeXhtmVkHi-QA" comments="_L2-YkLCjEeeXhtmVkHi-QA" targetConnectionVisual="_L2-_oLCjEeeXhtmVkHi-QA" name="getTicksPerQuarterNote">
+      <modelElement href="Vistor.uml#_tuHuoLCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3IJ9bCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3IJ9rCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_L3IJ97CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tuHuobCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_L3IJ-LCjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_L3IJ-bCjEeeXhtmVkHi-QA" comments="_L2-_obCjEeeXhtmVkHi-QA" targetConnectionVisual="_L2_msLCjEeeXhtmVkHi-QA" name="addNote">
+      <modelElement href="Vistor.uml#_tzWM4LCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3IJ-rCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3IJ-7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_L3IJ_LCjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tzWM47CiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_L3IJ_bCjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_L3IJ_rCjEeeXhtmVkHi-QA" name="note">
+        <modelElement href="Vistor.uml#_tzWM4bCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L3IJ_7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L3IKALCjEeeXhtmVkHi-QA" name="Note">
+          <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_L3IKAbCjEeeXhtmVkHi-QA" name="start">
+        <modelElement href="Vistor.uml#_tzWM4rCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L3IKArCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L3IKA7CjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_L3IKBLCjEeeXhtmVkHi-QA" comments="_L3ANwLCjEeeXhtmVkHi-QA" targetConnectionVisual="_L3ANwbCjEeeXhtmVkHi-QA" name="addNote">
+      <modelElement href="Vistor.uml#_tzWz8LCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3IKBbCjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3IKBrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_L3IKB7CjEeeXhtmVkHi-QA">
+        <modelElement href="Vistor.uml#_tzWz9LCiEeeXhtmVkHi-QA"/>
+        <type xmi:id="_L3IKCLCjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_L3IKCbCjEeeXhtmVkHi-QA" name="note">
+        <modelElement href="Vistor.uml#_tzWz8bCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L3IKCrCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L3IKC7CjEeeXhtmVkHi-QA" name="Note">
+          <modelElement href="Vistor.uml#_ttsQ0LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_L3IKDLCjEeeXhtmVkHi-QA" name="start">
+        <modelElement href="Vistor.uml#_tzWz8rCiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L3IKDbCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L3IKDrCjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_L3IKD7CjEeeXhtmVkHi-QA" name="velocity">
+        <modelElement href="Vistor.uml#_tzWz87CiEeeXhtmVkHi-QA"/>
+        <cardinality xmi:id="_L3IKELCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L3IKEbCjEeeXhtmVkHi-QA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_L3IKErCjEeeXhtmVkHi-QA" comments="_L3ANwrCjEeeXhtmVkHi-QA" targetConnectionVisual="_L3A00LCjEeeXhtmVkHi-QA" name="play">
+      <modelElement href="Vistor.uml#_tzXbALCiEeeXhtmVkHi-QA"/>
+      <visibility xmi:id="_L3IKE7CjEeeXhtmVkHi-QA" label="+"/>
+      <cardinality xmi:id="_L3IKFLCjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_L3IKFbCjEeeXhtmVkHi-QA" name="statusCmd">
+        <modelElement href="Vistor.uml#_tzXbAbCiEeeXhtmVkHi-QA"/>
+        <keywords xmi:id="_L3IKFrCjEeeXhtmVkHi-QA" keyword="final"/>
+        <cardinality xmi:id="_L3IKF7CjEeeXhtmVkHi-QA" label="1" max="1" min="1"/>
+        <type xmi:id="_L3IKGLCjEeeXhtmVkHi-QA" name="ISequencePlayerStatus">
+          <modelElement href="Vistor.uml#_tuBA8LCiEeeXhtmVkHi-QA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

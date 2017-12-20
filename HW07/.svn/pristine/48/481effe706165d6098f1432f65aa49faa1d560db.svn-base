@@ -1,0 +1,36 @@
+Instructions
+	1. Run HW07/EngineController.launch to launch the server
+	2. Run HW07/ClientController.launch to launch the client.
+	3. In the client's GUI, Use the default IP address or input the IP address of your desired server.
+	4. Click "connect" button to connect to the server. 
+	5. Choose from first drop list for computing tasks/ or adding your desired computing tasks using the "add" button.
+	6. You may combine tasks using the corresponding subpanel.
+	7. Click "quit" to quit the server/client.
+
+Three tasks:
+
+Task1 client.model.task.CountDistChar
+CountDistChar: a task that takes a string input; returns the number of distinct chars contained in the string.
+
+Task2 client.model.task.ReverseString
+ReverseString: a task that takes a string input; returns the reversed string.
+ 
+Task3 client.model.task.IsOdd
+IsOdd: a task that takes a integer input; returns true (is odd) or false (is not odd).
+
+
+
+Testing log:
+
+| Tesing NetID | Group | Testing status |
+1. lp28 ker7 | group 14 | success
+2. zy24 lz50 | group 22 | success
+3. lz50 zy24 | group 22 | success
+4. sw12 sq9 | group 20 | single task reverseString not working, otherwise okay (including multitasks).
+5. ry13 dl52 | group 3 | success
+6. zf12 cz39 | group 2 | success
+7. ql13 kp30 | group 28 | success
+8. ds60 ly15 | group 4 | success
+9. qy11 pg23 | group 17 | success
+10. xc23 yl148 | group 11 | success
+11. yc96 zz50 | group 13 | success
