@@ -1,2 +1,2 @@
 # Design-Pattern
-Objective Oriented Design @ Rice University
+Object-Oriented Design @ Rice University
